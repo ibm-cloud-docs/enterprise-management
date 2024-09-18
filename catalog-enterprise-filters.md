@@ -22,7 +22,7 @@ As the account owner or administrator, you can manage which products in the {{si
 ## Before you begin
 {: #catalog-enterprise-prereqs}
 
-* [Set up your enterprise](/docs/secure-enterprise?topic=secure-enterprise-enterprise-tutorial).
+* [Set up your enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial).
 * Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
 
 ## Managing products at the enterprise level

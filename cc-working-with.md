@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-09-16"
+lastupdated: "2024-09-18"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -165,7 +165,7 @@ In the enterprise level view, you can filter your emissions data down to a speci
 ​
 * Emissions by account: GHG emissions are broken down by account. This will display if the entity that is being viewed contains only accounts.
 ​
-Learn more about setting up and managing [Enterprise accounts](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise).
+Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
 ​
 ## Exporting carbon calculator usage data
 {: #exporting-data}

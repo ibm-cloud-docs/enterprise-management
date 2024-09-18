@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2024-09-16"
+lastupdated: "2024-09-18"
 
 keywords:
 
@@ -20,8 +20,8 @@ subcollection: secure-enterprise
 If you experience an issue or have questions, you can use the following resources before you open a support case.
 {: shortdesc}
 
-* Review the [FAQs about projects](/docs/secure-enterprise?topic=secure-enterprise-project-faqs) and [FAQs about enterprises](/docs/secure-enterprise?topic=secure-enterprise-enterprise-faqs) in the product documentation.
-* Review the troubleshooting documentation for [enterprises](/docs/secure-enterprise?topic=secure-enterprise-troubleshoot-view-enterprise) and [projects](/docs/secure-enterprise?topic=secure-enterprise-troubleshoot-project-access) to troubleshoot and resolve common issues.
+* Review the [FAQs about projects](/docs/secure-enterprise?topic=secure-enterprise-project-faqs) and [FAQs about enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise-faqs) in the product documentation.
+* Review the troubleshooting documentation for [enterprises](/docs/enterprise-management?topic=enterprise-management-troubleshoot-view-enterprise) and [projects](/docs/secure-enterprise?topic=secure-enterprise-troubleshoot-project-access) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `projects` or `enterprise`, so that it's seen by the {{site.data.keyword.cloud_notm}} development teams.
 

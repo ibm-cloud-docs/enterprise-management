@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-09-16"
+lastupdated: "2024-09-18"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -26,19 +26,19 @@ FAQs for your {{site.data.keyword.cloud}} enterprise might include questions abo
 {: faq}
 {: support}
 
-To set up an enterprise, you must be the account owner or an administrator on the Billing account management service. You use the {{site.data.keyword.cloud_notm}} console to create an enterprise account, enter the name of your company, provide your company's domain, create your enterprise structure, and more. For more information, see [Setting up an enterprise](/docs/secure-enterprise?topic=secure-enterprise-enterprise-tutorial).
+To set up an enterprise, you must be the account owner or an administrator on the Billing account management service. You use the {{site.data.keyword.cloud_notm}} console to create an enterprise account, enter the name of your company, provide your company's domain, create your enterprise structure, and more. For more information, see [Setting up an enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial).
 
 ## When I create an enterprise, does my {{site.data.keyword.cloud_notm}} account become the enterprise account?
 {: #enterprise-account-switch}
 {: faq}
 
-No, your {{site.data.keyword.cloud_notm}} account does not become the enterprise account. Your account is added to the enterprise hierarchy. For more information, see [Enterprise hierarchy](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise#enterprise-hierarchy).
+No, your {{site.data.keyword.cloud_notm}} account does not become the enterprise account. Your account is added to the enterprise hierarchy. For more information, see [Enterprise hierarchy](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise#enterprise-hierarchy).
 
 ## Can I use my {{site.data.keyword.cloud_notm}} account to create multiple enterprise accounts?
 {: #enterprise-cloud-account}
 {: faq}
 
-No, your {{site.data.keyword.cloud_notm}} account can be a part of only one enterprise account. When you create an enterprise, your account is added to the enterprise hierarchy. See [What is an enterprise?](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) for more information.
+No, your {{site.data.keyword.cloud_notm}} account can be a part of only one enterprise account. When you create an enterprise, your account is added to the enterprise hierarchy. See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more information.
 
 ## Can an existing enterprise be a child of another enterprise?
 {: #multiple-enterprise}
@@ -50,7 +50,7 @@ No, an existing {{site.data.keyword.cloud_notm}} enterprise account can't be imp
 {: #enterprise-add-account}
 {: faq}
 
-You can use the enterprise dashboard to import an existing account to your enterprise or create a new account within your enterprise. For more information, see [Import existing accounts](/docs/secure-enterprise?topic=secure-enterprise-enterprise-tutorial&interface=ui#existing_accounts_tutorial) and [Create new accounts](/docs/secure-enterprise?topic=secure-enterprise-enterprise-tutorial&interface=ui#create-accounts_tutorial).
+You can use the enterprise dashboard to import an existing account to your enterprise or create a new account within your enterprise. For more information, see [Import existing accounts](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial&interface=ui#existing_accounts_tutorial) and [Create new accounts](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial&interface=ui#create-accounts_tutorial).
 
 ## Can I import a Lite account into an enterprise?
 {: #lite-to-enterprise}
@@ -68,7 +68,7 @@ After you import your account into an enterprise, you can't remove it.
 {: #move-enterprise-account}
 {: faq}
 
-Yes, you can move your account anywhere within an enterprise. For example, you can move your account directly under the enterprise or from one account group to another. For more information, see [Moving accounts within the enterprise](/docs/secure-enterprise?topic=secure-enterprise-enterprise-organize).
+Yes, you can move your account anywhere within an enterprise. For example, you can move your account directly under the enterprise or from one account group to another. For more information, see [Moving accounts within the enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-organize).
 
 ## Can I move an account group?
 {: #move-account-group}
@@ -118,7 +118,7 @@ Subscription accounts and Pay-As-You-Go accounts that signed up with a credit ca
 {: #enterprise-account-number}
 {: faq}
 
-You can have a maximum of 1000 child accounts that can be distributed across a maximum of 500 account groups. An enterprise can contain up to five tiers of accounts and account groups. For more information, see [Enterprise hierarchy](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise&interface=ui#enterprise-hierarchy)
+You can have a maximum of 1000 child accounts that can be distributed across a maximum of 500 account groups. An enterprise can contain up to five tiers of accounts and account groups. For more information, see [Enterprise hierarchy](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise&interface=ui#enterprise-hierarchy)
 
 ## Can I create common resources for all of my child accounts?
 {: #enterprise-common-resources}
@@ -126,7 +126,7 @@ You can have a maximum of 1000 child accounts that can be distributed across a m
 
 Although you can create resources at the enterprise account level, this method is not a best practice. You can follow best practice by using resource groups and access groups to create and share resources.
 
-For more information, see [Working with resources in an enterprise](/docs/secure-enterprise?topic=secure-enterprise-enterprise-best-practices#child-resources-enterprise), [Resource management](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise#enterprise-resources), and [Best practices for assigning access](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises).
+For more information, see [Working with resources in an enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-best-practices#child-resources-enterprise), [Resource management](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise#enterprise-resources), and [Best practices for assigning access](/docs/enterprise-management?topic=enterprise-management-access-enterprises).
 
 ## How do I know how many child accounts are in the enterprise as an enterprise account owner?
 {: #enterprise-account-count}
@@ -138,7 +138,7 @@ To see all accounts within your enterprise, go to your Enterprise dashboard in t
 {: #enterprise-admin-access}
 {: faq}
 
-No, you do not automatically have access to child accounts and their resources. You need to be invited to individual child accounts and assigned access policies to manage resources. For more information, see [User management for enterprises](/docs/secure-enterprise?topic=secure-enterprise-enterprise-access-management).
+No, you do not automatically have access to child accounts and their resources. You need to be invited to individual child accounts and assigned access policies to manage resources. For more information, see [User management for enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise-access-management).
 
 ## Can I add users to child accounts as an enterprise administrator?
 {: #enterprise-admin-invite}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-09-16"
+lastupdated: "2024-09-18"
 
 keywords: known issues, known limitations
 
@@ -50,7 +50,7 @@ The projects API, SDK, and Terraform functionalities are beta for this release. 
 ## Enterprise limits
 {: #enterprise-limits}
 
-The following table lists the maximum limits for {{site.data.keyword.cloud_notm}} [enterprises](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise). These limits apply to any user who can create an enterprise, add accounts to an enterprise, or create and update account groups.
+The following table lists the maximum limits for {{site.data.keyword.cloud_notm}} [enterprises](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise). These limits apply to any user who can create an enterprise, add accounts to an enterprise, or create and update account groups.
 
 | Resource                               | Max  |
 |----------------------------------------|------|

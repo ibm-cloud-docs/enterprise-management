@@ -18,7 +18,7 @@ subcollection: billing-usage
 You can track resource and support costs from accounts in your {{site.data.keyword.Bluemix}} enterprise by viewing their usage. The accounts and account groups that you can view usage for depend on your assigned access.
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} enterprises enable you to centrally manage multiple {{site.data.keyword.Bluemix_notm}} accounts. As an enterprise user, you can keep an eye on resource usage and the associated costs for any account in the enterprise. See [What is an enterprise?](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) for more information.
+{{site.data.keyword.Bluemix_notm}} enterprises enable you to centrally manage multiple {{site.data.keyword.Bluemix_notm}} accounts. As an enterprise user, you can keep an eye on resource usage and the associated costs for any account in the enterprise. See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more information.
 
 ## Required access for viewing enterprise usage
 {: #enterprise-usage-access}
@@ -30,7 +30,7 @@ You can give users granular access so that they can view usage for a certain acc
 * Each department lead needs to view usage for their department, and they also need to create and manage accounts and account groups for their teams. Assign each department lead the Editor role for their department's account group.
 * Each team lead needs to view their team's usage, but you want them to get department approval to add new accounts to their team. Assign each team lead the Usage Reports Viewer role for their team's account group. They can view usage from all accounts within the account group, but not the usage from the account groups of other teams in the department.
 
-For detailed steps about assigning enterprise access, see [Assigning access for enterprise management](/docs/secure-enterprise?topic=secure-enterprise-assign-access-enterprise).
+For detailed steps about assigning enterprise access, see [Assigning access for enterprise management](/docs/enterprise-management?topic=enterprise-management-assign-access-enterprise).
 
 ## Viewing enterprise usage in the console
 {: #enterprise-usage-console}
@@ -199,5 +199,3 @@ To view your enterprise hierarchy and any usage, you need an access policy with 
    {: tip}
 
 1. Pair the usage costs for each account group with the identified department, and follow your company's processes to submit the charges.
-
-
