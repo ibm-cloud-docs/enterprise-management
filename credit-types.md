@@ -6,7 +6,7 @@ lastupdated: "2024-02-26"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 
@@ -53,4 +53,3 @@ Feature codes are provided for online courses and certain events, such as educat
 {: #sub-codes-credits}
 
 Subscription codes are provided when you purchase a subscription for a platform or support credit. Use the [IBM Partner Plus](https://www.ibm.com/partnerplus) to manage subscriptions. For more information, see [Applying subscription codes](/docs/enterprise-management?topic=enterprise-management-subscription_code).
-

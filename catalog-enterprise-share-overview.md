@@ -6,7 +6,7 @@ lastupdated: "2023-12-12"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in, visibility
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 

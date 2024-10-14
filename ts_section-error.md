@@ -6,7 +6,7 @@ lastupdated: "2023-06-26"
 
 keywords: troubleshoot billing
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

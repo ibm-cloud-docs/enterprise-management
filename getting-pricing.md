@@ -3,11 +3,11 @@
 copyright:
   years: 2024
 
-lastupdated: "2024-09-16"
+lastupdated: "2024-10-14"
 
 keywords: pricing
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

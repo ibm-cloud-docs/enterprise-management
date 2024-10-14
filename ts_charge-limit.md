@@ -6,7 +6,7 @@ lastupdated: "2022-12-19"
 
 keywords: troubleshoot, billing, payment limit, charge limit
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

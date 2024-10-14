@@ -6,7 +6,7 @@ lastupdated: "2024-06-10"
 
 keywords: GB-hour, container usage, runtime, charge
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: faq
 

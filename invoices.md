@@ -7,7 +7,7 @@ lastupdated: "2024-02-23"
 
 keywords: viewing invoices, invoices, IBM Customer Number, IBM Invoices, RSET, external invoice website, paperless invoice, request paperless invoice
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

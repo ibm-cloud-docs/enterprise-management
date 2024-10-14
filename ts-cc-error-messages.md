@@ -6,7 +6,7 @@ lastupdated: "2023-03-07"
 
 keywords: credit card, payment method, error credit card, credit card error, payment issue, card issue, card error, card error message, payment error message
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

@@ -6,7 +6,7 @@ lastupdated: "2024-08-28"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

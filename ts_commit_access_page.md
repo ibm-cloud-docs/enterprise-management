@@ -6,7 +6,7 @@ lastupdated: "2024-04-29"
 
 keywords: troubleshoot, billing, commitment
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

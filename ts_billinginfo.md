@@ -6,7 +6,7 @@ lastupdated: "2024-06-07"
 
 keywords: troubleshoot billing, billing error, billing info, can't access billing, function unavailable
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

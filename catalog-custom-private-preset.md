@@ -6,7 +6,7 @@ lastupdated: "2023-02-07"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog, preset configuration, preset
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 

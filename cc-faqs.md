@@ -6,7 +6,7 @@ lastupdated: "2024-02-01"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: faq
 
@@ -113,5 +113,3 @@ Talk to your CSM or create case on support center. When you open a support casae
 {: faq}
 
 In the carbon calculator, on the locations widget, you can hover over the location of their data center to see carbon intensity.
-
-

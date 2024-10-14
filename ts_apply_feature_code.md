@@ -6,7 +6,7 @@ lastupdated: "2022-05-16"
 
 keywords: troubleshoot billing, feature code, can't apply code, can't apply feature code, lite account, trial account
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

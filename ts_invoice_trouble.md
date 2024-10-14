@@ -6,7 +6,7 @@ lastupdated: "2024-01-12"
 
 keywords: troubleshoot billing, manage invoice, can't view invoice
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

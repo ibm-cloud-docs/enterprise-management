@@ -8,7 +8,7 @@ lastupdated: "2024-08-20"
 
 keywords: promo code, discount, credit, promotion code, promotional code, redeem promos
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

@@ -6,7 +6,7 @@ lastupdated: "2023-12-19"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 

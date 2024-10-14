@@ -6,7 +6,7 @@ lastupdated: "2024-06-28"
 
 keywords: account, publish, private catalog, allowlist, external
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 

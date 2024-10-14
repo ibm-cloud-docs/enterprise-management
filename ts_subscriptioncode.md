@@ -6,7 +6,7 @@ lastupdated: "2024-08-13"
 
 keywords: troubleshoot billing, subscription code, subscription code error, can't apply subscription code, code applied
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

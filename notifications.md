@@ -6,7 +6,7 @@ lastupdated: "2024-01-30"
 
 keywords: spending notification, spending alert, cost threshold, spending threshold, service notifications, preset notifications, notification,
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

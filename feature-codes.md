@@ -6,7 +6,7 @@ lastupdated: "2022-03-02"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

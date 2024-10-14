@@ -6,7 +6,7 @@ lastupdated: "2024-08-19"
 
 keywords: GB-hour, container usage, runtime, charge, invoice, paperless invoicing, adjustments
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: faq
 

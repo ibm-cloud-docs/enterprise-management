@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-14"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -56,7 +56,7 @@ You can use the enterprise dashboard to import an existing account to your enter
 {: #lite-to-enterprise}
 {: faq}
 
-Yes, but your Lite account is automatically upgraded to a Pay-As-You-Go account. Billing for the account is then managed at the enterprise level. For more information, see [Centrally managing billing and usage with enterprises](/docs/billing-usage?topic=billing-usage-enterprise).
+Yes, but your Lite account is automatically upgraded to a Pay-As-You-Go account. Billing for the account is then managed at the enterprise level. For more information, see [Centrally managing billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 
 ## Can I remove my account from an enterprise?
 {: #remove-enterprise}
@@ -92,7 +92,7 @@ To invite users to an enterprise, you must have an {{site.data.keyword.Bluemix_n
 {: #enterprise-currency}
 {: faq}
 
-No, billing and subscriptions are managed at the enterprise level rather than at the child account level. Your child account cannot have a different subscription. For more information about enterprise billing, see [Billing options](/docs/billing-usage?topic=billing-usage-enterprise&interface=ui#enterprise-billing-options).
+No, billing and subscriptions are managed at the enterprise level rather than at the child account level. Your child account cannot have a different subscription. For more information about enterprise billing, see [Billing options](/docs/enterprise-management?topic=enterprise-management-enterprise&interface=ui#enterprise-billing-options).
 
 ## Can I change the domain for my enterprise account?
 {: #enterprise-domain}
@@ -104,9 +104,9 @@ Yes, domains can be updated. You can use the [Enterprise Management API](https:/
 {: #enterprise-invoice}
 {: faq}
 
-You can view usage for individual child accounts, but they are not individually invoiced. For more information about enterprise usage, see [Viewing usage in an enterprise](/docs/billing-usage?topic=billing-usage-enterprise-usage&interface=ui).
+You can view usage for individual child accounts, but they are not individually invoiced. For more information about enterprise usage, see [Viewing usage in an enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-usage&interface=ui).
 
-For more information about enterprise billing, see [Centrally managing billing and usage with enterprises](/docs/billing-usage?topic=billing-usage-enterprise).
+For more information about enterprise billing, see [Centrally managing billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 
 ## What account type do I need to create an enterprise account?
 {: #enterprise-account-type}

@@ -6,7 +6,7 @@ lastupdated: "2022-06-14"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 

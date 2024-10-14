@@ -6,7 +6,7 @@ lastupdated: "2022-08-19"
 
 keywords: troubleshoot billing, feature code, can't create service, create service, lite account, trial account
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

@@ -6,7 +6,7 @@ lastupdated: "2024-06-10"
 
 keywords: billing items, cancel, cancel billing items, cancel resources, delete resource, delete billing items
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

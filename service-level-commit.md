@@ -6,7 +6,7 @@ lastupdated: "2024-09-11"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

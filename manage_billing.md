@@ -7,7 +7,7 @@ lastupdated: "2024-01-03"
 
 keywords: payment method, credit card, payment, billing method, pay, pay my bill, billing items, ibm billing,
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

@@ -8,7 +8,7 @@ lastupdated: "2024-09-12"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: faq
 

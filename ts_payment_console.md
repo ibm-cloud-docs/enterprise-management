@@ -6,7 +6,7 @@ lastupdated: "2024-01-12"
 
 keywords: troubleshoot billing, add card, payment outside console, myibm.com/billing, manage payment
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

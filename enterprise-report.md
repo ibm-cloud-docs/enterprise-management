@@ -6,7 +6,7 @@ lastupdated: "2021-09-17"
 
 keywords: enterprise usage, view enterprise costs, account hierarchy, report organization, enterprise report organization
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 ---
 

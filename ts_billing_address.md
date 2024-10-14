@@ -6,7 +6,7 @@ lastupdated: "2024-08-13"
 
 keywords: troubleshoot billing, payment error, update billing address, billing address
 
-subcollection: billing-usage
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

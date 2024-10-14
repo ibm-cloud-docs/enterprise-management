@@ -6,7 +6,7 @@ lastupdated: "2024-09-16"
 
 keywords: catalog, private catalogs, visibility, filter catalog, config rules, security, compliance, catalog filtering, restrict
 
-subcollection: account
+subcollection: enterprise-management
 
 ---
 
@@ -40,6 +40,3 @@ After you create a rule, you can monitor for configuration changes by attaching 
 
 
  
-
-
-
