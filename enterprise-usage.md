@@ -43,7 +43,7 @@ For detailed steps about assigning enterprise access, see [Assigning access for 
 
    In the Support section, you can view the total support costs for all accounts within your enterprise. The starting credit reflects the monthly amount in your support subscription. If the support usage for the month was more than this amount, it's displayed as overage.
 
-   Usage information for classic infrastructure services is not included for the current billing period. However, it is included for previous billing periods, which you can view by selecting an earlier month from the **Time frame** menu. For more information, see [Viewing usage for your classic infrastructure resources](/docs/enterprise-management?topic=enterprise-management-infra-usage).
+   Usage information for classic infrastructure services is not included for the current billing period. However, it is included for previous billing periods, which you can view by selecting an earlier month from the **Time frame** menu. For more information, see [Viewing usage for your classic infrastructure resources](/docs/enterprise-management?topic=enterprise-management-viewingusage&interface=ui).
 
 1. To view usage within an account group, click the account group name in the table or in the **Enterprise level** menu. Similar to the enterprise level, usage is broken down by the account and account group.
 
@@ -231,4 +231,3 @@ To view usage for an on-premises resource, like {{site.data.keyword.powerSys_not
 Map commitment usage in your enterprise back to child accounts by completing the following steps:
 1. Go to the **Entity ID** column and filter on an account ID.
 1. Go to the **Service name** column and filter on the service that is associated with your commitment. The sum of the **Cost** column gives you this month's usage towards a service-level commitment in a specific account.
-

@@ -99,6 +99,7 @@ toc:
           - iam-tp-template-create.md
           - iam-policy-template-create.md
           - iam-settings-template-create.md
+          - iam-monitor-ent-template.md
           - custom-share.md
           - security-setup.md
           - iam-template-versions.md
@@ -218,11 +219,19 @@ toc:
       - topicgroup:
           label: Troubleshooting enterprise accounts
           topics:
+          - ts-view-enterprise.md
+          - ts-import-enterprise.md
+          - ts-create-enterprise-acct.md
+          - ts-subscriptions-enterprise.md
+          - ts-enterprise-apply.md
           - include: ../account/bxnui.md
       - topicgroup:
-          label: Troubleshooting enterprise IAM templates
-          topics:
-          - commitment-faqs.md
+           label: Troubleshooting enterprise IAM templates
+           topics:
+           - ts-access-ent-iam-templates.md
+           - ts-access-child-accts.md
+           - ts-iam-template-fail.md
+           - commitment-faqs.md
       - topicgroup:
           label: Troubleshooting the Support Center
           topics:
