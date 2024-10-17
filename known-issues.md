@@ -4,11 +4,11 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-10-09"
+lastupdated: "2024-10-17"
 
 keywords: known issues, known limitations
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

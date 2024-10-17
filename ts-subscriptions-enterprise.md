@@ -2,11 +2,11 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2024-10-16"
+lastupdated: "2024-10-17"
 
 keywords: troubleshoot enterprise, enterprise problem, enterprise subscriptions, enterprise permissions, enterprise access
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: troubleshoot
 

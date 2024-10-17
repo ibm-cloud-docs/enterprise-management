@@ -2,11 +2,11 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2024-09-16"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, share, private catalog, allowlist, account groups
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

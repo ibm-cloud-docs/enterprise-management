@@ -6,7 +6,7 @@ lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

@@ -2,11 +2,11 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise settings
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: tutorial
 completion-time: 15m

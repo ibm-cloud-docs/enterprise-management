@@ -2,11 +2,11 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2024-10-16"
+lastupdated: "2024-10-17"
 
 keywords: troubleshooting enterprise iam templates, iam tempalates, enterprise-managed IAM, access enteprise IAM, access templates
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

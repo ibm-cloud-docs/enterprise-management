@@ -2,11 +2,11 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: customize, deployable architecture, set up, security and compliance center, custom profiles
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: tutorial
 completion-time: 10m

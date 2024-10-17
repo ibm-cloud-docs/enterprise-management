@@ -4,11 +4,11 @@ copyright:
 
   years: 2019, 2023
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

@@ -4,11 +4,11 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise access
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

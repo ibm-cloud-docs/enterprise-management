@@ -2,9 +2,9 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 keywords: enterprise, enterprise account, enterprise iam, enterprise template, iam template
 

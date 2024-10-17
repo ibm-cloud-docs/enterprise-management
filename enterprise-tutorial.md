@@ -2,11 +2,11 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: tutorial
 completion-time: 10m

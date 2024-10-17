@@ -2,11 +2,11 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

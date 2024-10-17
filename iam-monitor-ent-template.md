@@ -2,11 +2,11 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-10-17"
 
 keywords: monitoring, iam templates, monitoring iam templates, activity tracker
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

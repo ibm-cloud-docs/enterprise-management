@@ -2,11 +2,11 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: faq
 

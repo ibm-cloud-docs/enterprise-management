@@ -4,11 +4,11 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: deployable architecture, custom, share, enterprise
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 content-type: tutorial
 account-plan: paid

@@ -2,11 +2,11 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

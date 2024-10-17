@@ -5,7 +5,7 @@ lastupdated: "2024-09-23"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

@@ -2,11 +2,11 @@
 
 copyright:
   years: 2023
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

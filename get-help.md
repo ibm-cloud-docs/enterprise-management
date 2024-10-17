@@ -8,7 +8,7 @@ lastupdated: "2024-10-17"
 
 keywords:
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

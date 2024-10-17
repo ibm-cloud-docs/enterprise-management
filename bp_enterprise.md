@@ -2,11 +2,11 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise resources, enterprise account, best practices, setting up an enterprise
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 

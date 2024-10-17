@@ -2,11 +2,11 @@
 
 copyright:
   years: 2020, 2023
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, add account, import account, create account
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 
