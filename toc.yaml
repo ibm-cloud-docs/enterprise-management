@@ -224,14 +224,12 @@ toc:
           - ts-create-enterprise-acct.md
           - ts-subscriptions-enterprise.md
           - ts-enterprise-apply.md
-          - include: ../account/bxnui.md
       - topicgroup:
            label: Troubleshooting enterprise IAM templates
            topics:
            - ts-access-ent-iam-templates.md
            - ts-access-child-accts.md
            - ts-iam-template-fail.md
-           - commitment-faqs.md
       - topicgroup:
           label: Troubleshooting the Support Center
           topics:
