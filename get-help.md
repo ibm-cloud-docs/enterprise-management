@@ -4,7 +4,7 @@ copyright:
 
   years: 2023
 
-lastupdated: "2024-09-18"
+lastupdated: "2024-10-17"
 
 keywords:
 
@@ -25,4 +25,4 @@ If you experience an issue or have questions, you can use the following resource
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `projects` or `enterprise`, so that it's seen by the {{site.data.keyword.cloud_notm}} development teams.
 
-If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
+If you still can't resolve the problem, you can open a support case. For more information, see [Creating support cases](/docs/enterprise-management?topic=enterprise-management-open-case&interface=ui). And, if you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).

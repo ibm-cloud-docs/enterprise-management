@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-17"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -76,7 +76,7 @@ Learn more in [Centrally manage billing and usage with enterprises](/docs/enterp
 ## Enterprise support
 {: #enterprise-support-model}
 
-The level of support that is assigned to an {{site.data.keyword.Bluemix_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans#support_level_enterprise).
+The level of support that is assigned to an {{site.data.keyword.Bluemix_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/enterprise-management?topic=enterprise-management-support-plans#support_level_enterprise).
 
 ## Resource management
 {: #enterprise-resources}
