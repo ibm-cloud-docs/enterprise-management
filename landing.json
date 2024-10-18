@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "title": "Managing your enterprise docs",
+  "introduction": "Discover the end-to-end journey for enterprise management by leveraging the docs. Start by creating your enterprise, learning how to effectively manage enterprise billing, and gaining insights into controlling access. Explore best practices for resource creation and how to get the support you need.",
+  "console_page": "/enterprise",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Setting up an enterprise",
+        "href": "/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial&interface=ui"
+      },
+      {
+        "title": "Centrally managing billing and usage with enterprises",
+        "href": "/docs/enterprise-management?topic=enterprise-management-enterprise"
+      },
+      {
+        "title": "Assigning access for enterprise management",
+        "href": "/docs/enterprise-management?topic=enterprise-management-assign-access-enterprise&interface=ui"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Introducing IBM Cloud enterprises",
+      "description": "Learn more about how enterprises provide a way to centrally manage billing, resource usage, and identity and access management (IAM) across multiple accounts.",
+      "href": "https://mediacenter.ibm.com/media/Introducing%20IBM%20Cloud%20enterprises/1_vsakxb0o",
+      "type": "video"
+    },
+    {
+      "title": "Introducing IBM Cloud enterprise-managed IAM",
+      "description": "Enterprise-managed IAM is a set of new features that allows you to centrally manage access and security settings for your organization.",
+      "href": "https://www.ibm.com/blog/announcement/introducing-ibm-cloud-enterprise-managed-iam/",
+      "type": "blog",
+      "recommended": true
+    }
+  ],
+  "section_devtools": {
+    "api": "/apidocs/enterprise-apis/enterprise",
+    "cli": "/docs/enterprise-management?topic=enterprise-management-ibmcloud_enterprise"
+    }
+  }

@@ -1,0 +1,248 @@
+---
+toc:
+  properties:
+    subcollection: enterprise-management
+    category: platform_services
+    audience: platform
+    href: /docs/enterprise-management
+    console-page: /
+    product-page: https://ibm.com/cloud
+    path: enterprise-management
+    label: Managing your enterprise
+  entries:
+  - navgroup:
+      id: learn
+      topics:
+      - enterprises.md
+      - enterprise.md
+      - paygo_committed_use.md
+      - topic: billing-overview.md
+        navtitle: How can I manage billing and usage in IBM Cloud?
+      - topicgroup:
+          label: Learn about access management
+          topics:
+            - include: ../account/iam-whatis.md
+            - include: ../account/iam-identities.md
+            - iam-access-concepts.md
+            - include: ../account/iam-policies-overview.md
+            - include: ../account/iam-roles-overview.md
+            - iam-mappings.md
+            - include: ../account/context-restrictions-what-is.md
+      - include: ../secure-enterprise/index.md
+      - topicgroup:
+          label: Best practices
+          topics:
+          - bp_enterprise.md
+          - bp-enterprise-access.md
+          - bp_billing.md
+          - cc-bp.md
+  - navgroup:
+      id: tutorial
+      topics:
+      - enterprise-tutorial.md
+      - enterprise-create.md
+      - iam-secure-account-tutorial.md
+      - iam-ent-template-tutorial.md
+      - security-setup.md
+      - reconcile-tutorial.md
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: Managing your enterprise
+          topics:
+          - enterprise-add-accounts.md
+          - enterprise-organize-accounts.md
+          - enterprise-update-group-contact.md
+          - dashboard-manage1.md
+          - account-close.md
+      - topicgroup:
+          label: Managing access for enterprises
+          topics:
+          - enterprise-access.md
+          - enterprise-assign-access.md
+          - include: ../account/iam-account_management.md
+          - include: ../account/access-concepts.md
+          - include: ../account/context-restrictions-create.md
+          - context-restrictions-manage1.md
+          - iam-service-roles.md
+          - include: ../account/iam-login_fedid.md
+          - include: ../account/iam-federation-guide.md
+          - include: ../account/iam-audit-policies.md
+          - include: ../account/iam-condition-properties.md
+          - iam-cross-acc-access.md
+          - iam-login-flows.md
+          - monitoring.md
+          - iam-idp-integration.md
+          - iam-policies-change-log.md
+          - include: ../account/iam-userinv.md
+      - topicgroup:
+          label: Working with resources and tags
+          topics:
+          - manage_resource_group1.md
+          - manage_resource1.md
+          - include: ../account/rg-access.md
+          - include: ../account/iam-access-report.md
+          - include: ../account/reclaim-resource.md
+          - include: ../account/tagging_resources.md
+          - manage_tags1.md
+          - include: ../account/grant-tag-access.md
+          - include: ../account/data-center-migration.md
+          - vrf-service-endpoint.md
+          - quotas.md
+      - topicgroup:
+          label: Centrally managing access in child account
+          topics:
+          - iam-enterprise-opt-in.md
+          - iam-auth-template.md
+          - iam-ag-template-create.md
+          - iam-tp-template-create.md
+          - iam-policy-template-create.md
+          - iam-settings-template-create.md
+          - iam-monitor-ent-template.md
+          - custom-share.md
+          - security-setup.md
+          - iam-template-versions.md
+      - topicgroup:
+          label: Billing and usage for an enterprise
+          topics:
+          - topicgroup:
+              label: Managing your costs
+              topics:
+              - estimating_costs.md
+              - how_charged.md
+              - change_pricing_plan.md
+              - getting-pricing-api.md
+              - notifications.md
+              - project-spend.md
+          - topicgroup:
+              label: Managing your usage
+              topics:
+              - viewing_usage1.md
+              - enterprise-usage.md
+              - enterprise-report.md
+              - include: ../account/exporting-usage.md
+              - quotas.md
+          - topicgroup:
+              label: Working with codes and credits
+              topics:
+              - promo_codes.md
+              - subscription_codes.md
+              - feature-codes.md
+          - topicgroup:
+              label: Managing your invoices and payments
+              topics:
+              - manage_billing.md
+              - invoices.md
+              - understand-invoice.md
+          - topicgroup:
+              label: Managing your subscriptions
+              topics:
+              - subscriptions.md
+              - paygo_committed_use.md
+              - service-level-commit.md
+              - cc-working-with.md
+              - migrate-billing.md
+              - migrate-bp-billing.md
+          - cancel-billing-items.md
+          - support.md
+      - topicgroup:
+          label: Managing projects
+          topics:
+          - include: ../secure-enterprise/create-project.md
+      - topicgroup:
+          label: Catalog management
+          topics:
+          - catalog-enterprise-share.md
+          - catalog-settings1.md
+          - catalog-cross-validation.md
+          - catalog-custom-private-object.md
+          - catalog-custom-private-preset.md
+          - catalog-enterprise-filters.md
+          - catalog-enterprise-share-accept.md
+          - catalog-enterprise-share-overview.md
+          - catalog-other-share.md
+          - catalog-scc-rules.md
+  - navgroup:
+      id: reference
+      topics:
+      - topicgroup:
+          label: API reference
+          topics:
+          - link:
+              label: Enterprise Management
+              href: https://{DomainName}/apidocs/enterprise-apis/enterprise
+          - link:
+              label: Enterprise Billing Units
+              href: https://{DomainName}/apidocs/enterprise-apis/billing-unit
+          - link:
+              label: Usage Metering
+              href: https://{DomainName}/apidocs/usage-metering
+          - link:
+              label: Usage Reports
+              href: https://{DomainName}/apidocs/metering-reporting
+          - link:
+              label: Enterprise Billing Units
+              href: https://{DomainName}/apidocs/enterprise-apis/billing-unit
+          - link:
+              label: Enterprise Usage Reports
+              href: https://{DomainName}/apidocs/enterprise-apis/resource-usage-reports
+      - topicgroup:
+          label: Command reference
+          topics:
+          - include: ../cli/reference/ibmcloud/cli_enterprise.md
+          - include: ../cli/reference/ibmcloud/cli_billing.md
+          - include: ../cli/reference/ibmcloud/cli_order.md
+      - topicgroup:
+          label: Terraform reference
+          links:
+          - link:
+              label: Enterprise Management
+              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
+      - credit-types.md
+      - include: ../account/customer-incident-report.md
+      - known-issues.md
+      - get-help.md
+      - include: ../account/bxnui.md
+  - navgroup:
+      id: help
+      topics:
+      - topicgroup:
+          label: FAQs
+          topics:
+          - faqs-enterprise.md
+          - billing-faq.md
+          - subscription_acct_faq.md
+          - invoice_faqs.md
+          - commitment-faqs.md
+          - cc-faqs.md
+      - topicgroup:
+          label: Troubleshooting enterprise accounts
+          topics:
+          - ts-view-enterprise.md
+          - ts-import-enterprise.md
+          - ts-create-enterprise-acct.md
+          - ts-subscriptions-enterprise.md
+          - ts-enterprise-apply.md
+      - topicgroup:
+          label: Troubleshooting enterprise IAM templates
+          topics:
+          - ts-access-ent-iam-templates.md
+          - ts-access-child-accts.md
+          - ts-iam-template-fail.md
+      - topicgroup:
+          label: Troubleshooting billing and usage
+          topics:
+          - ts_billinginfo.md
+          - ts_subscriptioncode.md
+          - ts_payment_console.md
+          - ts_invoice_trouble.md
+          - ts_apply_feature_code.md
+          - ts_service_feature_code.md
+          - ts_billing_address.md
+          - ts-view-commit.md
+          - ts_commit_cannot_apply.md
+          - ts_commit_access_page.md
+          - ts_section-error.md
+          - ts_charge-limit.md
+          - ts-cc-error-messages.md
