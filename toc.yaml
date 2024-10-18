@@ -225,11 +225,11 @@ toc:
           - ts-subscriptions-enterprise.md
           - ts-enterprise-apply.md
       - topicgroup:
-           label: Troubleshooting enterprise IAM templates
-           topics:
-           - ts-access-ent-iam-templates.md
-           - ts-access-child-accts.md
-           - ts-iam-template-fail.md
+          label: Troubleshooting enterprise IAM templates
+          topics:
+          - ts-access-ent-iam-templates.md
+          - ts-access-child-accts.md
+          - ts-iam-template-fail.md
       - topicgroup:
           label: Troubleshooting billing and usage
           topics:
