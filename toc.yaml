@@ -62,7 +62,6 @@ toc:
           - enterprise-access.md
           - enterprise-assign-access.md
           - include: ../account/iam-account_management.md
-          - include: ../account/access-concepts.md
           - include: ../account/context-restrictions-create.md
           - context-restrictions-manage1.md
           - iam-service-roles.md
@@ -75,7 +74,7 @@ toc:
           - monitoring.md
           - iam-idp-integration.md
           - iam-policies-change-log.md
-          - include: ../account/iam-userinv.md
+          - include: ../account/iam-manage-user-account1.md
       - topicgroup:
           label: Working with resources and tags
           topics:
