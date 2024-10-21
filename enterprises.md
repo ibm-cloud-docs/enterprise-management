@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-21"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -57,7 +57,7 @@ You create tiers in your enterprise by nesting an account group within an accoun
 
 An enterprise can contain up to five tiers of accounts and account groups. In its most basic form, an enterprise has two tiers: The enterprise account, and a single child account. A maximum of 1000 accounts can be added to an enterprise.
 
-Your enterprise structure is flexible and can grow and change as your needs do. You can add and remove account groups and move accounts between account groups. If the purpose of an account group changes, you can rename it to better reflect the accounts it contains. For more information on enterprise account architecture, see [Planning your account structure](https://cloud.ibm.com/docs/enterprise-account-architecture?topic=enterprise-account-architecture-account-structure).
+Your enterprise structure is flexible and can grow and change as your needs do. You can add and remove account groups and move accounts between account groups. If the purpose of an account group changes, you can rename it to better reflect the accounts it contains. For more information on enterprise account architecture, see [Planning your account structure](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about#account-structure).
 
 ## Consolidated billing
 {: #enterprise-billing}

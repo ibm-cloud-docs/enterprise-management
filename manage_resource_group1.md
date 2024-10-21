@@ -3,7 +3,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-09-19"
+lastupdated: "2024-10-21"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -345,7 +345,7 @@ To add the resources to a resource group, complete the following steps:
 {: #add_to_rgs_api}
 {: api}
 
-See [Managing catalog settings](/docs/account?topic=account-filter-account#set-public-visibility-api) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
+See [Managing catalog settings](/account?topic=account-filter-account&interface=ui#set-public-visibility) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
 
 ## Viewing resources in a resource group
 {: #view_rg_resources}
@@ -562,4 +562,3 @@ You can also delete a resource group by running the following `terraform destroy
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
 {: pre}
-

@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-21"
 
 keywords: deployable architecture, custom, share, enterprise
 
@@ -54,7 +54,7 @@ To send a request to share deployable architectures and products to the enterpri
 1. Select **Example Corp enterprise** to share to the enterprise and all account groups.
 1. Click **Share**.
 
-In the version list, the **Visibility** status is now `Pending`. Next, the enterprise needs to accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui).
+In the version list, the **Visibility** status is now `Pending`. Next, the enterprise needs to accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/enterprise-management?topic=enterprise-management-catalog-share-accept).
 
 ## Check the share request status
 {: #share-status}
