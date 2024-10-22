@@ -215,6 +215,7 @@ toc:
           - invoice_faqs.md
           - commitment-faqs.md
           - cc-faqs.md
+          - include: ../account/faq-support.md
       - topicgroup:
           label: Troubleshooting enterprise accounts
           topics:
@@ -245,3 +246,14 @@ toc:
           - ts_section-error.md
           - ts_charge-limit.md
           - ts-cc-error-messages.md
+      - topicgroup:
+          label: Support for an enterprise
+          topics:
+          - include: ../account/using-support-center.md
+          - include: ../account/support-plans.md
+          - include: ../account/create-case.md
+          - include: ../account/assign-user-access-cases.md
+          - include: ../account/manage-case.md
+          - include: ../account/monitor-notif-status1.md
+          - include: ../account/report-security.md
+          - include: ../account/case-severity-response-times.md
