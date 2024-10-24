@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-21"
 
 keywords: monitoring, iam templates, monitoring iam templates, activity tracker
 
@@ -280,5 +280,5 @@ curl -H "Authorization: Bearer $TOKEN" "https://iam.test.cloud.ibm.com/v1/profil
 | `in progress` | The assignment records were successfully created and the assignment process is in progress. |
 | `success`     | The assignment process has completed and the template has been assigned to all target accounts and account groups successfully. |
 | `fail`        | The assignment process is complete but there is one or more target accounts where the template failed to be assigned. |
-| `superseded`  | The assignment has been superseded by another assignment record with the same template at a target account group higher in the enterprise accounts hierarchy. For more information, see [Superseeding a version](/docs/secure-enterprise?topic=secure-enterprise-working-with-versions#template-superseded). |
+| `superseded`  | The assignment has been superseded by another assignment record with the same template at a target account group higher in the enterprise accounts hierarchy. For more information, see [Superseeding a version](/docs/enterprise-management?topic=enterprise-management-working-with-versions#template-superseded). |
 {: caption="The possible states for an IAM template assignment in Activity Tracker" caption-side="top"}

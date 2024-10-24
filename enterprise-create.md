@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-21"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -68,7 +68,7 @@ Click **Accounts** to view your enterprise hierarchy, which contains two account
    ```
    {: codeblock}
 
-1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/account?topic=account-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
+1. Create the enterprise by running the [`ibmcloud enterprise create`](/docs/enterprise-management?topic=enterprise-management-ibmcloud_enterprise#ibmcloud_enterprise_create) command, where `NAME` is a unique name to identify the enterprise.
 
    ```bash
    ibmcloud enterprise create NAME [-d, --domain DOMAIN_NAME] [--primary-contact-id PRIMARY_CONTACT_USER_ID]
@@ -101,7 +101,7 @@ ID:                      09876jihgf54321edcba
 Enterprise Account ID:   edcba12345jihgf67890
 ```
 
-The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/account?topic=account-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
+The account that you used to create the enterprise is now a part of the enterprise. Run the [`ibmcloud enterprise accounts`](/docs/enterprise-management?topic=enterprise-management-ibmcloud_enterprise#ibmcloud_enterprise_accounts) command to view the two accounts in your enterprise: the enterprise account, and the account you used to create the enterprise.
 
 ## Creating an enterprise by using the API
 {: #create-api}

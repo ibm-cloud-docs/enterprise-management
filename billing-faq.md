@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2024
 
-lastupdated: "2024-09-12"
+lastupdated: "2024-10-21"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -298,9 +298,9 @@ You can view the primary contact and address that is associated with an account 
 
 As a self-managed platform, the security of an account is the responsibility of the account owner and all users with access to the account. Any charges that result from unauthorized access are the responsibility of the account owner.
 
-To prevent unauthorized access, change your password regularly and require the use of multifactor authentication by all users on your account. These options include the use of time-based one-time passcode authentication, security questions, third-party authentication mechanisms, and password expiration rules. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
+To prevent unauthorized access, change your password regularly and require the use of multifactor authentication by all users on your account. These options include the use of time-based one-time passcode authentication, security questions, third-party authentication mechanisms, and password expiration rules. For more information, see [Enabling and managing verification methods and MFA](/docs/account?topic=account-enablemfa).
 
-You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-remove).
+You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-iamuserinv&interface=ui#remove-user-acount-ui).
 {: tip}
 
 ## Can I use my Pay-As-You-Go account to create an enterprise?

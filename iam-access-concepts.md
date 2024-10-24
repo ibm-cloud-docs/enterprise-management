@@ -4,7 +4,7 @@ copyright:
 
   years: 2022, 2024
 
-lastupdated: "2024-04-10"
+lastupdated: "2024-10-21"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -116,4 +116,4 @@ For example, you can create an access group called `Storage Administrators`. Whe
 
 This is a simple example, but the approach can be applied to any job, role, or responsibility in an organization. The access policies assigned to the access group can be fine-grained allowing for use cases like storage administrator of all storage in a specific resource group, and even for only a specific storage type.
 
-For more information about getting up and running quickly with {{site.data.keyword.cloud_notm}} IAM by setting up access groups for quick access assignments, inviting users to your account, and managing their access, see [Assigning access to resources](/docs/account?topic=account-access-getstarted).
+For more information about getting up and running quickly with {{site.data.keyword.cloud_notm}} IAM by setting up access groups for quick access assignments, inviting users to your account, and managing their access, see [Assigning access to resources](/docs/account?topic=account-access).

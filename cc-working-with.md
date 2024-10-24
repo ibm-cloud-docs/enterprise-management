@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-22"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -35,10 +35,11 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.baremetal_short}} for Classic             
 * {{site.data.keyword.blockstorageshort}}                       
 * {{site.data.keyword.block_storage_is_short}}                  
+* Block Storage Snapshots for VPC [New]{: tag-new}              
 * Cloud HSM                                                     
 * Cloud Object Storage                                          
 * Cloudant                                                      
-* Code Engine [New]{: tag-new}                                  
+* Code Engine                                                   
 * {{site.data.keyword.registryshort}}                           
 * {{site.data.keyword.contdelivery_short}}                      
 * Data Engine (previously SQL Query)                            
@@ -52,8 +53,11 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.datastageshort}}                          
 * Db2                                                           
 * Db2 Warehouse                                                 
+* Dedicated Host for VPC [New]{: tag-new}                       
 * Direct Link Connect                                           
+* Direct Link Connect on Classic [New]{: tag-new}               
 * Direct Link Dedicated                                         
+* Direct Link Dedicated on Classic [New]{: tag-new}             
 * {{site.data.keyword.dns_short}}                               
 * {{site.data.keyword.en_short}}                                
 * {{site.data.keyword.messagehub}}                              
@@ -135,6 +139,9 @@ The goal of the calculation method is to associate electricity consumption and c
 * Per client account, cloud service, and location where the service is running
 * Per client account and Resource Group
 
+The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/billing-usage/bureau-veritas-validation.pdf){: external}.
+
+
 For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/billing-usage/carbon-calc-method-v2.pdf){: external}.
 
 
@@ -165,7 +172,7 @@ In the enterprise level view, you can filter your emissions data down to a speci
 ​
 * Emissions by account: GHG emissions are broken down by account. This will display if the entity that is being viewed contains only accounts.
 ​
-Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
+Learn more about setting up and managing [Enterprise accounts](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise).
 ​
 ## Exporting carbon calculator usage data
 {: #exporting-data}
@@ -204,7 +211,7 @@ The following table shows the locations that are considered to be zero-emissions
 | WDC04       | Washington DC |
 | WDC06       | Washington DC |
 | WDC07       | Washington DC |
-{: caption="Carbon intensity of data centers in North and South America" caption-side="bottom"}
+{: caption="Table 1. Carbon intensity of data centers in North and South America" caption-side="bottom"}
 {: #americas}
 {: tab-title="Americas"}
 {: tab-group="carbon-intesity"}
@@ -227,7 +234,7 @@ The following table shows the locations that are considered to be zero-emissions
 | MIL01       |	Milan         |
 | PAR01       | Paris         |
 | PAR04       | Paris         |
-{: caption="Carbon intensity of data centers in Europe" caption-side="bottom"}
+{: caption="Table 1. Carbon intensity of data centers in Europe" caption-side="bottom"}
 {: #europe}
 {: tab-title="Europe"}
 {: tab-group="carbon-intesity"}
@@ -236,7 +243,7 @@ The following table shows the locations that are considered to be zero-emissions
 | Data Center | Location      |
 |-------------|---------------|
 | OSA22       |	Osaka	        |
-{: caption="Carbon intensity of data centers in Asia Pacific" caption-side="bottom"}
+{: caption="Table 1. Carbon intensity of data centers in Asia Pacific" caption-side="bottom"}
 {: #asia-pacific}
 {: tab-title="Asia Pacific"}
 {: tab-group="carbon-intesity"}
@@ -249,7 +256,7 @@ Carbon intensity is the emission rate for grams of carbon dioxide-equivalent emi
 ## Carbon calculator terms
 {: #carbon-calc-terms}
 
-The following are the terms that are used within the [carbon calculator documentation](/docs/enterprise-management?topic=enterprise-management-what-is-cloud-calc).
+The following are the terms that are used within the [carbon calculator documentation](/docs/billing-usage?topic=billing-usage-what-is-cloud-calc).
 
 Energy
 :   Electricity, fuels, and Purchased Energy Commodities used to operate facilities. It does not include energy used for transportation or similar activities.

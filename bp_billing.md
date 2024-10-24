@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-06-10"
+lastupdated: "2024-10-21"
 
 keywords: best practice billing, best practice usage, automate billing, track costs
 
@@ -53,4 +53,4 @@ Use [projects](#x2035151){: term} to help you automatically tag related resource
 ## Automate billing and usage management by using the CLI or APIs
 {: #billing-cli-apis}
 
-If you want to automate how you review your resource usage and associated costs, use the [`ibmcloud billing`](/docs/cli?topic=cli-ibmcloud_billing#ibmcloud_billing_org_usage) CLI or [Usage Metering](/apidocs/usage-metering){: external} and [Usage Reports](/apidocs/metering-reporting){: external} APIs to integrate this functionality into your own apps.
+If you want to automate how you review your resource usage and associated costs, use the [`ibmcloud billing`](/docs/cli?topic=cli-ibmcloud_billing) CLI or [Usage Metering](/apidocs/usage-metering){: external} and [Usage Reports](/apidocs/metering-reporting){: external} APIs to integrate this functionality into your own apps.

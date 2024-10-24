@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-21"
 
 subcollection: enterprise-management
 
@@ -94,10 +94,8 @@ Spend less time on configuring individual policies and use access policy templat
 
 Authorization templates make it easy to create predefined permission sets that allow one service to access another. They also automatically authorize dependent services, ensuring that services have the access they need.
 
-In an authorization policy, the source service gains access to the target service based on assigned roles. While the target service is always within the account where the authorization is created, source services can be from the same or different accounts. Authorization templates standardize authorization policies across your enterprise, ensuring consistent and secure configurations while minimizing unauthorized access.
-
+In an authorization policy, the source service gains access to the target service based on assigned roles. While the target service is always within the account where the authorization is created, source services can be from the same or different accounts. Authorization templates standardize authorization policies across your enterprise, ensuring consistent and secure configurations while minimizing unauthorized access. For more information, see [Creating authorization policy templates](/docs/enterprise-management?topic=enterprise-management-authorization-policy-template-create).
  
-
 ## Action controls
 {: #action-controls}
 
@@ -224,7 +222,7 @@ All existing accounts now require users to log in with MFA. Any time that a new 
 ### Assigning access in multiple environments by using tags
 {: #am-tags-enterprise}
 
-Some users in my enterprise's child accounts need access to resources in [different environments](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-principles#dev-and-prod) within account groups. Account groups in my enterprise have two child accounts. Development and test environments reside in one account, and production environments are in a separate account. Resource administrators in my enterprise use [access management tags](/docs/account?topic=account-tag&interface=ui#create-access-console) to group `env:dev`, `env:test`, and `env:prod` resources in their accounts. They also group resources by using the tags `resource:storage`, `resource:containers`, `resource:security`. This way, enterprise administrators can create more granular policies for different environments in the enterprise.
+Some users in my enterprise's child accounts need access to resources in [different environments](/docs/enterprise-account-architecture?topic=enterprise-account-architecture-about#dev-and-prod) within account groups. Account groups in my enterprise have two child accounts. Development and test environments reside in one account, and production environments are in a separate account. Resource administrators in my enterprise use [access management tags](/docs/account?topic=account-tag&interface=ui#create-access-console) to group `env:dev`, `env:test`, and `env:prod` resources in their accounts. They also group resources by using the tags `resource:storage`, `resource:containers`, `resource:security`. This way, enterprise administrators can create more granular policies for different environments in the enterprise.
 
 I create an access group template for each type of user that exists in child accounts that contain development and test environments:
 

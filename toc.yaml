@@ -62,7 +62,6 @@ toc:
           - enterprise-access.md
           - enterprise-assign-access.md
           - include: ../account/iam-account_management.md
-          - include: ../account/access-concepts.md
           - include: ../account/context-restrictions-create.md
           - context-restrictions-manage1.md
           - iam-service-roles.md
@@ -75,7 +74,7 @@ toc:
           - monitoring.md
           - iam-idp-integration.md
           - iam-policies-change-log.md
-          - include: ../account/iam-userinv.md
+          - include: ../account/iam-manage-user-account1.md
       - topicgroup:
           label: Working with resources and tags
           topics:
@@ -216,6 +215,7 @@ toc:
           - invoice_faqs.md
           - commitment-faqs.md
           - cc-faqs.md
+          - include: ../account/faq-support.md
       - topicgroup:
           label: Troubleshooting enterprise accounts
           topics:
@@ -246,3 +246,14 @@ toc:
           - ts_section-error.md
           - ts_charge-limit.md
           - ts-cc-error-messages.md
+      - topicgroup:
+          label: Support for an enterprise
+          topics:
+          - include: ../account/using-support-center.md
+          - include: ../account/support-plans.md
+          - include: ../account/create-case.md
+          - include: ../account/assign-user-access-cases.md
+          - include: ../account/manage-case.md
+          - include: ../account/monitor-notif-status1.md
+          - include: ../account/report-security.md
+          - include: ../account/case-severity-response-times.md
