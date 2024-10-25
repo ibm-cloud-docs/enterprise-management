@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-25"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -22,7 +22,7 @@ Access policy templates define a policy without requiring a subject, and you can
 
 For example, you might need to assign an access policy that grants administrator access on All IAM enabled services to multiple access groups or trusted profile templates so that members can create instances of IAM-enabled services. To reduce policy misconfigurations, create an access policy template called `Admin on All IAM enabled services`. Select the preconfigured policy when you need to assign that level of access in an access group or trusted profile template.
 
-While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI or API. View policy by going to **Manage > Access (IAM) > Templates > Access policies**.
+While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI or API. View policy by going to **Manage > Access (IAM) > Templates > Policies**.
 
 
 Access policy templates support only the `v2/policies` schema. For more information, see the [IAM Policy Management API change log](/docs/account?topic=account-api-change-log).
