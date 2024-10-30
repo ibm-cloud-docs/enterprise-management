@@ -161,6 +161,10 @@ toc:
           - catalog-enterprise-share-overview.md
           - catalog-other-share.md
           - catalog-scc-rules.md
+      - topicgroup:
+          label: Observability
+          topics:
+          - at-events-em.md
   - navgroup:
       id: reference
       topics:
