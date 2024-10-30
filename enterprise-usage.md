@@ -199,35 +199,3 @@ To view your enterprise hierarchy and any usage, you need an access policy with 
    {: tip}
 
 1. Pair the usage costs for each account group with the identified department, and follow your company's processes to submit the charges.
-
-## Tracking commitment usage in an enterprise
-{: #view-commitment-usage}
-
-As an administrator, you can map the usage in your child accounts to your commitments at the enterprise level. Download the usage report by [Exporting your enterprise usage details to a .csv file](/docs/enterprise-management?topic=enterprise-management-enterprise-usage&interface=ui#export-enterprise-csv).
-
-In the usage report, **Credit Pool Type** indicates the commitment or subscription model.
-- `SERVICE`: [Service-level commitment](/docs/enterprise-management?topic=enterprise-management-service-comit)
-- `PLATFORM`: [Enterprise Savings Plan](/docs/enterprise-management?topic=enterprise-management-committed-use)
-- `SUBSCRIPTION`: [Subscription](/docs/enterprise-management?topic=enterprise-management-subscriptions)
-- `SUPPORT`: [Support subscription](/docs/enterprise-management?topic=enterprise-management-support)
-
-**Total credits** is the total amount of credits that you subscribe or commit to for the entire term. **Starting balance** is how many credits you have remaining at the beginning of the month. **Used credits** is your spend that month, and **Current balance** is the credits remaining.
-
-
-
-### Tracking usage for Enterprise Savings Plan
-{: #ESP-usage}
-
-Map commitment usage in your enterprise back to child accounts by completing the following steps:
-
-1. Go to the **Entity ID** column and filter on the account ID.
-1. Go to the **Service name** column and filter on the service that is associated with your platform. For example, {{site.data.keyword.cos_full_notm}}. The total sum of the **Cost** column across the services, helps you to determine the commitment usage amount for the specific account.
-
-### Tracking usage for service-level commitments
-{: #SLC-usage}
-
-To view usage for an on-premises resource, like {{site.data.keyword.powerSys_notm}} Private Cloud, filter the **Pricing region** column to the {{site.data.keyword.satelliteshort}} location associated with your pod. Then, filter the **Service name** column to {{site.data.keyword.powerSys_notm}}.
-
-Map commitment usage in your enterprise back to child accounts by completing the following steps:
-1. Go to the **Entity ID** column and filter on an account ID.
-1. Go to the **Service name** column and filter on the service that is associated with your commitment. The sum of the **Cost** column gives you this month's usage towards a service-level commitment in a specific account.
