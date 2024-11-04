@@ -165,6 +165,17 @@ toc:
           label: Observability
           topics:
           - at-events-em.md
+      - topicgroup:
+          label: Getting help when you run into issues
+          topics:
+          - include: ../account/using-support-center.md
+          - include: ../account/support-plans.md
+          - include: ../account/create-case.md
+          - include: ../account/assign-user-access-cases.md
+          - include: ../account/manage-case.md
+          - include: ../account/monitor-notification-status.md
+          - include: ../account/report-security.md
+          - include: ../account/case-severity-response-times.md
   - navgroup:
       id: reference
       topics:
@@ -249,14 +260,3 @@ toc:
           - ts_section-error.md
           - ts_charge-limit.md
           - ts-cc-error-messages.md
-      - topicgroup:
-          label: Support for an enterprise
-          topics:
-          - include: ../account/using-support-center.md
-          - include: ../account/support-plans.md
-          - include: ../account/create-case.md
-          - include: ../account/assign-user-access-cases.md
-          - include: ../account/manage-case.md
-          - include: ../account/monitor-notification-status.md
-          - include: ../account/report-security.md
-          - include: ../account/case-severity-response-times.md
