@@ -562,3 +562,4 @@ You can also delete a resource group by running the following `terraform destroy
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
 {: pre}
+

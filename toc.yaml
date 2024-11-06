@@ -54,7 +54,7 @@ toc:
           - enterprise-add-accounts.md
           - enterprise-organize-accounts.md
           - enterprise-update-group-contact.md
-          - dashboard-manage1.md
+          - dashboard-manage.md
           - account-close.md
       - topicgroup:
           label: Managing access for enterprises
@@ -63,7 +63,7 @@ toc:
           - enterprise-assign-access.md
           - include: ../account/iam-account_management.md
           - include: ../account/context-restrictions-create.md
-          - context-restrictions-manage1.md
+          - context-restrictions-manage.md
           - iam-service-roles.md
           - include: ../account/iam-login_fedid.md
           - include: ../account/iam-federation-guide.md
@@ -74,17 +74,17 @@ toc:
           - monitoring.md
           - iam-idp-integration.md
           - iam-policies-change-log.md
-          - include: ../account/iam-manage-user-account1.md
+          - include: ../account/iam-manage-user-account.md
       - topicgroup:
           label: Working with resources and tags
           topics:
-          - manage_resource_group1.md
-          - manage_resource1.md
+          - manage_resource_group.md
+          - manage_resource.md
           - include: ../account/rg-access.md
           - include: ../account/iam-access-report.md
           - include: ../account/reclaim-resource.md
           - include: ../account/tagging_resources.md
-          - manage_tags1.md
+          - manage_tags.md
           - include: ../account/grant-tag-access.md
           - include: ../account/data-center-migration.md
           - vrf-service-endpoint.md
@@ -117,7 +117,7 @@ toc:
           - topicgroup:
               label: Managing your usage
               topics:
-              - viewing_usage1.md
+              - viewing_usage.md
               - enterprise-usage.md
               - enterprise-report.md
               - include: ../account/exporting-usage.md
@@ -153,7 +153,7 @@ toc:
           label: Catalog management
           topics:
           - catalog-enterprise-share.md
-          - catalog-settings1.md
+          - catalog-settings.md
           - catalog-cross-validation.md
           - catalog-custom-private-preset.md
           - catalog-enterprise-filters.md
@@ -173,7 +173,8 @@ toc:
           - include: ../account/create-case.md
           - include: ../account/assign-user-access-cases.md
           - include: ../account/manage-case.md
-          - include: ../account/monitor-notification-status.md
+          - include: ../account/view_notifications.md
+          - include: ../account/ViewStatus.md
           - include: ../account/report-security.md
           - include: ../account/case-severity-response-times.md
   - navgroup:
