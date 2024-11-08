@@ -3,11 +3,11 @@
 copyright:
 years: 2019, 2024
 
-lastupdated: "2024-11-05"
-
+lastupdated: "2024-11-08"
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
-subcollection: account
+
+subcollection: enterprise-management
 ---
 
 {{site.data.keyword.attribute-definition-list}}
@@ -323,5 +323,3 @@ curl -X "GET" \
 {: codeblock}
 
 Each event in the audit logs table by default identifies each change with the email of the user that made the change, the type of change, a description of the change, and the date that the change was made.
-
-

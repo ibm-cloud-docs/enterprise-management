@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-22"
+lastupdated: "2024-11-08"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -163,17 +163,17 @@ Emissions from key greenhouse gases are measured in metric tons of carbon dioxid
 
 ## Tracking enterprise emissions with carbon calculator
 {: #tracking-emissions-enterprise}
-​
-The enterprise level view of carbon calculator enables you to view and export emissions data for your entire enterprise account. You must be assigned the `Usage report viewer` role on the enterprise service in the enterprise parent account in order to view and export the emissions data at the enterprise level. For more information about assigning access, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
+
+​The enterprise level view of carbon calculator enables you to view and export emissions data for your entire enterprise account. You must be assigned the `Usage report viewer` role on the enterprise service in the enterprise parent account in order to view and export the emissions data at the enterprise level. For more information about assigning access, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
 
 In the enterprise level view, you can filter your emissions data down to a specific account group or account by clicking that entity in the account hierarchy. The enterprise view provides two additional widgets:
 ​
 * Emissions by account group: GHG emissions broken down by account group. This displays if the entity being viewed contains account groups. Emissions listed under "Miscellaneous" do not belong to an account group.
-​
+
 * Emissions by account: GHG emissions are broken down by account. This will display if the entity that is being viewed contains only accounts.
-​
-Learn more about setting up and managing [Enterprise accounts](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise).
-​
+
+Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
+
 ## Exporting carbon calculator usage data
 {: #exporting-data}
 
@@ -186,11 +186,10 @@ The latest version of carbon calculator export, version 2.0, includes significan
 
 Because export version 1.0 generated separate CSVs for service, resource group, and location, any custom automations leveraging the export feature should be updated to match the new format. If you need assistance or have questions regarding the new format, [create a support case](/docs/enterprise-management?topic=enterprise-management-open-case&interface=ui).
 
-
 ## Working with the carbon calculator API
 {: #tracking-emissions-api}
-​
-Users can pull emissions data or incorporate that data into their own applications and processes by leveraging the [Carbon Calculator API](/apidocs/carbon-calculator).
+
+​Users can pull emissions data or incorporate that data into their own applications and processes by leveraging the [Carbon Calculator API](/apidocs/carbon-calculator).
 
 ## Zero-emissions data centers
 {: #zero-emission-data-centers}
@@ -256,7 +255,7 @@ Carbon intensity is the emission rate for grams of carbon dioxide-equivalent emi
 ## Carbon calculator terms
 {: #carbon-calc-terms}
 
-The following are the terms that are used within the [carbon calculator documentation](/docs/billing-usage?topic=billing-usage-what-is-cloud-calc).
+The following are the terms that are used within the [carbon calculator documentation](/docs/account?topic=account-what-is-cloud-calc).
 
 Energy
 :   Electricity, fuels, and Purchased Energy Commodities used to operate facilities. It does not include energy used for transportation or similar activities.
