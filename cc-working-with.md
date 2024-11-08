@@ -142,7 +142,7 @@ The goal of the calculation method is to associate electricity consumption and c
 The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/billing-usage/bureau-veritas-validation.pdf){: external}.
 
 
-For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/billing-usage/carbon-calc-method-v2.pdf){: external}.
+For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v3.pdf){: external}.
 
 
 ## Tracking account emissions with carbon calculator
