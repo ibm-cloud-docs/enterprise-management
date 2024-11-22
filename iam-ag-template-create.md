@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-11-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -163,7 +163,7 @@ Access policies grant access in child accounts to the members of your enterprise
 1. Or, create a new policy template by clicking **Create**.
     1. Name and describe the policy that you want to assign.
 
-    You create a policy template with every policy that you configure for an access group template. Policy templates are view-only and can't be referenced to grant access in other access group or trusted profile templates by using the {{site.data.keyword.cloud_notm}} console. You can grant access by referencing a policy template by using the CLI or API.
+    You create a policy template with every policy that you configure for an access group template. You can reference a policy template to assign access in other enterprise IAM templates.
     {: note}
 
     1. Select a service or group of services. Then, click **Next**.

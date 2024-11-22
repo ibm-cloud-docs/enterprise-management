@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2024-10-17"
+  years: 2023, 2024
+lastupdated: "2024-11-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -93,7 +93,7 @@ Access policies grant access in child accounts to the federated users that can a
 1. Click **Access > Add**.
 1. Enter a name and describe the policy that you want to assign.
 
-   You create policy template with every policy that you configure for a trusted profile template. In the {{site.data.keyword.cloud_notm}} console, policy templates are view-only. You can reference a policy template to assign access in other enterprise IAM templates by using the CLI or API.
+   You create a policy template with every policy that you configure for a trusted profile template. You can reference a policy template to assign access in other enterprise IAM templates.
    {: note}
 
 1. Select a service or group of services. Then, click **Next**.
