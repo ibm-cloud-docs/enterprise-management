@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-12-13"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -43,6 +43,9 @@ When you assign a settings template, child account users with the Administrator 
 - New and existing accounts in your enterprise must opt-in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
 
 
+- The setting defined at the child account-level applies if the enterprise-managed setting is less strict or removed.
+
+
 ## Creating a settings template
 {: #create-settings-template}
 {: ui}
@@ -72,12 +75,12 @@ By default, all members of an account can create {{site.data.keyword.cloud}} API
 
 Restricting the ability to create API keys makes sense if you want users in specific child account to always log in interactively, meaning that you don't want automation scripts to run that can log in users automatically by using an API key. For more information about API keys, see [Managing user API keys](/docs/account?topic=account-userapikey).
 
-If you turn on the API key creation setting, users in your account require specific access to create API keys, including the account owner. To restrict who can create API keys, use the following steps:
+If you turn on the Restrict API key creation setting, users in your account require specific access to create API keys, including the account owner. To restrict who can create API keys, use the following steps:
 
 Enabling this setting affects only the creation of user API keys. It does not affect API keys for service IDs.
 {: note}
 
-1. Enable the **API key creation** setting in the Account section.
+1. Enable the **Restrict API key creation** setting in the Account section.
 1. Click **Yes** to confirm.
 
 Now that the setting is enabled to restrict users from creating API keys, you can create an access group template that grants the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create API keys with restrictions enabled](/docs/account?topic=account-allow-api-create&interface=ui#restrict-api-create-access).
@@ -91,7 +94,7 @@ By default, all members of an account can create service IDs. However, by using 
 
 If you enable the Service ID creation setting, users in child accounts require specific access to create service IDs, including the account owner. To restrict who can create service IDs, use the following steps:
 
-1. Enable the **Service ID creation** setting in the Account section.
+1. Enable the **Restrict service ID creation** setting in the Account section.
 1. Click **Yes** to confirm.
 
 Now that the setting is enabled to restrict users from creating service IDs, you can create an access group template that grants the required access to enable specific users to continue creating service IDs. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create service IDs with restrictions enabled](/docs/account?topic=account-restrict-service-id-create&interface=ui#assign-access-create-service-id-restrict)
@@ -110,7 +113,7 @@ Child account administrators can set an IP address restriction for individual us
 
 To restrict all users to using only specific IP addresses, complete the following steps:
 
-1. From the Account section, enable the **IP address access** setting.
+1. From the Account section, enable the **Restrict IP address access** setting.
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the child accounts can log in to {{site.data.keyword.Bluemix}}.
 
    You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
@@ -118,6 +121,7 @@ To restrict all users to using only specific IP addresses, complete the followin
 
 1. Click **Save**.
 
+The child account can restrict access to a subset of IPs within the enterprise-managed list. For example, the administrator of a production child account might specify a more granular allowlist.
 
 ### (Optional) Adding authentication setting
 {: #authentication-settings-template}
@@ -139,6 +143,10 @@ To enable MFA in a settings template, complete the following steps:
 
 1. Go to the Authentication section.
 1. Select the type of MFA that you want to enable in your account. For more information about the MFA options, see [MFA options](/docs/account?topic=account-types#mfa-options).
+
+
+The MFA level defined by the child account applies if the enterprise-managed setting is less strict or removed. For example, the administrator of a production child account might specify a stricter level of MFA than what is defined by the enterprise-managed settings template.
+
 
 
 
@@ -246,13 +254,17 @@ The new template version that you assign replaces the old version. Learn more ab
 {: #remove-assignment-settings}
 {: ui}
 
-You can remove a template assignment from an account or account group where the template is assigned. You might want to do so if the template isn't working as intended. When you remove a template assignment from an account, by default the previous version of the template is reinstated. If the assignment you remove is for the first or only version of a template, the settings preferences in the child account are removed.
+You can remove a template assignment from an account or account group where the template is assigned. You might want to do so if the template isn't working as intended. When you remove a template assignment from an account, by default the previous version of the template is reinstated. If the assignment you remove is for the first or only version of a template, the assigned settings preferences in the child account are removed.
 
 To remove an assignment, complete the following steps:
 1. Click **Manage > Access (IAM) > Templates > Settings** in the {{site.data.keyword.cloud}} console.
 1. Click **Settings** and select your settings template.
 1. Click **Assignments**.
 1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") **> Remove** on the account or account group where you want to remove the assignment.
+
+
+When you remove all settings template assignments, the setting that's defined at the child account-level is instated.
+{: note}
 
 
 ## Deleting a settings template
