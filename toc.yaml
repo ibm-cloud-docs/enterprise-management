@@ -15,7 +15,6 @@ toc:
       topics:
       - enterprises.md
       - enterprise.md
-      - paygo_committed_use.md
       - topic: billing-overview.md
         navtitle: How can I manage billing and usage in IBM Cloud?
       - topicgroup:
@@ -23,10 +22,10 @@ toc:
           topics:
             - include: ../account/iam-whatis.md
             - include: ../account/iam-identities.md
-            - iam-access-concepts.md
+            - include: ../account/iam-access-concepts.md
             - include: ../account/iam-policies-overview.md
             - include: ../account/iam-roles-overview.md
-            - iam-mappings.md
+            - include: ../account/iam-mappings.md
             - include: ../account/context-restrictions-what-is.md
       - include: ../secure-enterprise/index.md
       - topicgroup:
@@ -34,8 +33,8 @@ toc:
           topics:
           - bp_enterprise.md
           - bp-enterprise-access.md
-          - bp_billing.md
-          - cc-bp.md
+          - include: ../account/bp_billing.md
+          - include: ../account/cc-bp.md
   - navgroup:
       id: tutorial
       topics:
@@ -44,7 +43,7 @@ toc:
       - iam-secure-account-tutorial.md
       - iam-ent-template-tutorial.md
       - security-setup.md
-      - reconcile-tutorial.md
+      - include: ../account/reconcile-tutorial.md
   - navgroup:
       id: howto
       topics:
@@ -54,8 +53,10 @@ toc:
           - enterprise-add-accounts.md
           - enterprise-organize-accounts.md
           - enterprise-update-group-contact.md
-          - dashboard-manage.md
-          - account-close.md
+          - include: ../account/dashboard-manage.md
+          - include: ../account/update-your-profile.md
+          - include: ../account/update-account-ownership.md
+          - include: ../account/account-close.md
       - topicgroup:
           label: Managing access for enterprises
           topics:
@@ -63,32 +64,31 @@ toc:
           - enterprise-assign-access.md
           - include: ../account/iam-account_management.md
           - include: ../account/context-restrictions-create.md
-          - context-restrictions-manage.md
-          - iam-service-roles.md
+          - include: ../account/context-restrictions-manage.md
+          - include: ../account/iam-service-roles.md
           - include: ../account/iam-login_fedid.md
           - include: ../account/iam-federation-guide.md
           - include: ../account/iam-audit-policies.md
           - include: ../account/iam-condition-properties.md
-          - iam-cross-acc-access.md
-          - iam-login-flows.md
-          - monitoring.md
-          - iam-idp-integration.md
-          - iam-policies-change-log.md
+          - include: ../account/iam-cross-acc-access.md
+          - include: ../account/iam-login-flows.md
+          - include: ../account/monitoring.md
+          - include: ../account/iam-idp-integration.md
+          - include: ../account/iam-policies-change-log.md
           - include: ../account/iam-manage-user-account.md
       - topicgroup:
           label: Working with resources and tags
           topics:
-          - manage_resource_group.md
-          - manage_resource.md
+          - include: ../account/manage_resource_group.md
+          - include: ../account/manage_resource.md
           - include: ../account/rg-access.md
           - include: ../account/iam-access-report.md
           - include: ../account/reclaim-resource.md
           - include: ../account/tagging_resources.md
-          - manage_tags.md
+          - include: ../account/manage_tags.md
           - include: ../account/grant-tag-access.md
           - include: ../account/data-center-migration.md
-          - vrf-service-endpoint.md
-          - quotas.md
+          - include: ../account/vrf-service-endpoint.md
       - topicgroup:
           label: Centrally managing access in child account
           topics:
@@ -100,7 +100,6 @@ toc:
           - iam-settings-template-create.md
           - iam-monitor-ent-template.md
           - custom-share.md
-          - security-setup.md
           - iam-template-versions.md
       - topicgroup:
           label: Billing and usage for an enterprise
@@ -108,43 +107,45 @@ toc:
           - topicgroup:
               label: Managing your costs
               topics:
-              - estimating_costs.md
-              - how_charged.md
-              - change_pricing_plan.md
-              - getting-pricing-api.md
-              - notifications.md
-              - project-spend.md
+              - include: ../account/estimating_costs.md
+              - include: ../account/how_charged.md
+              - include: ../account/change_pricing_plan.md
+              - include: ../account/getting-pricing-api.md
+              - include: ../account/notifications.md
+              - include: ../account/project-spend.md
           - topicgroup:
               label: Managing your usage
               topics:
-              - viewing_usage.md
+              - include: ../account/viewing_usage.md
+              - include: ../account/infra_usage.md
+              - include: ../account/scenario.md
               - enterprise-usage.md
               - enterprise-report.md
               - include: ../account/exporting-usage.md
-              - quotas.md
+              - include: ../account/quotas.md
           - topicgroup:
               label: Working with codes and credits
               topics:
-              - promo_codes.md
-              - subscription_codes.md
+              - include: ../account/promo_codes.md
+              - include: ../account/subscription_codes.md
               - feature-codes.md
           - topicgroup:
               label: Managing your invoices and payments
               topics:
-              - manage_billing.md
-              - invoices.md
-              - understand-invoice.md
+              - include: ../account/manage_billing.md
+              - include: ../account/invoices.md
+              - include: ../account/understand-invoice.md
           - topicgroup:
               label: Managing your subscriptions
               topics:
-              - subscriptions.md
+              - include: ../account/subscriptions.md
               - paygo_committed_use.md
-              - service-level-commit.md
-              - cc-working-with.md
-              - migrate-billing.md
-              - migrate-bp-billing.md
-          - cancel-billing-items.md
-          - support.md
+              - include: ../account/service-level-commit.md
+              - include: ../account/cc-working-with.md
+              - include: ../account/migrate-billing.md
+              - include: ../account/migrate-bp-billing.md
+          - include: ../account/cancel-billing-items.md
+          - include: ../account/support.md
       - topicgroup:
           label: Managing projects
           topics:
@@ -152,15 +153,16 @@ toc:
       - topicgroup:
           label: Catalog management
           topics:
-          - catalog-enterprise-share.md
-          - catalog-settings.md
-          - catalog-cross-validation.md
-          - catalog-custom-private-preset.md
+          - include: ../account/catalog-enterprise-share.md
+          - include: ../account/catalog-settings.md
+          - include: ../account/catalog-cross-validation.md
+          - include: ../account/catalog-custom-private-preset.md
+          - include: ../account/catalog-custom-private-object.md
           - catalog-enterprise-filters.md
-          - catalog-enterprise-share-accept.md
-          - catalog-enterprise-share-overview.md
-          - catalog-other-share.md
-          - catalog-scc-rules.md
+          - include: ../account/catalog-enterprise-share-accept.md
+          - include: ../account/catalog-enterprise-share-overview.md
+          - include: ../account/catalog-other-share.md
+          - include: ../account/catalog-scc-rules.md
       - topicgroup:
           label: Observability
           topics:
@@ -213,9 +215,9 @@ toc:
           - link:
               label: Enterprise Management
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
-      - credit-types.md
+      - include: ../account/credit-types.md
       - include: ../account/customer-incident-report.md
-      - known-issues.md
+      - include: ../account/known-issues.md
       - get-help.md
       - include: ../account/bxnui.md
   - navgroup:
@@ -225,11 +227,11 @@ toc:
           label: FAQs
           topics:
           - faqs-enterprise.md
-          - billing-faq.md
-          - subscription_acct_faq.md
-          - invoice_faqs.md
-          - commitment-faqs.md
-          - cc-faqs.md
+          - include: ../account/billing-faq.md
+          - include: ../account/subscription_acct_faq.md
+          - include: ../account/invoice_faqs.md
+          - include: ../account/commitment-faqs.md
+          - include: ../account/cc-faqs.md
           - include: ../account/faq-support.md
       - topicgroup:
           label: Troubleshooting enterprise accounts
@@ -246,18 +248,26 @@ toc:
           - ts-access-child-accts.md
           - ts-iam-template-fail.md
       - topicgroup:
+          label: Troubleshooting the Support Center
+          topics:
+          - include: ../account/ts_create-case.md
+          - include: ../account/ts_help-info-services.md
+          - include: ../account/ts_service-broker.md
+          - include: ../account/ts_view-archived-cases.md
+          - include: ../account/ts_view-case-details.md
+      - topicgroup:
           label: Troubleshooting billing and usage
           topics:
-          - ts_billinginfo.md
-          - ts_subscriptioncode.md
-          - ts_payment_console.md
-          - ts_invoice_trouble.md
-          - ts_apply_feature_code.md
-          - ts_service_feature_code.md
-          - ts_billing_address.md
-          - ts-view-commit.md
-          - ts_commit_cannot_apply.md
-          - ts_commit_access_page.md
-          - ts_section-error.md
-          - ts_charge-limit.md
-          - ts-cc-error-messages.md
+          - include: ../account/ts_billinginfo.md
+          - include: ../account/ts_subscriptioncode.md
+          - include: ../account/ts_payment_console.md
+          - include: ../account/ts_invoice_trouble.md
+          - include: ../account/ts_apply_feature_code.md
+          - include: ../account/ts_service_feature_code.md
+          - include: ../account/ts_billing_address.md
+          - include: ../account/ts-view-commit.md
+          - include: ../account/ts_commit_cannot_apply.md
+          - include: ../account/ts_commit_access_page.md
+          - include: ../account/ts_section-error.md
+          - include: ../account/ts_charge-limit.md
+          - include: ../account/ts-cc-error-messages.md
