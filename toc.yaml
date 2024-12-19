@@ -70,7 +70,6 @@ toc:
           - include: ../account/iam-federation-guide.md
           - include: ../account/iam-audit-policies.md
           - include: ../account/iam-condition-properties.md
-          - include: ../account/iam-cross-acc-access.md
           - include: ../account/iam-login-flows.md
           - include: ../account/monitoring.md
           - include: ../account/iam-idp-integration.md
@@ -162,7 +161,6 @@ toc:
           - include: ../account/catalog-enterprise-share-accept.md
           - include: ../account/catalog-enterprise-share-overview.md
           - include: ../account/catalog-other-share.md
-          - include: ../account/catalog-scc-rules.md
       - topicgroup:
           label: Observability
           topics:
