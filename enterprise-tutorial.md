@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-17"
+  years: 2019, 2025
+lastupdated: "2025-01-03"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -29,7 +29,7 @@ The tutorial uses a fictitious company that is called *Example Corp* that wants 
 ![A four-tier enterprise that groups accounts according to department in an organization. For example, account groups are named Marketing, Development, and Sales. The account groups contain accounts for teams within those departments. For example, the Sales account group contains accounts for Direct, Online, and Enablement.](images/enterprise-by-dept.svg "An enterprise that organizes accounts according to department in the organization."){: caption="An enterprise that is organized by department" caption-side="bottom"}
 
 ## Before you begin
-{: #setting-prereqs}
+{: #setting-enterprise-prereqs}
 
 Read [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) to learn the basic principles of how account management, billing, resources, and user and access management work in an enterprise.
 
