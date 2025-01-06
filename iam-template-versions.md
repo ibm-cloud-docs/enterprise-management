@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-10-17"
+  years: 2023, 2025
+lastupdated: "2025-01-06"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, templates, enterprise managed, versions, versioning. template version, migrate version, upgrade version, new version
 
@@ -102,8 +102,6 @@ IAM templates that you assign at the account group level have priority over assi
 {: #move-account}
 
 Accounts in your enterprise might have a history of different enterprise-managed IAM template assignments. You can replace a template assignment by assigning a newer version or superseded an assignment by assigning a template at a higher level, such as the account group level. In these cases, the previous assignment of a template becomes inactive while the versions with higher-level assignments remain active.
-
-{{site.data.content.move-account}}
 
 You might want to remove inactive assignments before you move an account to avoid granting access unintentionally in the account.
 1. To view a record of assignments, go to **Manage > Access (IAM) > Templates**, select your template and version, and go to **Assignments**.
