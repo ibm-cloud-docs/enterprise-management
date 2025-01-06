@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2023
-lastupdated: "2024-10-17"
+  years: 2019, 2025
+lastupdated: "2025-01-06"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact
 
@@ -283,7 +283,7 @@ For detailed information about the API, see [Enterprise Management API](/apidocs
 ### Moving accounts with enterprise-managed IAM template assignments
 {: #moving-template-assignment}
 
-{{site.data.content.move-account}}
+Accounts in your enterprise might have a history of different enterprise-managed IAM template assignments. You can replace a template assignment by assigning a newer version or superseded an assignment by assigning a template at a higher level, such as the account group level. In these cases, the previous assignment of a template becomes inactive while the versions with higher-level assignments remain active.
 
 An inactive assignment occurs when it is superseded by a higher-level assignment or when a new version of the template is assigned, rendering the previous version inactive.
 {: tip}
