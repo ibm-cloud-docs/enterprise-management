@@ -42,7 +42,7 @@ toc:
       - enterprise-create.md
       - iam-secure-account-tutorial.md
       - iam-ent-template-tutorial.md
-      - security-setup.md
+      - include: ../secure-enterprise/security-setup.md
       - include: ../account/reconcile-tutorial.md
   - navgroup:
       id: howto
