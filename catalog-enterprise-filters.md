@@ -2,11 +2,11 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-01-08"
+lastupdated: "2025-01-10"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
-subcollection: secure-enterprise
+subcollection: enterprise-management
 
 ---
 
