@@ -88,6 +88,7 @@ toc:
           - include: ../account/grant-tag-access.md
           - include: ../account/data-center-migration.md
           - include: ../account/vrf-service-endpoint.md
+          - include: ../account/locations-management.md
       - topicgroup:
           label: Centrally managing access in child account
           topics:
