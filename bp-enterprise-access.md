@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-12-16"
+  years: 2023, 2025
+lastupdated: "2025-02-07"
 
 subcollection: enterprise-management
 
@@ -18,7 +18,7 @@ keywords: enterprise, enterprise account, enterprise iam, enterprise template, i
 While you're deciding how to [set up your enterprise and account structure](/docs/enterprise-management?topic=enterprise-management-enterprise-best-practices) within the enterprise, begin planning how to assign access to identities in your organization. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud}}.
 {: shortdesc}
 
-To learn more about organizing resources and assigning access in child accounts or nonenteprise accounts, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
+To learn more about organizing resources and assigning access in child accounts or nonenterprise accounts, see [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
 
 ## How enterprise-managed IAM access works
 {: #how-enterprise-iam}
