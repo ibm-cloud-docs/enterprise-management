@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-11-22"
+  years: 2023, 2025
+lastupdated: "2025-03-26"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -45,7 +45,7 @@ Administrators on the Identity service can add trust relationships and policies 
    By default, no users have the roles Template Administrator or Template Assignment Administrator, including the account owner.
    {: note}
 
-- New and existing accounts in your enterprise must opt-in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
+- New and existing accounts in your enterprise must opt in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
 
 
 ## Creating a trusted profile template
@@ -70,17 +70,7 @@ To create a trusted profile template, complete the following steps:
 {: #add-tp-template}
 {: ui}
 
-Establish trust with federated users by creating conditions based on attributes from your corporate directory. When federated users meet the conditions that you define, they can apply the profile.
 
-To establish trust, complete the following steps:
-
-1. Click **Trust relationship > Add**.
-1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity provider (IdP).
-1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
-   1. Click Add a condition to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
-   1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
-1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
-1. Click **Save**.
 
 
 
