@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-11-22"
+  years: 2023, 2025
+lastupdated: "2025-03-27"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -45,7 +45,7 @@ Administrators on the Identity service can add trust relationships and policies 
    By default, no users have the roles Template Administrator or Template Assignment Administrator, including the account owner.
    {: note}
 
-- New and existing accounts in your enterprise must opt-in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
+- New and existing accounts in your enterprise must opt in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
 
 
 ## Creating a trusted profile template
@@ -70,17 +70,84 @@ To create a trusted profile template, complete the following steps:
 {: #add-tp-template}
 {: ui}
 
+#### Individual users 
+{: #individual-users}
+
+Establish trust with individual users within or outside of your account by using their {{site.data.keyword.cloud_notm}} IAM ID.
+
+To establish trust, complete the following steps: 
+
+1. Click **Trust relationship > Individual users**.
+1. Click **Add**, and select **Account users** or **External users** to invite enterprise members and assign the template.
+   1. Click **Account users** to add a user in your account.
+       1. Select a user or multiple users.
+       1. Click **Add** to add the user to an associated profile.
+   1. Click **External users** to add users who are not in your account.
+       1. Enter the IAM ID.
+       1. Enter the associated account IDs. You can add more than one account, and it can include an account that is different than the one the user is currently working on.
+       1. (Optional) Enter a description.
+       1. Click **Add** to add the user to an associated profile.
+
+Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the users that you want to edit or remove, by selecting **Add** or **Remove**.
+
+#### Federated users 
+{: #federated-users}
+
 Establish trust with federated users by creating conditions based on attributes from your corporate directory. When federated users meet the conditions that you define, they can apply the profile.
 
 To establish trust, complete the following steps:
 
-1. Click **Trust relationship > Add**.
-1. Select **Users federated by IBMid** or **Users federated by IBM Cloud AppID** as the authentication method and input the default identity provider (IdP).
+1. Click **Trust relationship > Federated users**.
+1. Click **Add**, and select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP).
 1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
-   1. Click Add a condition to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+   1. Click **Add a condition** to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
    1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
-1. Click **Save**.
+1. Click **Add**. 
+
+Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the federated users that you want to edit or remove, by selecting **Add** or **Remove**.
+
+#### Compute resources 
+{: #compute-resources}
+
+Establish trust with compute resources to enable programs running in a specific cluster to securely access necessary resources.
+
+To establish trust, complete the following steps:
+
+1. Click **Trust relationship > Compute resources**. 
+1. Click **Add**, and select a compute service.
+1. Click **Add a condition** to define multiple conditions. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+1. Click **Add**. 
+
+Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the compute resource that you want to edit or remove, by selecting **Add** or **Remove**.
+
+#### {{site.data.keyword.cloud_notm}} services
+{: #IBM-Cloud-services}
+
+Establish trust with {{site.data.keyword.cloud_notm}} services by allowing the instance of a cloud service identified by its cloud resource name. 
+
+To establish trust, complete the following steps:
+
+1. Click **Trust relationship > {{site.data.keyword.cloud_notm}} services**.
+1. Click **Add**, and enter the CRN. 
+1. (Optional) Enter a description.
+1. Click **Add**. 
+
+Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the {{site.data.keyword.cloud_notm}} service that you want to edit or remove, by selecting **Add** or **Remove**.
+
+#### Service IDs 
+{: #service-IDs}
+
+Establish trust with service IDs by authenticating services. A service ID can be created for a specific service, with API keys that are generated to securely authenticate it. Additionally, the service ID can assume a trusted profile, inheriting permissions and accessing resources as needed.
+
+To establish trust, complete the following steps:
+
+1. Click **Trust relationship > Service ID**.
+1. Click **Add**, and enter a service ID.
+1. (Optional) Enter a description.
+1. Click **Add**. 
+
+Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the service ID that you want to edit or remove, by selecting **Add** or **Remove**.
 
 
 
