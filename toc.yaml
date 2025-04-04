@@ -43,6 +43,7 @@ toc:
       - iam-secure-account-tutorial.md
       - iam-ent-template-tutorial.md
       - iam-ent-template-pen-test.md
+      - iam-ent-manage-resources.md
       - include: ../secure-enterprise/security-setup.md
       - include: ../account/reconcile-tutorial.md
   - navgroup:
