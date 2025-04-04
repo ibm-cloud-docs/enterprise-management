@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-06"
+lastupdated: "2025-04-04"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, templates, enterprise managed, versions, versioning. template version, migrate version, upgrade version, new version
 
@@ -106,9 +106,6 @@ Accounts in your enterprise might have a history of different enterprise-managed
 You might want to remove inactive assignments before you move an account to avoid granting access unintentionally in the account.
 1. To view a record of assignments, go to **Manage > Access (IAM) > Templates**, select your template and version, and go to **Assignments**.
 1. Remove an assignment by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete**.
-
-You can also find the assignment record in Activity Tracker. For more information, see [Monitoring enterprise-managed IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates).
-{: tip}
 
 ## Removing an assignment
 {: #remove-assignment}
