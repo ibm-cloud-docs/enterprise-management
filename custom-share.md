@@ -37,7 +37,7 @@ This tutorial uses a fictitious scenario to help you learn and understand how to
 
 1. You must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
-1. [Create a customized deployable architecture](/docs/secure-enterprise?topic=secure-enterprise-basic-custom) called Example Corps' infrastructure. This deployable architecture is the one you will be sharing as you complete this tutorial. 
+1. [Create a customized deployable architecture](/docs/secure-enterprise?topic=secure-enterprise-basic-custom) called `Example Corps' infrastructure` and onboard it to a private catalog called `Example Corp catalog`. This deployable architecture is the one you will be sharing as you complete this tutorial. 
 
 1. Verify that at least one version of Example Corps' infrastructure is validated and in the `Ready` state. For more information, see [Validating the version](/docs/secure-enterprise?topic=secure-enterprise-onboard-da#validate-version).
 
