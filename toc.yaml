@@ -73,7 +73,6 @@ toc:
           - include: ../account/iam-audit-policies.md
           - include: ../account/iam-condition-properties.md
           - include: ../account/iam-login-flows.md
-          - include: ../account/monitoring.md
           - include: ../account/iam-idp-integration.md
           - include: ../account/iam-policies-change-log.md
           - include: ../account/iam-manage-user-account.md
@@ -168,6 +167,10 @@ toc:
           label: Observability
           topics:
           - at-events-em.md
+          - include: ../account/at-events-am.md
+          - include: ../account/at-events-iam.md
+          - include: ../account/at-events-cbr.md
+          - include: ../account/at-events-cm.md
       - topicgroup:
           label: Getting help when you run into issues
           topics:
