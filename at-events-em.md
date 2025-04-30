@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2025
-lastupdated: "2025-04-03"
+lastupdated: "2025-04-30"
 
 keywords:
 
@@ -30,8 +30,6 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
 {: #atracker-locations}
-
-
 
 Enterprise management sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
 
