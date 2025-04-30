@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2023, 2024
+  years: 2023, 2025
 
-lastupdated: "2024-10-21"
+lastupdated: "2025-04-30"
 
 keywords: deployable architecture, custom, share, enterprise
 
@@ -23,7 +23,9 @@ completion-time: 5m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="5m"}
 
-This tutorial walks you through how to share a deployable architecture that you created from an {{site.data.keyword.cloud}} pre-built deployable architecture. By completing this tutorial, you learn about sending a share request, viewing the status of your share request, and sharing your deployable architecture.
+
+
+ This tutorial walks you through how to share a deployable architecture that you created from an {{site.data.keyword.cloud}} pre-built deployable architecture. By completing this tutorial, you learn about sending a share request, viewing the status of your share request, and sharing your deployable architecture.
 {: shortdesc}
 
 When you send a share request to an enterprise, you are requesting to add the enterprise to an [allowlist](#x3954001){: term}. After the enterprise accepts the request, you can share individual products and deployable architectures to enterprise users who can create instances of any version that is in the `ready` state. A product is in the `ready` state when it is validated and you've marked it as `ready`. Versions that are not validated are in the `draft` state and are not shared with users. However, unvalidated `draft` versions are available to users who have access to the private catalog that contains the version.
@@ -95,4 +97,4 @@ Now that you have permission to share to the enterprise, you can share your depl
 1. Select **Example Corp enterprise** to share to the enterprise and all account groups.
 1. Click **Share**.
 
-In the version list, the **Visibility** status is now `Shared`.
+In the version list, the **Visibility** status is now `Shared`. 

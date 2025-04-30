@@ -1,7 +1,7 @@
 ---
 copyright:
  years: 2025
-lastupdated: "2025-04-04"
+lastupdated: "2025-04-29"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -327,7 +327,7 @@ curl -X POST "https://iam.cloud.ibm.com/v1/profile_templates" \
 {: curl}
 
 ## Assign the trusted profile template to an account group
-{: #assign-tp-template}
+{: #assign-tp-template-account}
 {: step}
 
 The template can be assigned to individual accounts or account groups (recommended). When you assign a template to an account group, a trusted profile gets created in each child account in the account group. Also, the system automatically creates trusted profiles for new accounts that are added to the account group, or removes them when child accounts are removed or deleted from the group. Create an assignment for a trusted profile template by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-trusted-profile-assignment) as shown in the following example:
@@ -499,4 +499,3 @@ curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 
 ```
 {: codeblock}
 {: curl}
-

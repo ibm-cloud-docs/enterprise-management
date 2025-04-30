@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2024-10-17"
+  years: 2023, 2025
+lastupdated: "2025-04-29"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -36,7 +36,7 @@ The tutorial uses a fictitious company that is called *Example Corp* to create a
 
 
 ## Before you begin
-{: #before-ent-iam-tutorial}
+{: #before-centrally-manage-acces}
 
 - Check out [Best practices for assigning access in an enterprise](/docs/enterprise-management?topic=enterprise-management-access-enterprises) to learn more about the features, concepts, and components of the enterprise-managed access system.
 
