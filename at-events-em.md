@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2025
-lastupdated: "2025-04-30"
+lastupdated: "2025-05-19"
 
 keywords:
 
@@ -29,7 +29,7 @@ You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to rou
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
-{: #atracker-locations}
+{: #atracker-locations-em}
 
 Enterprise management sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
 
@@ -64,7 +64,7 @@ Enterprise management sends activity tracking events by {{site.data.keyword.atra
 {: row-headers}
 
 ## Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-{: #log-launch-standalone}
+{: #log-launch-standalone-em}
 
 
 
@@ -102,12 +102,12 @@ The following table lists the actions that generate an event:
 {: caption="Actions that generate enterprise usage report management events" caption-side="top"}
 
 ## Analyzing enterprise billing activity tracking events
-{: #at_events_iam_analyze}
+{: #at_events_iam_analyze-em}
 
 
 
 ### requestData fields
-{: #at_events_analyze_4_reqdata}
+{: #at_events_analyze_4_reqdata-em}
 
 The following table lists the fields that are available through the `requestData` field in the events with actions `billing.enterprise-usage-report.read` and `billing.enterprise-usage-report.download`:
 
