@@ -26,11 +26,16 @@ Access to manage the [enterprise](/docs/enterprise-management?topic=enterprise-m
 * Create new accounts in the enterprise
 * Create and name account groups
 * Move accounts between account groups
+* Cancel account (assuming all resources have already been deleted)
 * Import existing accounts to the enterprise
 * Update the enterprise name or domain
-* View usage reports for the enterprise, a specific account group, accounts within account groups, or a specific account
+* View usage (used to calculate billing) reports for the enterprise, a specific account group, accounts within account groups, a specific account, down to the plan level
 * Create enterprise-managed IAM templates
 * Assign enterprise-managed IAM templates to child accounts
+* Assign IAM templates to child accounts
+* Set Spending notifications can be set on the child accounts from the child accounts and members of the enterprise can be notified
+* Monitor security and compliance with SCC and SCC Workload Protection
+* Share private catalogs
 
 A policy that gives a user access to the enterprise service can either be assigned on the entire enterprise or only on a specific account group or single account.
 {: tip}
