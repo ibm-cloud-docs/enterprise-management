@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-03-27"
+lastupdated: "2025-05-29"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -63,6 +63,8 @@ To create a trusted profile template, complete the following steps:
 
    In the description, provide a list of actions available for this trusted profile.
    {: tip}
+
+
 
 1. Click **Create**.
 

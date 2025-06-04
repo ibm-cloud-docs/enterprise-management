@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-11-22"
+  years: 2023, 2025
+lastupdated: "2025-06-03"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -657,7 +657,7 @@ You can create an access group template by completing the following steps:
     {: curl}
     {: codeblock}
 
-1.  Use the [access-group-template-create](/clidocs/iam-access-groups#create-template) method as shown in the following sample request:
+1.  Use the [access-group-template-create](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_access_group_template_create) method as shown in the following sample request:
 
     ```bash
     ibmcloud iam access-group-template-create --output JSON --file /path/to/access_group_template.json
