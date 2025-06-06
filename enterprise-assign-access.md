@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2023
+  years: 2019, 2025
 
-lastupdated: "2024-10-17"
+lastupdated: "2025-06-06"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
@@ -26,11 +26,16 @@ Access to manage the [enterprise](/docs/enterprise-management?topic=enterprise-m
 * Create new accounts in the enterprise
 * Create and name account groups
 * Move accounts between account groups
+* Cancel accounts after all associated resources have been deleted
 * Import existing accounts to the enterprise
 * Update the enterprise name or domain
-* View usage reports for the enterprise, a specific account group, accounts within account groups, or a specific account
+* View usage reports, which are used to calculate billing, for the enterprise, a specific account group, accounts within account groups, or a specific account, with detail available at the plan level
 * Create enterprise-managed IAM templates
 * Assign enterprise-managed IAM templates to child accounts
+* Assign IAM templates to child accounts
+* Set spending notifications on child accounts to notify members of the enterprise
+* Monitor security and compliance with the {{site.data.keyword.compliance_short}} and {{site.data.keyword.sysdigsecure_short}}
+* Share private catalogs
 
 A policy that gives a user access to the enterprise service can either be assigned on the entire enterprise or only on a specific account group or single account.
 {: tip}
