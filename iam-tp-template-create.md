@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-05-29"
+lastupdated: "2025-06-16"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -56,7 +56,7 @@ Consider using trusted profile templates when users need access to many child ac
 
 To create a trusted profile template, complete the following steps:
 
-1. Go to **Manage > Access (IAM) > Templates** in the {{site.data.keyword.cloud_notm}} console.
+1. Go to **Manage > Access (IAM) > Templates**, and select **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Create**.
 1. Enter a name and description for the trusted profile template that describes its purpose for enterprise users.
 1. Enter a name and description for the enterprise-managed trusted profile that describes its purpose for child account users.
@@ -64,7 +64,16 @@ To create a trusted profile template, complete the following steps:
    In the description, provide a list of actions available for this trusted profile.
    {: tip}
 
+   You can use replacement variables in the profile name to customize it for each account. The following variables are supported:
 
+   * `${template_id}`: Will be replaced by a unique identifier for the trusted profile template.
+   * `${template_name}`: Will be replaced by the current name of the trusted profile template.
+   * `${template_version}`: Will be replaced by the current version of the trusted profile template.
+   * `${account_id}`: Will be replaced by the identifier of the account to which the trusted profile template is assigned.
+   * `${account_name}`: Will be replaced by the name of the account to which the trusted profile template is assigned.
+
+   Changes to values such as the account name do not cause the update of the trusted profile name. The profile name is set when you assign the template to an account or upgrade the template version. This means that if the account name changes later, the profile name won’t update automatically. The new account name will only be used the next time you assign the template or upgrade it.
+   {: note}
 
 1. Click **Create**.
 
