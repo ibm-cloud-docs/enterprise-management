@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-02-07"
+lastupdated: "2025-06-20"
 
 subcollection: enterprise-management
 
@@ -103,6 +103,8 @@ Action controls are a mechanism to define the operations that administrators of 
 
 Action controls are available only for access group templates.
 {: note}
+
+
 
 For access group templates, the best practice is to restrict changes to policies, but to allow access group administrators to add members. This way, you can create role-based access group templates with the right access for those roles and delegate managing membership to the access group administrator. Learn more about the available action controls for access group [members](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#members-action-controls), [dynamic rules](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#dynamic-rules-action-controls), and [access policies](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#access-ag-action-controls).
 
