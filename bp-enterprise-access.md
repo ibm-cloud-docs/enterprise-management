@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-06-20"
+lastupdated: "2025-06-27"
 
 subcollection: enterprise-management
 
@@ -76,7 +76,7 @@ For more information, see [Creating enterprise-managed trusted profile templates
 ## Settings templates
 {: #settings-templates}
 
-Enterprise-managed settings templates ensure that IAM settings, like [restricting domains for account invitations](/docs/account?topic=account-restrict-acct-invite) and [setting limits for login sessions](/docs/account?topic=account-iam-work-sessions&interface=ui), are consistent across multiple accounts. You can assign a settings template to existing accounts and to accout groups to help streamline the process of creating new accounts that are secure by default. By selecting an account group, you assign a settings template to existing and future child accounts of that group. Administrators can apply the appropriate template to an account group to ensure that new accounts are configured consistently and in compliance with organizational policies and best practices. This can save time and reduce the risk of misconfiguration or security vulnerabilities.
+Enterprise-managed settings templates ensure that IAM settings are consistent across multiple accounts. You can assign a settings template to existing accounts and to accout groups to help streamline the process of creating new accounts that are secure by default. By selecting an account group, you assign a settings template to existing and future child accounts of that group. Administrators can apply the appropriate template to an account group to ensure that new accounts are configured consistently and in compliance with organizational policies and best practices. This can save time and reduce the risk of misconfiguration or security vulnerabilities.
 
 For more information, see [Creating enterprise-managed settings templates](/docs/enterprise-management?topic=enterprise-management-settings-template-create).
 

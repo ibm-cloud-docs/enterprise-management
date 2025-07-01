@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-06-16"
+lastupdated: "2025-07-01"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -59,10 +59,10 @@ To create a trusted profile template, complete the following steps:
 1. Go to **Manage > Access (IAM) > Templates**, and select **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Create**.
 1. Enter a name and description for the trusted profile template that describes its purpose for enterprise users.
-1. Enter a name and description for the enterprise-managed trusted profile that describes its purpose for child account users.
 
-   In the description, provide a list of actions available for this trusted profile.
-   {: tip}
+    In the description, provide a list of actions available for this trusted profile. 
+    {: tip}
+
 
    You can use replacement variables in the profile name to customize it for each account. The following variables are supported:
 
