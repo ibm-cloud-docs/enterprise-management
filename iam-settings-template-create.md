@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-12-13"
+  years: 2023, 2025
+lastupdated: "2025-07-04"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -429,7 +429,7 @@ The new template version that you assign replaces the old version. Learn more ab
    {: codeblock}
 
 ## Removing an assignment by using the CLI
-{: #remove-assignment-settings-cli}
+{: #remove-assignment-cli}
 {: cli}
 
 You can remove a template assignment from an account or account group where the template is assigned. You might want to do so if the template isn't working as intended. When you remove a template assignment from an account, by default the previous version of the template is reinstated. If the assignment you remove is for the first or only version of a template, the enterprise-managed settings preferences in the child account are removed.
