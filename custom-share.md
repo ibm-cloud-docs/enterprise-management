@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2025
 
-lastupdated: "2025-07-01"
+lastupdated: "2025-07-09"
 
 keywords: deployable architecture, custom, share, enterprise
 
@@ -31,7 +31,7 @@ When you send a share request to an enterprise, you are requesting to add the en
 Not ready to share your deployable architecture, or are you not a part of an enterprise? You can skip this tutorial and continue on to [deploying an architecture by using a project](/docs/secure-enterprise?topic=secure-enterprise-deploy-regions). Users in your account who have access to the private catalog that contains a `draft` version of your deployable architecture can deploy it. 
 {: tip}
 
-Imagine you are a product manager for the fictitious company _Example Corp_. Your enterprise needs a deployable architecture to provide secure and customizable compute resources for running your applications and services. Your infrastructure architect browsed the {{site.data.keyword.cloud_notm}} catalog and discovered the Cloud automation for {{site.data.keyword.codeengineshort}} option, a deployable architecture that provides the foundation that you need. However, your infrastructure architect decided to [modify the architecture to fully meet your business needs](/docs/secure-enterprise?topic=secure-enterprise-basic-custom). Your cloud automation engineering professional named your new deployable architecture `Example Corps' infrastructure` and onboarded it to the private catalog `Example Corp catalog`. Now, you are ready to share `Example Corps' infrastructure` to the rest of your enterprise account `Example Corp enterprise`.
+Imagine you are a product manager for the fictitious company _Example Corp_. Your enterprise needs a deployable architecture to provide secure and customizable compute resources for running your applications and services. Your infrastructure architect browsed the {{site.data.keyword.cloud_notm}} catalog and discovered the Cloud automation for {{site.data.keyword.codeengineshort}} option, a deployable architecture that provides the foundation that you need. However, your infrastructure architect decided to [modify the architecture to fully meet your business needs](/docs/secure-enterprise?topic=secure-enterprise-basic-custom). Your cloud automation engineering professional named your new deployable architecture `Example Corp's infrastructure` and onboarded it to the private catalog `Example Corp catalog`. Now, you are ready to share `Example Corp's infrastructure` to the rest of your enterprise account `Example Corp enterprise`.
 
 This tutorial uses a fictitious scenario to help you learn and understand how to share a deployable architecture. As you complete the tutorial, adapt each step to match your organization's needs.
 
@@ -42,9 +42,9 @@ This tutorial uses a fictitious scenario to help you learn and understand how to
 
 1. Verify that your account is part of an enterprise. You can create an enterprise from an existing Subscription account or a qualifying Pay-as-you-Go account. For more information, go to [Creating an enterprise](/docs/enterprise-management?topic=enterprise-management-create-enterprise&interface=ui).
 
-1. [Create a customized deployable architecture](/docs/secure-enterprise?topic=secure-enterprise-basic-custom) called `Example Corps' infrastructure` and onboard it to a private catalog called `Example Corp catalog`. This deployable architecture is the one you will be sharing as you complete this tutorial. 
+1. [Create a customized deployable architecture](/docs/secure-enterprise?topic=secure-enterprise-basic-custom) called `Example Corp's infrastructure` and onboard it to a private catalog called `Example Corp catalog`. This deployable architecture is the one you will be sharing as you complete this tutorial. 
 
-1. Verify that at least one version of Example Corps' infrastructure is in the `ready`, `test`, or `pre-release` state. For more information on states, go to [Versioning workflow in your private catalog](/docs/account?topic=account-catalog-share-overview#version-flow).
+1. Verify that at least one version of `Example Corp's infrastructure` is in the `ready`, `test`, or `pre-release` state. For more information on states, go to [Versioning workflow in your private catalog](/docs/account?topic=account-catalog-share-overview#version-flow).
 
 ## Send a share request
 {: #share-request}
@@ -54,7 +54,7 @@ To send a request to share deployable architectures and products to the enterpri
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Catalogs** > **Private catalogs**.
 1. Select **Example Corp catalog**, which is where your deployable architecture is located.
-1. Select **Example Corps' infrastructure**.
+1. Select **Example Corp's infrastructure**.
 1. Click **Actions** > **Share**.
 1. Review the list of affected versions. If you don't see the version that you want to share, make sure that the version is in the `ready`, `test`, or `pre-release` state.
 1. Select **Share to this enterprise or account groups** to see the enterprise and its account groups.
