@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2025, 2025
+  years: 2025
 lastupdated: "2025-07-31"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
@@ -19,12 +19,11 @@ In an enterprise where you have many child accounts, it can be difficult to manu
 {: shortdesc}
 
 
-As an Enterprise IAM administrator, you can centrally restrict child account users from performing certain actions in the child accounts even if they have an access policy granting them access.
+As an enterprise IAM administrator, you can centrally restrict child account users from performing certain actions in the child accounts even if they have an access policy granting them access.
 
-You can assign only one action control template to an account or account group. Create an action control template that applies to the most accounts and create a new one only for accounts that have special requirements. For example, you want to centrally disable deleting the auditng events for some (or all) child accounts within your enterprise.
-{: note}
+You can assign only one action control template to an account or an account group. Create an action control template that applies to the most accounts and create a new one only for accounts that have special requirements. For example, you want to centrally disable deleting the auditing events for some or all child accounts within your enterprise.
 
-Action controls created from templates cannot be deleted or updated by anyone. The only way to delete or update them is via remove or update action control assignment.
+You cannot delete or update the action controls created from templates. The only way to delete or update them is through remove or update action control assignment.
 {: note}
 
 ## Before you begin
@@ -41,7 +40,7 @@ Action controls created from templates cannot be deleted or updated by anyone. T
    * A policy with the Template Assignment Administrator role on All IAM Account Management services
    * A policy with at least the Viewer role on the Enterprise service.
 
-- To read enterprise-managed IAM template or the template assignment, make sure you're assigned the following access:
+- To read an enterprise-managed IAM template or the template assignment, make sure you're assigned the following access:
    * A policy with the Template Administrator role on All IAM Account Management services.
    * A policy with the Template Assignment Administrator role on All IAM Account Management services.
 
@@ -54,11 +53,11 @@ Action controls created from templates cannot be deleted or updated by anyone. T
 {: #create-act-cli}
 {: cli}
 
-Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers ( Activity Tracker Event Routing, Logs Routing and Metrics Routing).
+Consider that uses action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers ({{site.data.keyword.atracker_full}}, {{site.data.keyword.logs_routing_full}}, and {{site.data.keyword.metrics_router_full}}).
 
 To create an action control template by using the CLI, complete the following steps:
 
-1. Create a JSON file that configures the action control template definition. The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. The `action_control.actions` argument specifies the action restrictions imposed on the child account. 
+1. Create a JSON file that configures the action control template definition. The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. The `action_control.actions` argument specifies the action restrictions that are imposed on the child account. 
 
    ```json
    {
@@ -76,6 +75,7 @@ To create an action control template by using the CLI, complete the following st
    }
    }
    ```
+   {: codeblock}
 
 1. Create the action control template by using the `ibmcloud iam action-control-template-create` command as shown in the following sample request:
 
@@ -122,7 +122,7 @@ To update a specific version of an action control template, use the `action-cont
 
 You can assign the versions of only one settings template at a time in your enterprise. You can assign different versions of the same settings template, but you can't use multiple settings templates in an enterprise. You might want to assign different versions to accounts with different requirements, like production and test accounts.
 
-You can't assign an IAM template to the enteprise account, only child accounts.
+You can't assign an IAM template to the enterprise account, only child accounts.
 {: note}
 
 To create an assignment for an account settings template, complete the following steps:
@@ -143,7 +143,7 @@ To create an assignment for an account settings template, complete the following
 If an assignment fails, use the `action-control-assigment-update` method to retry.
 {: tip}
 
-## Retrieving versions of action control template by using CLI
+## Retrieving versions of the action control template by using the CLI
 {: #retrieve-version-act-cli}
 {: cli}
 
@@ -186,10 +186,7 @@ ibmcloud iam action-control-template TEMPLATE_NAME|TEMPLATE_ID
 Create a new version of an action control template when you need to make updates to a committed version. To create a new version, complete the following steps.
 
 1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#replace-action-control-template).
-1. Use the `iam-access-management.action-control-template.create` command to create a new version. The following sample request creates a new version of the template with template id `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
-
-but the action required to perform this task. This action is mapped to the system roles defined in the other doc pages
-
+1. Use the `iam-access-management.action-control-template.create` command to create a new version. The following sample request creates a new version of the template with template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/v1/action_control_templates' \
@@ -270,11 +267,11 @@ Before you can delete a settings template version, you must remove all assignmen
 {: #create-act-api}
 {: api}
 
-Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from deleting the auditing events from {{site.data.keyword.atracker_short}} .
+Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from deleting the auditing events from {{site.data.keyword.atracker_short}}.
 
 To create an action control template by using the API, complete the following steps:
 
-Create a JSON file that configures an action control template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#list-action-control-templates). The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. 
+Create a JSON file that configures the template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#list-action-control-templates). The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. 
 
 ```bash
    curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_templates' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -380,7 +377,7 @@ An action control template can be deleted by providing the action control templa
 When you delete an action control template, all versions of this template are deleted.
 {: note}
 
-## Retrieving versions of action control template by using API
+## Retrieving versions of the action control template by using the API
 {: #retrieve-version-act-API}
 {: api}
 
@@ -515,7 +512,7 @@ get_action_control_template_version(
 Create a new version of an action control template when you need to make updates to a committed version. To create a new version, complete the following steps.
 
 1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#replace-action-control-template).
-1. Use the `iam-access-management.action-control-template.create` method to create a new version. The following sample request creates a new version of the template with template id `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
+1. Use the `iam-access-management.action-control-template.create` method to create a new version. The following sample request creates a new version of the template with template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
 
 ```bash
    curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_template/$TEMPLATE_ID/versions' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -575,7 +572,7 @@ You can update a specific version of an action control template, only if the ver
 The new template version that you assign replaces the old version. Learn more about [Assigning an action control template](/apidocs/iam-policy-management#create-action-control-template-assignment).
 {: note}
 
-Use the `iam-access-management.action-control-template.update` method to update a new version. The following sample request creates a new version of the template with the same template id `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab`, but version: `1` for the `atracker` service.
+Use the `iam-access-management.action-control-template.update` method to update a new version. The following sample request creates a new version of the template with the same template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab`, but version: `1` for the `atracker` service.
 
    ```bash
    curl -X PUT 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
@@ -676,11 +673,11 @@ delete_action_control_template_version(
 
 1. To delete all versions, repeat these steps. Make sure that you remove the assignments for each version first.
 
-## Committing an action control template version by using API
+## Committing an action control template version by using the API
 {: #commit-act-version-API}
 {: api}
 
-After committing an action control template version, you cannot make any further changes to the action control template. If you have to make updates after committing a version, create a new version of the template.
+After committing an action control template version, you cannot make any further changes to the action control template. If you must make updates after committing a version, create a new version of the template.
 
 Use the `iam-access-management.action-control-template.update` method to commit a version of the action control template. The following sample request commits a version of the action control template.
 
@@ -727,7 +724,7 @@ Use the `iam-access-management.action-control-template.update` method to commit 
 
 You can assign the versions of only one action control template at a time in your enterprise. You can assign different versions of the same action control template, but you can't use multiple action control templates in an enterprise. You might want to assign different versions to accounts with different requirements, like production and test accounts.
 
-You can't assign an IAM action control template to the enteprise account, you can assign them only to the child accounts.
+You can't assign an IAM action control template to the enterprise account. You can assign them only to the child accounts.
 {: note}
 
 - List the action control template assignments in your enterprise account and note the template name and version number for the action control template that you want to assign to child accounts:
@@ -812,7 +809,7 @@ You can't assign an IAM action control template to the enteprise account, you ca
    {: go}
    {: codeblock}
 
-- Use the `iam-access-management.action-control-assignment.create` method to assign the template to an `account` or `account group`  The following sample request assigns an action control template to a target account.
+- Use the `iam-access-management.action-control-assignment.create` command to assign the template to an `account` or `account group`. The following sample request assigns an action control template to a target account.
 
    ```bash
    curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_assignments' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -865,11 +862,11 @@ You can't assign an IAM action control template to the enteprise account, you ca
 If an assignment fails, use the `iam-access-management.action-control-assignment.update` method to retry.
 {: tip}
 
-## Removing an action control assigment by using the API
+## Removing an action control assignments by using the API
 {: #remove-act-API}
 {: api}
 
-You can remove an action control template assignment by providing an action control `assignment ID`. You can't delete an action control assignment if the status is "in_progress".
+You can remove a template assignment by providing an action control `assignment ID`. You can't delete an action control assignment if the status is `in_progress`.
 
 ```bash
 DELETE /v1/action_control_assignments/{assignment_id}
@@ -935,10 +932,10 @@ Use the following steps to create an action control template by using the terraf
 
 To commit a version of the action control template, set `committed` to `true`.
 
-After committing an action control template, you cannot make any further changes to the action control template. If you have to make updates after committing a version, create a new version of the template.
+After committing an action control template, you cannot make any further changes to the action control template. If you must make updates after committing a version, create a new version of the template.
 {: note}
 
-## Deleting an action control template by using the Terraform
+## Deleting an action control template by using Terraform
 {: #delete-act-terraform}
 {: terraform}
 
@@ -956,7 +953,7 @@ The following example deletes an action control template `TerraformActionControl
 ```
 {: codeblock}
 
-## Creating a new version by using the Terraform
+## Creating a new version by using Terraform
 {: #new-version-create-terraform}
 {: terraform}
 
@@ -979,7 +976,7 @@ resource "ibm_iam_action_control_template_version" "action_control_template_v2" 
 {: codeblock}
 
 
-## Updating a version by using the Terraform
+## Updating a version by using Terraform
 {: #update-act-terraform}
 {: terraform}
 
@@ -1006,7 +1003,7 @@ If you're retrying an assignment, use the same version number. The following sam
    {: codeblock}
 
 
-## Deleting a version by using the Terraform
+## Deleting a version by using Terraform
 {: #delete-act-version-terraform}
 {: terraform}
 
@@ -1029,13 +1026,13 @@ Make a note of the template name and version number of the version that you want
 To delete all versions, repeat these steps. Make sure that you remove the assignments for each version first.
 {: note}
 
-## Assigning an action control template using terraform
+## Assigning an action control template by using Terraform
 {: #assign-act-terraform}
 {: terraform}
 
 You can assign the versions of only one action control template at a time in your enterprise. You can assign different versions of the same action control template, but you can't use multiple action control templates in an enterprise. You might want to assign different versions to accounts with different requirements, like production and test accounts.
 
-To create an assignment for an action control template, assign an action control template to the particular enterprise account. The following example assigns an action control template to the  `Enterprise`.
+To create an assignment for an action control template, assign an action control template to the particular enterprise account. The following example assigns an action control template to the `Enterprise`.
 
    ```terraform
    resource "ibm_iam_action_control_assignment" "action_control_assignment" {
