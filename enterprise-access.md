@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2024
+  years: 2019, 2025
 
-lastupdated: "2024-10-17"
+lastupdated: "2025-08-01"
 
 keywords: enterprise access
 
@@ -13,7 +13,6 @@ subcollection: enterprise-management
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # User management for enterprises
 {: #enterprise-access-management}
