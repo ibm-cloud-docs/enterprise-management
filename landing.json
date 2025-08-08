@@ -37,5 +37,14 @@
   "section_devtools": {
     "api": "/apidocs/enterprise-apis/enterprise",
     "cli": "/docs/enterprise-management?topic=enterprise-management-ibmcloud_enterprise"
+    },
+  "section_updates": {
+      "view_more": "/docs/overview?topic=overview-whatsnew",
+      "tiles": [
+        {
+          "date": "08 August 2025",
+          "title": "Centralized IAM policy support for enterprise log routing"
+        }
+      ]
     }
   }
