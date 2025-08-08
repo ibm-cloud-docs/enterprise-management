@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-08-01"
+lastupdated: "2025-08-08"
 
 keywords: enterprise access
 
@@ -34,3 +34,149 @@ If you want a user to manage the enterprise and have access to resources within 
 {: note}
 
 For information about assigning access to users in an enterprise, see [Assigning access for enterprise management](/docs/enterprise-management?topic=enterprise-management-assign-access-enterprise).
+
+## Setting up centralized access to manage enterprise audit logs
+{: #enterprise-audit-logs}
+
+Enterprise customers can create authorization policies that allow log instances in multiple accounts to send logs to a centralized log instance, that uses just one policy. This is achieved by specifying a broader scope, either the entire enterprise or a specific account group while defining the subject of the policy.
+
+While setting up access to forward logs from multiple accounts to a centralized logging instance, the authorization policy includes:
+
+* Subject: Defines the scope of the logs. which can be one of the following:
+  * An enterprise ID - applies to all accounts in an enterprise.
+  * An account group ID - applies to all accounts within that specific group.
+  * A specific account ID - applies only to an account.
+* Service: Both the source and target services are typically set to `cloud-log`.
+* Resource: Identifies the centralized log instance that receives logs.
+* Role: Grants permissions such as `writer` or `sender` to allow log forwarding.
+
+### Core benefits
+{: #core-benefits}
+
+The core benefits of this approach provides centralized, scalable, and efficient access control across your enterprise environment, including:
+
+* Single-point access control - one policy covers multiple accounts.
+* Automatic coverage - new accounts that are added to the enterprise or group are included without extra configuration.
+* Simplified management - reduces the number of policies that are required and streamlines access setup across environments.
+
+### Example scenarios
+{: #example-scenarios}
+
+Platform attributes for scoping authorization by enterprise ID or account group ID.
+
+If an enterprise ID is specified in the policy, all log instances in child accounts within the enterprise sends logs to the centralized log instance. This setup simplifies configuration by requiring only one policy, regardless of the number of accounts involved.
+
+If an account group ID is used, all log instances within accounts grouped under that specific ID are allowed to send logs to the central instance. Additionally, any accounts added to the group in future are automatically included, ensuring seamless and scalable log integration.
+
+#### Enterprise ID example
+{: #enterprise-example}
+
+The following example shows how attributes in authorization policies indicate a subject’s resource within the scope of an enterprise.
+
+```java
+{
+   "type": "authorization",
+   "subject": [
+    {
+       "attributes": [
+        {
+           "key": "enterpriseId",
+           "operator": "stringEquals",
+           "value": "$ENTERPRISE_ID"
+        },
+        {
+           "key": "serviceName",
+           "operator": "stringEquals",
+           "value": "$SERVICE_NAME"
+        },
+       ]
+    }],
+   "control": {
+      "grant": {
+        "rules": [
+      {
+          "role_id":
+          "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+      }],
+    },
+  },
+  "resource": [
+  {
+      "attributes": [
+    {
+        "key": "accountId",
+        "operator": "stringEquals",
+        "value": "$ACCOUNT_ID"
+    },
+    {
+        "key": "serviceName",
+        "operator": "stringEquals",
+        "value": "$SERVICE_NAME"
+    },
+    {
+        "Key": "serviceInstance",
+        "operator": "stringEquals",
+        "value": "SERVICE_INSTANCE_ID"
+    },
+      ]
+  }]
+}
+```
+{: codeblock}
+{: java}
+
+#### Account group ID example
+{: #account-example}
+
+The following example shows how attributes in authorization policies indicate a subject's resource within the scope of an account group.
+
+```java
+{
+   "type": "authorization",
+   "subject": [
+    {
+       "attributes": [
+        {
+           "key": "AccountGroupId",
+           "operator": "stringEquals",
+           "value": "$ENTERPRISE_ACCOUNT_GROUP_ID"
+        },
+        {
+           "key": "serviceName",
+           "operator": "stringEquals",
+           "value": "$SERVICE_NAME"
+        }]
+    }],
+    "control": {
+       "grant": {
+         "rules": [
+        {
+           "role_id":
+           "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+        }],
+      },
+    },
+    "resource": [
+    {
+       "attributes": [
+      {
+         "key": "accountId",
+         "operator": "stringEquals",
+         "value": "$ACCOUNT_ID"
+      },
+      {
+         "key": "serviceName",
+         "operator": "stringEquals",
+         "value": "$SERVICE_NAME"
+      },
+      {
+         "Key": "serviceInstance",
+         "operator": "stringEquals",
+         "value": "SERVICE_INSTANCE_ID"
+      },
+       ]
+    }]
+}
+```
+{: codeblock}
+{: java}
