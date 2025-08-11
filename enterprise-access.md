@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-11"
 
 keywords: enterprise access
 
@@ -46,7 +46,7 @@ While setting up access to forward logs from multiple accounts to a centralized 
   * An enterprise ID - applies to all accounts in an enterprise.
   * An account group ID - applies to all accounts within that specific group.
   * A specific account ID - applies only to an account.
-* Service: Both the source and target services are typically set to `cloud-log`.
+* Service: Both the source and target services are typically set to `logs`.
 * Resource: Identifies the centralized log instance that receives logs.
 * Role: Grants permissions such as `writer` or `sender` to allow log forwarding.
 
@@ -76,8 +76,7 @@ The following example shows how attributes in authorization policies indicate a 
 ```java
 {
    "type": "authorization",
-   "subject": [
-    {
+   "subject": {
        "attributes": [
         {
            "key": "enterpriseId",
@@ -88,38 +87,37 @@ The following example shows how attributes in authorization policies indicate a 
            "key": "serviceName",
            "operator": "stringEquals",
            "value": "$SERVICE_NAME"
-        },
+        }
        ]
-    }],
+   },
    "control": {
       "grant": {
-        "rules": [
-      {
-          "role_id":
-          "crn:v1:bluemix:public:iam::::serviceRole:Writer"
-      }],
-    },
-  },
-  "resource": [
-  {
-      "attributes": [
-    {
-        "key": "accountId",
-        "operator": "stringEquals",
-        "value": "$ACCOUNT_ID"
-    },
-    {
-        "key": "serviceName",
-        "operator": "stringEquals",
-        "value": "$SERVICE_NAME"
-    },
-    {
-        "Key": "serviceInstance",
-        "operator": "stringEquals",
-        "value": "SERVICE_INSTANCE_ID"
-    },
+        "roles": [
+        {
+          "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+        }
       ]
-  }]
+     }
+  },
+  "resource": {
+      "attributes": [
+      {
+         "key": "accountId",
+         "operator": "stringEquals",
+         "value": "$ACCOUNT_ID"
+      },
+      {
+         "key": "serviceName",
+         "operator": "stringEquals",
+         "value": "$SERVICE_NAME"
+      },
+      {
+         "Key": "serviceInstance",
+         "operator": "stringEquals",
+         "value": "SERVICE_INSTANCE_ID"
+      }
+   ]
+  }
 }
 ```
 {: codeblock}
@@ -133,8 +131,7 @@ The following example shows how attributes in authorization policies indicate a 
 ```java
 {
    "type": "authorization",
-   "subject": [
-    {
+   "subject": {
        "attributes": [
         {
            "key": "AccountGroupId",
@@ -145,19 +142,19 @@ The following example shows how attributes in authorization policies indicate a 
            "key": "serviceName",
            "operator": "stringEquals",
            "value": "$SERVICE_NAME"
-        }]
-    }],
+        }
+      ]
+    },
     "control": {
        "grant": {
-         "rules": [
+         "roles": [
         {
-           "role_id":
-           "crn:v1:bluemix:public:iam::::serviceRole:Writer"
-        }],
-      },
-    },
-    "resource": [
-    {
+           "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Writer"
+        }
+      ]
+    }
+  },
+    "resource": {
        "attributes": [
       {
          "key": "accountId",
@@ -173,9 +170,9 @@ The following example shows how attributes in authorization policies indicate a 
          "Key": "serviceInstance",
          "operator": "stringEquals",
          "value": "SERVICE_INSTANCE_ID"
-      },
-       ]
-    }]
+      }
+    ]
+  }
 }
 ```
 {: codeblock}
