@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023. 2025
-lastupdated: "2025-02-18"
+lastupdated: "2025-08-13"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise trusted profile, penetration testing
 
@@ -84,7 +84,7 @@ After the trusted profile template is created, you are directed to the template 
 {: #trust-template}
 {: step}
 
-Establish trust between your cloud environment and the external penetration testing team. Create conditions based on the SAML attributes from their IdP to determine which users from their directory can apply the trusted profile. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
+Establish trust between your cloud environment and the external penetration testing team. Create conditions based on the SAML attributes from their IdP to determine which users from their directory can apply the trusted profile. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-ibm-idp-integration#trusted-profiles-idp-data).
 
 1. Click the **Trust relationship** tab and click **Add**.
 1. Select the authentication method **Users federated by IBMid**.

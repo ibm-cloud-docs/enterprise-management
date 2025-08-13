@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-07-01"
+lastupdated: "2025-08-13"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -29,7 +29,7 @@ Administrators on the Identity service can add trust relationships and policies 
 ## Before you begin
 {: #before-you-tp-template}
 
-- Before you begin, you need to [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration).
+- Before you begin, you need to [Enable authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
 
 - To learn about how enterprise-manged IAM templates make your enterprise more secure, see [How enterprise-managed IAM access works](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#how-enterprise-iam).
 
@@ -112,7 +112,7 @@ To establish trust, complete the following steps:
 1. Click **Add**, and select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP).
 1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
    1. Click **Add a condition** to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
-   1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-idp-integration#trusted-profiles-idp-data).
+   1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-ibm-idp-integration#trusted-profiles-idp-data).
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 1. Click **Add**. 
 
