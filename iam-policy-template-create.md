@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-10-25"
+  years: 2023, 2025
+lastupdated: "2025-09-04"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -22,7 +22,7 @@ Access policy templates define a policy without requiring a subject, and you can
 
 For example, you might need to assign an access policy that grants administrator access on All IAM enabled services to multiple access groups or trusted profile templates so that members can create instances of IAM-enabled services. To reduce policy misconfigurations, create an access policy template called `Admin on All IAM enabled services`. Select the preconfigured policy when you need to assign that level of access in an access group or trusted profile template.
 
-While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI or API. View policy by going to **Manage > Access (IAM) > Templates > Policies**.
+While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI, or API. View policy by going to **Manage > Access (IAM) > Templates > Policies**.
 
 
 Access policy templates support only the `v2/policies` schema. For more information, see the [IAM Policy Management API change log](/docs/account?topic=account-api-change-log).
@@ -32,11 +32,60 @@ Policy templates have limited availability in the {{site.data.keyword.cloud_notm
 {: important}
 {: ui}
 
-## Creating a policy template in the console
+## Creating a policy template by using the console
 {: ui}
 {: #create-policy-template-ui}
 
 Policy templates that you create in the {{site.data.keyword.cloud_notm}} console must be associated with an access group or trusted profile template. Learn more about adding access policies to [access group templates](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#add-access-ag-template) and [trusted profile templates](/docs/enterprise-management?topic=enterprise-management-tp-template-create&interface=ui#add-access-tp-template).
+
+### Creating a stand-alone policy template
+{: ui}
+{: #create-standalone-policytemplate-ui}
+
+Policy templates allow administrators in enterprise accounts to define access rules independently, without linking them directly to an access group or trusted profile template. They can be created, updated, managed independently, and reused. After it is finalized, a policy template must be added to either an access group or a trusted profile template. When a policy template is linked, they can be assigned to subaccounts, where the associated rules are enforced.
+
+To create a stand-alone policy template in the console, complete the following steps:
+
+1. Go to **Manage > Access (IAM) > Enterprise > Templates > Policies** in the {{site.data.keyword.cloud_notm}} and click **Create**.
+1. Enter a name for the template and click **Create**.
+1. Click **Access** and enter the policy details.
+1. Scope the access to **All resources**, or select **Specific resources** based on attributes and click **Next**.
+1. Select any combination of roles to define the scope of access and click **Next**.
+1. (Optional) Add conditions to specify when you want the policy to grant access.
+1. Click **Save**.
+
+#### Reviewing a policy template
+{: ui}
+{: #review-policy-template}
+
+To lock the version and prevent further changes, review and commit the policy template by completing the following steps:
+
+1. Click **Review**.
+1. Verify that the policy template is configured to your expectation.
+1. Select the checkbox to confirm that the policy template version is locked and cannot be modified.
+1. Click **Commit**.
+
+#### Creating a new version
+{: #create-new-version}
+{: ui}
+
+Create a new version of a policy template to update your configurations without changing the original setup. It helps you improve or adjust settings and still keep a record of earlier versions.
+
+To create a new version of a policy template, complete the following steps:
+
+1. Click **Manage > Access (IAM) > Templates > Policies** in the {{site.data.keyword.cloud_notm}} console.
+1. Select your policy template.
+1. Click the **New version** icon ![New version icon](../icons/new-version.svg "New version").
+1. Select the version that you want as the basis for your new version.
+1. Enter a new description for the template and access policy, or keep the ones that you already have.
+1. Click **Create**.
+1. Make any adjustments to the access policy.
+
+     You cannot edit the **Service** of the access policy but you can change **Resources**, **Roles**, and **Conditions**.
+     {: note}
+
+1. Click **Save**.
+1. Click **Review** and commit the new version.
 
 ## Deleting a policy template in the console
 {: #delete-policy-template-ui}

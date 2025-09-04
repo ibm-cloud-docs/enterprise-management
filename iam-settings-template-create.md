@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-07-04"
+lastupdated: "2025-09-04"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -234,6 +234,7 @@ To create a new version of a settings template, complete the following steps:
 1. Click **Review** and commit the new version. For more information, see [Reviewing your access group template](/docs/enterprise-management?topic=enterprise-management-settings-template-create&interface=ui#review-settings-template).
 
 To assign a new version of a settings template, complete the following steps:
+
 1. Go to **Manage > Access (IAM) > Templates** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Settings**.
 1. Click the **Table expand** icon ![Table expand icon](../icons/table-expand.svg "Table expand") on the template that you want to work with.
