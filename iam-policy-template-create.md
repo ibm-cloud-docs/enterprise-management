@@ -24,13 +24,8 @@ For example, you might need to assign an access policy that grants administrator
 
 While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI, or API. View policy by going to **Manage > Access (IAM) > Templates > Policies**.
 
-
 Access policy templates support only the `v2/policies` schema. For more information, see the [IAM Policy Management API change log](/docs/account?topic=account-api-change-log).
 {: note}
-
-Policy templates have limited availability in the {{site.data.keyword.cloud_notm}} console. Use the API or CLI to create policy templates.
-{: important}
-{: ui}
 
 ## Creating a policy template by using the console
 {: ui}
