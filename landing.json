@@ -44,6 +44,10 @@
         {
           "date": "08 August 2025",
           "title": "Centralized IAM policy support for enterprise log routing"
+        },
+        {
+          "date": "07 August 2025",
+          "title": "Stand-alone policy templates in IAM"
         }
       ]
     }
