@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-16"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -61,7 +61,7 @@ To lock the version and prevent further changes, review and commit the policy te
 1. Click **Commit**.
 
 #### Creating a new version
-{: #create-new-version}
+{: #create-new-version-policy}
 {: ui}
 
 Create a new version of a policy template to update your configurations without changing the original setup. It helps you improve or adjust settings and still keep a record of earlier versions.
