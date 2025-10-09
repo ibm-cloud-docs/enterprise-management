@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-07-31"
+lastupdated: "2025-10-09"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
 
@@ -19,7 +19,7 @@ In an enterprise where you have many child accounts, it can be difficult to manu
 {: shortdesc}
 
 
-As an enterprise IAM administrator, you can centrally restrict child account users from performing certain actions in the child accounts even if they have an access policy granting them access.
+As an enterprise IAM administrator, you can centrally restrict child account users from performing certain actions in the child accounts even if they have an access policy that grants them access.
 
 You can assign only one action control template to an account or an account group. Create an action control template that applies to the most accounts and create a new one only for accounts that have special requirements. For example, you want to centrally disable deleting the auditing events for some or all child accounts within your enterprise.
 
@@ -33,14 +33,14 @@ You cannot delete or update the action controls created from templates. The only
 
 - Be a member of the enterprise account to create and assign enterprise-managed IAM templates.
 
-- To create, update, and delete an enterprise-managed IAM template, make sure you're assigned the following access:
+- To create, update, and delete an enterprise-managed IAM template, make sure that you are assigned with the following access:
    * A policy with the Template Administrator role on All IAM Account Management services.
 
-- To assign an enterprise-managed IAM template to child accounts, make sure you're assigned the following access:
+- To assign an enterprise-managed IAM template to child accounts, make sure that you are assigned with the following access:
    * A policy with the Template Assignment Administrator role on All IAM Account Management services
    * A policy with at least the Viewer role on the Enterprise service.
 
-- To read an enterprise-managed IAM template or the template assignment, make sure you're assigned the following access:
+- To read an enterprise-managed IAM template or the template assignment, make sure you're assigned with the following access:
    * A policy with the Template Administrator role on All IAM Account Management services.
    * A policy with the Template Assignment Administrator role on All IAM Account Management services.
 
@@ -49,11 +49,13 @@ You cannot delete or update the action controls created from templates. The only
 
 - New and existing accounts in your enterprise must opt-in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
 
+
+
 ## Creating an action control template by using the CLI
 {: #create-act-cli}
 {: cli}
 
-Consider that uses action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers ({{site.data.keyword.atracker_full}}, {{site.data.keyword.logs_routing_full}}, and {{site.data.keyword.metrics_router_full}}).
+Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers ({{site.data.keyword.atracker_full}}, {{site.data.keyword.logs_routing_full}}, and {{site.data.keyword.metrics_router_full}}).
 
 To create an action control template by using the CLI, complete the following steps:
 

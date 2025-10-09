@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: enterprise-management
@@ -20,13 +19,13 @@ toc:
       - topicgroup:
           label: Learn about access management
           topics:
-            - include: ../account/iam-whatis.md
-            - include: ../account/iam-identities.md
-            - include: ../account/iam-access-concepts.md
-            - include: ../account/iam-policies-overview.md
-            - include: ../account/iam-roles-overview.md
-            - include: ../account/iam-mappings.md
-            - include: ../account/context-restrictions-what-is.md
+          - include: ../account/iam-whatis.md
+          - include: ../account/iam-identities.md
+          - include: ../account/iam-access-concepts.md
+          - include: ../account/iam-policies-overview.md
+          - include: ../account/iam-roles-overview.md
+          - include: ../account/iam-mappings.md
+          - include: ../account/context-restrictions-what-is.md
       - include: ../secure-enterprise/index.md
       - topicgroup:
           label: Best practices
@@ -99,7 +98,7 @@ toc:
           - iam-tp-template-create.md
           - iam-policy-template-create.md
           - iam-settings-template-create.md
-          - iam-act.md 
+          - iam-act.md
           - custom-share.md
           - iam-template-versions.md
       - topicgroup:
