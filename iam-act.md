@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-09"
+lastupdated: "2025-10-13"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
 
@@ -55,7 +55,7 @@ You cannot delete or update the action controls created from templates. The only
 {: #create-act-cli}
 {: cli}
 
-Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers ({{site.data.keyword.atracker_full}}, {{site.data.keyword.logs_routing_full}}, and {{site.data.keyword.metrics_router_full}}).
+Consider using action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers.
 
 To create an action control template by using the CLI, complete the following steps:
 
