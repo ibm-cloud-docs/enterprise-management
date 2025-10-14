@@ -136,9 +136,9 @@ To remove a template assignment, follow these steps:
 
 1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
 1. Select any action control template.
-1. Click ![Actions](/icons/action-menu-icon.svg) icon, and click **Details** to view the assignment details.
+1. Click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions"), and click **Details** to view the assignment details.
 1. On the **Assignment report** page, click **Unassign all**. 
-1. You can also remove a template assignment from ![Actions](/icons/action-menu-icon.svg) icon, and select **Remove**.
+1. You can also remove a template assignment from the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions") icon, and select **Remove**.
 1. Click **Remove** to confirm the removal of template assignment.
 
 ## Deleting an action control template
@@ -150,9 +150,9 @@ To delete a version of an action control template or delete an action control te
 
 To delete a template or template version, follow these steps:
 1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
-1. For any particular template or template version, click ![Actions](/icons/action-menu-icon.svg) icon and select **Delete version** or **Delete template** respectively.
+1. For any particular template or template version, click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions") and select **Delete version** or **Delete template** respectively.
 1. If you have not deleted the template assignments, select any action control template and remove all the assignments. 
-1. Click ![Delete](/icons/delete.svg) icon and click **Delete** to confirm the deletion of a template version.
+1. Click the **Delete** icon ![Delete](../icons/delete.svg "Delete") and click **Delete** to confirm the deletion of a template version.
 
 ## Creating an action control template by using the CLI
 {: #create-act-cli}
