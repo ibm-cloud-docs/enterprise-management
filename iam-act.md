@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-13"
+lastupdated: "2025-10-14"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
 
@@ -49,7 +49,110 @@ You cannot delete or update the action controls created from templates. The only
 
 - New and existing accounts in your enterprise must opt-in to enterprise-managed IAM. For more information, see [Opting in to enterprise-managed IAM](/docs/enterprise-management?topic=enterprise-management-enterprise-managed-opt-in).
 
+## Creating an action control template
+{: #create-act-ui}
+{: ui}
 
+You can create action control templates when you have many child accounts that require the same service restrictions. For example, as an enterprise IAM administrator, you want to restrict child account users from accounts from managing various settings for the Observability Routers.
+
+To create an action control template, complete the following steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Click **Create**.
+1. Enter a name and description for the action control template that describes its purpose for enterprise users.
+1. Enter the description for the action controls that describes its purpose for child account users.
+1. Click **Create**, the template **Overview** page is displayed. To complete your template, you must configure the service on which you like to impose the restrictions.
+1. Click **Configuration** tab, select a **Service**, and click **Next**.
+1. Select the **Disallowed actions**. For example, if you select `logs-router.tenant.create`, your child account users cannot create a new tenant to the {{site.data.keyword.logs_routing_full_notm}}.
+1. Click **Review** to verify your configuration, and click **Save** to update your template.
+1. Click **Review** on the upper right of the template page. 
+1. In the **Review and commit** page, select the confirmation to commit the template and click **commit**. Until you commit, the template is `Draft` state. After you commit, the template will be in `Committed` state.
+
+You can assign templates to child accounts and account groups only after you commit. 
+{: note}
+
+## Assigning an action control template to child accounts
+{: #assign-act-ui}
+{: ui}
+
+You can assign an action control templates to child accounts and account groups to restrict certain actions. To assign an action control template, complete the following steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Select any action control template. 
+1. Click **Assign accounts** on the upper right of the template page.
+1. Select the accounts and account groups for which you like to assign the action control template.
+
+If you select an account group, the template gets assigned to all current and future child accounts of that group.
+{: note}
+
+1. Click **Assign accounts** to assign the enterprise template to the specified accounts or account groups. 
+
+## Updating an action control template
+{: #update-act-ui}
+{: ui}
+
+To update an action control template, complete the following steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Select any action control template.
+1. Click **Assign accounts** to modify the assignments. You can change the specified accounts or account groups that are assigned to the template.
+
+After you commit the templates, you will not be able to edit the template, but can create another version of the template. 
+{: note}
+
+## Creating a new version
+{: #new-version-act-create-ui}
+{: ui}
+
+To create a new verson of the action control template, complete the following steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Select any action control template.
+1. Click **Create new version** on the upper right of the template page.
+1. Select the version based on which a new version of the template must be created.
+1. Update the template and action control description, if necessary.
+1. Select the action controls that you like to carry over to the new version.
+1. Click **Create**. A new version of the template is created.
+1. You can modify the configurations such as **Service** and **Disallowed actions** before you commit the template.
+1. In the **Review and commit** page, select the confirmation to commit the template and click **commit**.
+1. In the **Action controls** templates page, you can see a new version of the existing template.
+
+## Updating a version
+{: #update-assignment-act-ui}
+{: ui}
+
+To update a template assignment, follow these steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Select any action control template.
+1. Click **Assignments** tab, for a particular assignment, click **Update** link.
+1. Select the version and click **Update** to update the template version that is assigned to the child accounts.
+
+## Removing an action control template assignment
+{: #remove-assignment-settings-ui}
+{: ui}
+
+To remove a template assignment, follow these steps:
+
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. Select any action control template.
+1. Click ![Actions](/icons/action-menu-icon.svg) icon, and click **Details** to view the assignment details.
+1. On the **Assignment report** page, click **Unassign all**. 
+1. You can also remove a template assignment from ![Actions](/icons/action-menu-icon.svg) icon, and select **Remove**.
+1. Click **Remove** to confirm the removal of template assignment.
+
+## Deleting an action control template
+{: #delete-act-version-ui}
+{: ui}
+
+To delete a version of an action control template or delete an action control template, you must unassign all the assignments for the template. 
+{: note}
+
+To delete a template or template version, follow these steps:
+1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
+1. For any particular template or template version, click ![Actions](/icons/action-menu-icon.svg) icon and select **Delete version** or **Delete template** respectively.
+1. If you have not deleted the template assignments, select any action control template and remove all the assignments. 
+1. Click ![Delete](/icons/delete.svg) icon and click **Delete** to confirm the deletion of a template version.
 
 ## Creating an action control template by using the CLI
 {: #create-act-cli}
