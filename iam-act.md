@@ -82,8 +82,8 @@ You can assign an action control templates to child accounts and account groups 
 1. Click **Assign accounts** on the upper right of the template page.
 1. Select the accounts and account groups for which you like to assign the action control template.
 
-If you select an account group, the template gets assigned to all current and future child accounts of that group.
-{: note}
+   If you select an account group, the template gets assigned to all current and future child accounts of that group.
+   {: note}
 
 1. Click **Assign accounts** to assign the enterprise template to the specified accounts or account groups. 
 
