@@ -151,7 +151,7 @@ To delete a version of an action control template or delete an action control te
 To delete a template or template version, follow these steps:
 1. Go to **Manage > Access (IAM) > Templates**, and select **Action controls** in the {{site.data.keyword.cloud_notm}} console.
 1. For any particular template or template version, click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions") and select **Delete template** or **Delete version**.
-1. If you did not delete the template assignments, select the action control template and remove all the assignments. 
+1. If the template has any assignments, select the action control template and remove all the associated assignments. 
 1. Click the **Delete** icon ![Delete](../icons/delete.svg "Delete") and click **Delete** to confirm the deletion of a template version.
 
 ## Creating an action control template by using the CLI
