@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-10-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -66,6 +66,32 @@ To create a settings template, complete the following steps:
 Customize your enterprise to meet business and regulatory requirements by defining IAM account settings in child accounts.
 
 
+
+#### Restricting domains for account invitations
+{: #restrict-user-invitation}
+{: ui}
+
+By default, you can send account invitations to email addresses from any domain. However, if you enable the **Restrict user invitations** setting, you can limit invitations to only those email addresses that belong to the specified allowed domains. To enable restrictions on specific domains, complete the following steps:
+
+1. In the **IAM Settings > Account** page, enable **Restrict user invitations**. 
+1. In the **Restrict user invitations** window, specify the domains that can receive invites and join the accounts. The child accounts can have a separate allowlist of domains that can join the child accounts.
+1. Click **Save**.
+1. Select **Stricter** or **More flexible** to determine how enterprise and child account restrictions are applied.   
+   - **Stricter**: enforces to apply both enterprise and child account restrictions.
+   - **More flexible**: allows the users if they match either the enterprise or child account domains.
+1. Click **Edit** to modify the existing domain or add new domains to the allowlist. This feature enhances your account’s security and gives you the flexibility to update domains as needed.
+
+Domain restrictions are implemented by setting email patterns. For example, `**@ibm.com`, `**@*.ibm.com`, `**@?.ibm.com`. A single asterisk `*` represents any sequence of zero or more characters in a string, except the sequence ends if a period `.` or at sign `@` is found. A double asterisk `**` represents any sequence of zero or more characters in the string without limit. A question mark `?` represents any single character.
+
+Taking a closer look at the example `**@*.ibm.com`. The username part of the email address specifies `**`. Since the sequence is not limited by `.`, an email address like `my.name.is.bob@us.ibm.com` is valid. The subdomain `us` is also valid because it is a string of letters, where the sequence ends with `.`.
+
+#### Restricting user visibility
+{: #restrict-user-visibility}
+{: ui}
+
+By default, all users in an account can see every other user on the **Users** page. However, by enabling the **Restrict user list visibility** setting, you can control which users are visible, so that each user sees account members they are directly associated with.
+
+To apply restrictions on specific users, in the **IAM Settings > Account** page, enable **Restrict user list visibility**. It allows you to manage how users view other members within the account.
 
 #### Restricting users from creating API keys
 {: #restrict-api-key-template}
