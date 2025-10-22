@@ -89,7 +89,7 @@ Taking a closer look at the example `**@*.ibm.com`. The username part of the ema
 
 By default, all users in an account can see every other user on the **Users** page. However, by enabling the **Restrict user list visibility** setting, you can control which users are visible, so that each user sees account members they are directly associated with.
 
-To apply restrictions on specific users, in the **IAM Settings > Account** page, enable **Restrict user list visibility**. It allows you to manage how users view other members within the account.
+To apply restrictions on specific users, enable the **Restrict user list visibility** setting in the **Account** section. It allows you to control how users view other members across the sub accounts where this template is assigned.
 
 #### Restricting users from creating API keys
 {: #restrict-api-key-template}
