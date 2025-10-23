@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-10-22"
+lastupdated: "2025-10-23"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -75,8 +75,6 @@ By default, you can send account invitations to email addresses from any domain.
 
 1. Enable the **Restrict user invitations** setting in the **Account** section. When this setting is enabled, the **Invite user** page in sub accounts limits invitations to email addresses from the specified allowed domains.
 1. Select **Stricter** or **More flexible** to determine how template and sub account settings are applied.
-    - **Stricter**: the domain must be allowed by both the template and the account settings (the domain must be in both lists).
-    - **More flexible**: the domain is allowed if it is present in either, the template list or the account settings list.
 1. Click **Edit** to modify the existing domain or add new domains to the allowed list. This feature enhances your account’s security while giving you the flexibility to update it at any time and add more domains as needed.
 
 Domain restrictions are implemented by setting email patterns. For example, `**@ibm.com`, `**@*.ibm.com`, `**@?.ibm.com`. A single asterisk `*` represents any sequence of zero or more characters in a string, except the sequence ends if a period `.` or at sign `@` is found. A double asterisk `**` represents any sequence of zero or more characters in the string without limit. A question mark `?` represents any single character.
