@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-14"
+lastupdated: "2025-11-06"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
 
@@ -379,19 +379,21 @@ To create an action control template by using the API, complete the following st
 Create a JSON file that configures the template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#list-action-control-templates). The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. 
 
 ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_templates' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
-   "name": "Billing discounts",
-   "description": "Restrict access to manage target setting configurations in child accounts",
-   "account_id": "ROOT_ENTERPRISE_ACCOUNT_ID",
-   "action_control": {
+curl -X POST "https://iam.cloud.ibm.com/v1/action_control_templates" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d '{
+  "name": "Billing discounts",
+  "description": "Restrict access to manage target setting configurations in child accounts",
+  "account_id": "ROOT_ENTERPRISE_ACCOUNT_ID",
+  "action_control": {
     "description": "Restrict access to atracker configurations",
     "service_name": "atracker",
-    "actions": [ "atracker.setting.update",
-            "atracker.target.create",
-            "atracker.target.update",
-            "atracker.target.delete",
-         }
-   }'
+    "actions": [
+      "atracker.setting.update",
+      "atracker.target.create",
+      "atracker.target.update",
+      "atracker.target.delete"
+    ]
+  }
+}'
 ```
 {: curl}
 {: codeblock}
@@ -444,7 +446,7 @@ To delete an action control template, you must be assigned one or more IAM acces
 An action control template can be deleted by providing the action control template ID. The following example JSON file specifies the `template_id` of the action control template.
 
 ```bash
-   curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+   curl -X DELETE 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
 ```
 {: curl}
 {: codeblock}
@@ -492,7 +494,7 @@ To retrieve the versions of an action control template, you must be assigned one
 - You can retrieve the latest version of an action control template by the providing an action control `template_id`.
 
 ```bash
-curl -X GET 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID&state=active' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X GET 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID&state=active' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
 ```
 {: curl}
 {: codeblock}
@@ -532,7 +534,7 @@ get_action_control_template(
 - You can retrieve all the versions of an action control template by providing an action control `template ID`.
 
 ```bash
-curl -X GET 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions&state=active' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X GET 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions&state=active' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
 ```
 {: curl}
 {: codeblock}
@@ -574,7 +576,7 @@ list_action_control_template_versions(
 - You can retrieve a specific version of an action control template by providing an action control `template ID` and `version`.
 
 ```bash
-curl -X GET 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X GET 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
 ```
 {: curl}
 {: codeblock}
@@ -620,7 +622,7 @@ Create a new version of an action control template when you need to make updates
 1. Use the `iam-access-management.action-control-template.create` method to create a new version. The following sample request creates a new version of the template with template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
 
 ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_template/$TEMPLATE_ID/versions' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/action_control_template/$TEMPLATE_ID/versions' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{
    "name": "Activity Tracker Event Routing restriction",
    "description": "Restrict access to atracker configurations",
    "action_control": {
@@ -680,7 +682,7 @@ The new template version that you assign replaces the old version. Learn more ab
 Use the `iam-access-management.action-control-template.update` method to update a new version. The following sample request creates a new version of the template with the same template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab`, but version: `1` for the `atracker` service.
 
    ```bash
-   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
+   curl -X PUT 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
     "name": "Billing discounts",
     "description": "Restrict access to atracker configurations",
     "action_control": {
@@ -787,7 +789,7 @@ After you commit a version of an action control template, you cannot make any fu
 Use the `iam-access-management.action-control-template.update` method to commit a version of the action control template. The following sample request commits a version of the action control template.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMLPATE_VERSION/commit' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{}'
+   curl -X POST 'https://iam.cloud.ibm.com/v1/action_control_templates/$TEMPLATE_ID/versions/$TEMLPATE_VERSION/commit' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{}'
    ```
    {: curl}
    {: codeblock}
@@ -835,7 +837,7 @@ You can't assign an IAM action control template to the enterprise account. You c
 - List the action control template assignments in your enterprise account and note the template name and version number for the action control template that you want to assign to child accounts:
 
   ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/action_control_assignments?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/action_control_assignments?account_id=$ACCOUNT_ID' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
    ```
    {: curl}
    {: codeblock}
@@ -879,7 +881,7 @@ You can't assign an IAM action control template to the enterprise account. You c
 - You can get a specific action control template assignment by providing an action control `assignment ID`.
 
    ```bash
-      curl -X GET 'https://iam.test.cloud.ibm.com/v1/action_control_assignments/$ASSIGNMENT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+      curl -X GET 'https://iam.cloud.ibm.com/v1/action_control_assignments/$ASSIGNMENT_ID' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'
    ```
    {: curl}
    {: codeblock}
@@ -917,7 +919,7 @@ You can't assign an IAM action control template to the enterprise account. You c
 - Use the `iam-access-management.action-control-assignment.create` command to assign the template to an `account` or `account group`. The following sample request assigns an action control template to a target account.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/action_control_assignments' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/action_control_assignments' -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{
       "templates": [{
       "id": "template_id",
       "version": "template_version"
