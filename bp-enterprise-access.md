@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-06-27"
+lastupdated: "2025-11-17"
 
 subcollection: enterprise-management
 
@@ -59,6 +59,8 @@ Changes to access policies
 Secure by default
 :   If you need to ensure that new accounts are configured to your standards by default, you can assign an IAM template to an account group. Assigning a template at the account group level ensures that new accounts that you create within that account group, or existing account that you move to it, are automatically assigned the same template.
 
+
+
 ## Access group templates
 {: #ag-enterprise-templates}
 
@@ -86,6 +88,8 @@ For more information, see [Creating enterprise-managed settings templates](/docs
 Access policy templates define a policy without requiring a subject, and you can use them to grant access to multiple subjects.
 
 Spend less time on configuring individual policies and use access policy templates to quickly grant the right access in access group and trusted profile templates. For more information, see [Creating access policy templates](/docs/enterprise-management?topic=enterprise-management-policy-template-create).
+
+
 
 
 
