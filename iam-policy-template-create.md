@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-09-16"
+lastupdated: "2025-12-09"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -118,16 +118,16 @@ To create an access policy template by using the CLI, complete the following ste
 
 1. Create a JSON file that configures the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
 
-   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.compliance_long}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
+   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
 
     ```json
     {
-      "name": "SCCEditor",
-      "description": "Grant Editor Role on Security and Compliance Center service",
+      "name": "SCCWPEditor",
+      "description": "Grant Editor role on Security and Compliance Center Workload Protection service",
       "account_id": "ACCOUNT_ID",
       "policy": {
         "type": "access",
-        "description": "Grant Editor Role on Security and Compliance Center service",
+        "description": "Grant Editor role on Security and Compliance Center Workload Protection service",
         "control": {
             "grant": {
             "roles": [
@@ -182,11 +182,11 @@ To update policy template by using the CLI, complete the following steps:
 1. Use the `ap-template-version-update` command as shown in the following sample request:
 
    ```bash
-   ibmcloud iam access-policy-template-update SCCEditor 1 --file /path/to/security_editor_access_policy_template.json
+   ibmcloud iam access-policy-template-update SCCWPEditor 1 --file /path/to/security_editor_access_policy_template.json
    ```
    {: codeblock}
 
-   This updates version `1` of the `SCCEditor` policy template by reffering to the updated JSON file.
+   This updates version `1` of the `SCCWPEditor` policy template by reffering to the updated JSON file.
 
 If you need to make updates after you commit the template, create a new version.
 {: tip}
@@ -200,14 +200,14 @@ Review the policy template and commit it so that no further changes can be made 
 1. Review the policy template before you commit it by using the `access-policy-template-version` method to view the specific verison.
 
    ```bash
-   ibmcloud iam access-policy-template-version SCCEditor 1
+   ibmcloud iam access-policy-template-version SCCWPEditor 1
    ```
    {: codeblock}
 
 1. To commit a policy template by using the CLI, use the `ap-template-version-commit` method as shown in the following sample request:
 
    ```bash
-   ibmcloud iam access-policy-template-version-commit SCCEditor 1
+   ibmcloud iam access-policy-template-version-commit SCCWPEditor 1
    ```
    {: codeblock}
 
@@ -240,7 +240,7 @@ As access requirements evolve for teams in your enterprise, you might need to cr
 1. Use the `access-policy-template-version-create` command as shown in the following sample request:
 
    ```bash
-   ibmcloud iam access-policy-template-version-create SCCEditor --file /path/to/security_editor_access_policy_template.json
+   ibmcloud iam access-policy-template-version-create SCCWPEditor --file /path/to/security_editor_access_policy_template.json
    ```
    {: codeblock}
 
@@ -275,11 +275,11 @@ In the case that you want to delete a policy template that's referenced in a tru
 To delete a policy template version by using the CLI, use the `access-policy-template-version-delete` command as shown in the following sample request:
 
 ```bash
-ibmcloud iam access-policy-template-version-delete SCCEditor 2
+ibmcloud iam access-policy-template-version-delete SCCWPEditor 2
 ```
 {: codeblock}
 
-This deletes version `2` of the `SCCEditor` policy template.
+This deletes version `2` of the `SCCWPEditor` policy template.
 
 ## Creating a policy template by using the API
 {: #create-policy-template-api}
