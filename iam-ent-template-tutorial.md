@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-12-09"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -190,5 +190,3 @@ When you update the assignments, you're directed back to the Assignment reports 
 {: #next-steps-ent-ag}
 
 Now that you learned how to set up enterprise-managed access groups that are customized for compliance focals, you can continue to create access group templates for other teams. For more information, see [Creating enterprise-managed access group templates](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui).
-
-Along with access to resources in child accounts, compliance focals might need additional access in the enterprise account. For more information, see [Assigning access to Security and Compliance Center](/docs/security-compliance?topic=security-compliance-assign-roles).

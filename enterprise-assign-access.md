@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-06-06"
+lastupdated: "2025-12-09"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
@@ -34,7 +34,7 @@ Access to manage the [enterprise](/docs/enterprise-management?topic=enterprise-m
 * Assign enterprise-managed IAM templates to child accounts
 * Assign IAM templates to child accounts
 * Set spending notifications on child accounts to notify members of the enterprise
-* Monitor security and compliance with the {{site.data.keyword.compliance_short}} and {{site.data.keyword.sysdigsecure_short}}
+* Monitor security and compliance with {{site.data.keyword.sysdigsecure_full_notm}}
 * Share private catalogs
 
 A policy that gives a user access to the enterprise service can either be assigned on the entire enterprise or only on a specific account group or single account.
@@ -101,9 +101,9 @@ For details about the actions users can take for each role, see [Actions and rol
 ### Managing security and compliance
 {: #security-compliance-access-req}
 
-For a user to manage security and compliance through {{site.data.keyword.compliance_full}}, you must assign the following access policies:
+For a user to manage security and compliance through {{site.data.keyword.sysdigsecure_full_notm}}, you must assign the following access policies:
 
-* Administrator or Editor role for {{site.data.keyword.compliance_short}}
+* Administrator or Editor role for {{site.data.keyword.sysdigsecure_full_notm}}
 * Custom role for the Enterprise
 
 To create the custom role with the appropriate permissions, see [Assigning access](/docs/security-compliance?topic=security-compliance-assign-roles)
