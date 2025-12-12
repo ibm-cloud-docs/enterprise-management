@@ -98,6 +98,7 @@ toc:
           - iam-policy-template-create.md
           - iam-settings-template-create.md
           - iam-act.md
+          - iam-crt.md
           - custom-share.md
           - iam-template-versions.md
       - topicgroup:
