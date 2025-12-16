@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-12-12"
+lastupdated: "2025-12-16"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, enterprise role template
 
@@ -12,7 +12,7 @@ subcollection: enterprise-management
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Creating enterprise role templates
+# Creating enterprise-managed role templates
 {: #crt-roletemplate-create}
 
 In large enterprises with multiple child accounts, manually configuring access restrictions and permissions across accounts can be complex and time-consuming. To help ensure consistent security and compliance, enterprise admins can centrally create and assign custom roles to subaccounts, enforcing the principle of least privilege. This capability simplifies role management and helps maintain uniform governance across your organization’s accounts.
