@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2024-10-17"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: troubleshoot enterprise, enterprise problem, can't view enterprise, access to enterprise
 
@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: #troubleshoot-view-enterprise}
 {: troubleshoot}
 
-If you aren't able to view the entire {{site.data.keyword.Bluemix}} enterprise, you might need to check what access you are assigned.
+If you aren't able to view the entire {{site.data.keyword.cloud}} enterprise, you might need to check what access you are assigned.
 
 You can view a few of the accounts in the enterprise but not the entire enterprise hierarchy. The account hierarchy shows only accounts that you have access to, not the entire enterprise account.
 {: tsSymptoms}
@@ -30,7 +30,7 @@ You are assigned access to only certain accounts in the enterprise.
 To check what access you are assigned, complete the following steps:
 {: tsResolve}
 
-1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.Bluemix_notm}} console.
+1. Go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console.
 2. Select your name.
 3. Click **Access**.
 

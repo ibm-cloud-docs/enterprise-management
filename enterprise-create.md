@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-21"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -16,13 +16,13 @@ subcollection: enterprise-management
 # Creating an enterprise
 {: #create-enterprise}
 
-You create an {{site.data.keyword.Bluemix}} enterprise from an existing Subscription account or a [qualifying Pay-as-you-Go account](/docs/enterprise-management?topic=enterprise-management-billusagefaqs#paygo-enterprise). When an existing account is used, an enterprise and an enterprise account are created. The account that you use to create the enterprise and the new enterprise account are permanently added to the enterprise, but this account does not become the parent account.
+You create an {{site.data.keyword.cloud}} enterprise from an existing Subscription account or a [qualifying Pay-as-you-Go account](/docs/enterprise-management?topic=enterprise-management-billusagefaqs#paygo-enterprise). When an existing account is used, an enterprise and an enterprise account are created. The account that you use to create the enterprise and the new enterprise account are permanently added to the enterprise, but this account does not become the parent account.
 {: shortdesc}
 
 ## Before you begin
 {: #create-prereqs}
 
-To create an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise), you must be the account owner or have the Administrator role on the Billing account management service in a Subscription account or a qualifying Pay-as-you-Go account.
+To create an [{{site.data.keyword.cloud_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise), you must be the account owner or have the Administrator role on the Billing account management service in a Subscription account or a qualifying Pay-as-you-Go account.
 
 The Subscription or Pay-as-you-Go account that you use to create the enterprise is permanently moved into the enterprise. Moving the account into the enterprise has the following impacts:
 * Billing for the account transitions to being [managed by the enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise). After the transition, users in the account can't access billing and payment information, such as invoices, payments, or subscriptions, for future billing periods. To view or manage billing, users need to be invited to the enterprise account and be given access to the Billing service in that account.
@@ -42,7 +42,7 @@ If you don't have a Subscription account, you can upgrade your account as descri
 {: #create-console}
 {: ui}
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage > Enterprise**, and click **Create**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage > Enterprise**, and click **Create**.
 1. Enter a unique name to identify your enterprise. Typically, the name reflects your company or organization, such as `My organization's enterprise`. You can edit the enterprise name later if needed.
 1. If your company or organization has an associated domain name, enter it in the **Domain** field. You can specify any domain or subdomain format, such as `example.com` or `my.example.com`.
 1. Review the information about the impact to your account, and select **I understand the impact to my account**. Then, click **Create**.

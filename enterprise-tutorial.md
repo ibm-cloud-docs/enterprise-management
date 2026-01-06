@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2025
-lastupdated: "2025-01-03"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, enterprise users, enterprise access, enterprise tutorial
 
@@ -21,7 +21,7 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.Bluemix}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
+This tutorial walks you through how to set up an enterprise by department so you can manage and track usage costs for multiple {{site.data.keyword.cloud}} accounts. By completing this tutorial, you learn how to create an enterprise, add accounts and organize them in account groups, invite users, and explore subscriptions.
 {: shortdesc}
 
 The tutorial uses a fictitious company that is called *Example Corp* that wants to create an enterprise with the following structure. As you complete the tutorial, adapt each step to match your organization's accounts and desired structure.
@@ -113,7 +113,7 @@ After you create the account, the account owner can log in to the account to inv
 Repeat the steps to create more accounts. As an example, the Example Corp enterprise has the following child account and parent account group hierarchy.
 
 | Child | Parent |
-| ----- | -------|
+| ----- | ------- |
 | Print | Marketing |
 | Frontend | Engineering |
 | Backend | Engineering |

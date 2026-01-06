@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2024-10-17"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: troubleshoot enterprise, enterprise problem, enterprise subscriptions, enterprise permissions, enterprise access
 
@@ -18,7 +18,7 @@ content-type: troubleshoot
 {: #troubleshoot-viewsub-enterprise}
 {: troubleshoot}
 
-When you go to view the Subscriptions page in the {{site.data.keyword.Bluemix}} console from a child account, the following message is displayed:
+When you go to view the Subscriptions page in the {{site.data.keyword.cloud}} console from a child account, the following message is displayed:
 {: tsSymptoms}
 
 > Looks like you don't have permission to view subscription data for this account. Contact your account owner or administrator to request access.

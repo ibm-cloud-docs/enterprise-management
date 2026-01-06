@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2024-10-17"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: troubleshoot enterprise, enterprise problem,apply subscription, enterprise subscription
 
@@ -21,7 +21,7 @@ content-type: troubleshoot
 A subscription code can't be added to the account because of specific access that is required.
 {: shortdesc}
 
-You can't add a subscription code to your {{site.data.keyword.Bluemix}} account because you don't have the correct access.
+You can't add a subscription code to your {{site.data.keyword.cloud}} account because you don't have the correct access.
 {: tsSymptoms}
 
 Because your account is a child account on the enterprise, you can't apply subscription codes. Subscription codes must be applied at the enterprise level.

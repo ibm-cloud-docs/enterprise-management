@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2022
-lastupdated: "2022-03-02"
+  years: 2018, 2026
+lastupdated: "2026-01-06"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -15,7 +15,7 @@ subcollection: enterprise-management
 # Applying feature codes
 {: #codes}
 
-You can apply feature codes to take advantage of additional {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.
+You can apply feature codes to take advantage of additional {{site.data.keyword.cloud}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.
 {: shortdesc}
 
 Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/enterprise-management?topic=enterprise-management-subscriptions) for more information.
@@ -35,7 +35,7 @@ Complete the following steps to apply a feature code to your existing account:
 If you don't have an account yet, you can add your feature code when you [register](/registration) for a new account by clicking **Register with a code** instead of entering your credit card information.
 {: tip}
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 1. Click **Apply code**.
 1. Enter the feature code, which is typically a random alphanumeric value such as `a1b2c3def456`.
 1. Click **Apply**.

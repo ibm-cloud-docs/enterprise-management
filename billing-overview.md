@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-04-01"
+lastupdated: "2026-01-06"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -113,6 +113,6 @@ For more information about invoices, see [Managing your invoices](/docs/enterpri
 ### Enterprise Savings Plan billing model
 {: #commitment-model}
 
-{{site.data.keyword.cloud_notm}} customers with a Subscription account can sign up for the Enterprise Savings Plan billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and you receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use).
+{{site.data.keyword.cloud_notm}} customers with a Subscription account can sign up for the Enterprise Savings Plan billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.cloud_notm}} and you receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use).
 
 Premium and advanced support options are available for Enterprise Savings Plan. Support plan pricing falls into two tiers depending on the price level of your commitment. For more information, see [Support options for Enterprise Savings Plan](/docs/enterprise-management?topic=enterprise-management-support-plans#support-plans).
