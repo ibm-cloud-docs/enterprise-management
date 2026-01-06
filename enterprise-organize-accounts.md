@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2025
-lastupdated: "2025-01-06"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact
 
@@ -16,7 +16,7 @@ subcollection: enterprise-management
 # Organizing accounts in an enterprise
 {: #enterprise-organize}
 
-Use account groups to organize related accounts in your {{site.data.keyword.Bluemix}} enterprise. You can create a multitiered enterprise hierarchy by nesting account groups within an account group. If you need to, you can reorganize by moving accounts between account groups.
+Use account groups to organize related accounts in your {{site.data.keyword.cloud}} enterprise. You can create a multitiered enterprise hierarchy by nesting account groups within an account group. If you need to, you can reorganize by moving accounts between account groups.
 {: shortdesc}
 
 For example, the following diagram depicts a four-tier enterprise that you can set up by nesting account groups. First, you create two account groups that have the enterprise as the parent. Then, you can create two additional account groups that have one of those account groups as a parent. You can move accounts freely within the account groups, no matter what tier they're in. However, account groups cannot be moved.
@@ -35,7 +35,7 @@ To create an account group, you need the Administrator or Editor role on the Ent
 {: #create-account-groups-ui}
 {: ui}
 
-1. From the Enterprise dashboard in the {{site.data.keyword.Bluemix_notm}} console, click **Accounts** to view the accounts and account groups in the enterprise.
+1. From the Enterprise dashboard in the {{site.data.keyword.cloud_notm}} console, click **Accounts** to view the accounts and account groups in the enterprise.
 1. In the Account groups section, click **Create**.
 1. Enter a name for the account group that reflects the accounts that it will contain. See [How can I use an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise#enterprise-use-cases) for examples of how you might organize accounts.
 1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.

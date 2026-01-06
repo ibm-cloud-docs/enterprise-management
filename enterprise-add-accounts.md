@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2024-12-19"
+  years: 2020, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, add account, import account, create account
 
@@ -16,7 +16,7 @@ subcollection: enterprise-management
 # Adding accounts to an enterprise
 {: #enterprise-add}
 
-You can build out your enterprise by adding more {{site.data.keyword.Bluemix}} accounts to it. To add accounts, you can import existing accounts that aren't in another enterprise, or you can create new accounts within your enterprise.
+You can build out your enterprise by adding more {{site.data.keyword.cloud}} accounts to it. To add accounts, you can import existing accounts that aren't in another enterprise, or you can create new accounts within your enterprise.
 {: shortdesc}
 
 After your enterprise has multiple accounts, you can organize related accounts by using account groups. For more information, see in [Organizing accounts in an enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-organize).
@@ -46,7 +46,7 @@ To import existing accounts into an enterprise, the following access is required
 To import an existing account, complete the following steps:
 
 
-1. Log in to your enterprise account, and go to **Manage > Enterprise** in the {{site.data.keyword.Bluemix_notm}} console.
+1. Log in to your enterprise account, and go to **Manage > Enterprise** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Accounts** to view the accounts and account groups in the enterprise. In the Accounts section, select **Add > Import account**.
 1. Select the account that you want to import.
 
@@ -89,7 +89,7 @@ To import an existing account, complete the following steps:
 {: #add-account-api}
 {: api}
 
-To import an existing account to the enterprise, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#import-account-to-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
+To import an existing account to the enterprise, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#import-account-to-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
 ```bash
 curl -X PUT "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{

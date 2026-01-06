@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-21"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -16,7 +16,7 @@ subcollection: enterprise-management
 # What is an enterprise?
 {: #what-is-enterprise}
 
-{{site.data.keyword.Bluemix}} [enterprises](#x2026915){: term} provide a way to centrally manage billing, resource usage, and identity and access management (IAM) across multiple accounts. Within an enterprise, you create a multitiered hierarchy of accounts, with billing, payments, and enterprise-managed IAM for all accounts managed at the enterprise level.
+{{site.data.keyword.cloud}} [enterprises](#x2026915){: term} provide a way to centrally manage billing, resource usage, and identity and access management (IAM) across multiple accounts. Within an enterprise, you create a multitiered hierarchy of accounts, with billing, payments, and enterprise-managed IAM for all accounts managed at the enterprise level.
 {: shortdesc}
 
 When compared to using multiple stand-alone accounts, enterprises offer the following key benefits:
@@ -50,7 +50,7 @@ Whether you prefer to manage your cloud through the {{site.data.keyword.cloud_no
 At its core, an enterprise consists of three main building blocks:
 - The enterprise account, which serves as the parent account to all other accounts in the enterprise. The enterprise account manages billing for the entire enterprise, with usage costs from all accounts that are rolled up and paid from the enterprise account. With enterprise-managed IAM, you can also build out IAM best practices from the top down by assigning to child accounts IAM resources, such as access groups, trusted profiles, and IAM settings, all to your organization's specification.
 - Account groups, which you can use to organize related accounts. Account groups can't contain resources themselves, but you can view costs for resource usage from the accounts that they contain.
-- Accounts, which are just like stand-alone {{site.data.keyword.Bluemix_notm}} accounts in that they contain resources and resource groups and independent access permissions. However, one major difference is that each account in an enterprise doesn't manage its own billing or payments because these are handled at the enterprise account level.
+- Accounts, which are just like stand-alone {{site.data.keyword.cloud_notm}} accounts in that they contain resources and resource groups and independent access permissions. However, one major difference is that each account in an enterprise doesn't manage its own billing or payments because these are handled at the enterprise account level.
 
 You create tiers in your enterprise by nesting an account group within an account group.
 ![A diagram that shows four enterprise tiers. The first tier is the enterprise, which contains two tiers of account groups. Then, the account group contains accounts.](images/enterprise-hierarchy.svg "Enterprise tiers are created by adding account groups."){: caption="A four-tier enterprise hierarchy" caption-side="bottom"}
@@ -62,7 +62,7 @@ Your enterprise structure is flexible and can grow and change as your needs do. 
 ## Consolidated billing
 {: #enterprise-billing}
 
-In an enterprise, all billing is managed through the enterprise account. Enterprises require [subscription billing](/docs/account?topic=account-accounts#subscription-account) or an account with the [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use). Subscription billing means that you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. Subscription credit, as well as credit from any promotions, is added to the enterprise credit pool, which is shared across all accounts in the enterprise. As accounts use resources, credit is spent from the credit pool. The Pay as you go with Committed Use billing model is similar to the billing model for Subscription accounts. You commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount.
+In an enterprise, all billing is managed through the enterprise account. Enterprises require [subscription billing](/docs/account?topic=account-accounts#subscription-account) or an account with the [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use). Subscription billing means that you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. Subscription credit, as well as credit from any promotions, is added to the enterprise credit pool, which is shared across all accounts in the enterprise. As accounts use resources, credit is spent from the credit pool. The Pay as you go with Committed Use billing model is similar to the billing model for Subscription accounts. You commit to spend a certain amount on {{site.data.keyword.cloud_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount.
 
 ![A diagram that shows that credit from accounts is added to the enterprise credit pool, which is managed by the billing administrator in the enterprise account.](images/enterprise-billing.svg "Billing for all accounts is managed by the billing administrator in the enterprise account."){: caption="Enterprise billing management" caption-side="bottom"}
 
@@ -76,7 +76,7 @@ Learn more in [Centrally manage billing and usage with enterprises](/docs/enterp
 ## Enterprise support
 {: #enterprise-support-model}
 
-The level of support that is assigned to an {{site.data.keyword.Bluemix_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/enterprise-management?topic=enterprise-management-support-plans#support_level_enterprise).
+The level of support that is assigned to an {{site.data.keyword.cloud_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/enterprise-management?topic=enterprise-management-support-plans#support_level_enterprise).
 
 ## Resource management
 {: #enterprise-resources}
@@ -138,7 +138,7 @@ Or, if your organization has separate budgets by geography, you can structure yo
 ### Educational institutions
 {: #enterprise-edu}
 
-Educational institutions might want to provide {{site.data.keyword.Bluemix_notm}} accounts to their students so that they can learn valuable skills through hands-on projects that use {{site.data.keyword.Bluemix_notm}} services. For these institutions, such as traditional universities or online learning platforms, you can group accounts by department or subject area, then create accounts for each course.
+Educational institutions might want to provide {{site.data.keyword.cloud_notm}} accounts to their students so that they can learn valuable skills through hands-on projects that use {{site.data.keyword.cloud_notm}} services. For these institutions, such as traditional universities or online learning platforms, you can group accounts by department or subject area, then create accounts for each course.
 
 Within each account, students can create resources to build their projects and collaborate with other students in the account. The university has a complete view of the costs of each department and course.
 

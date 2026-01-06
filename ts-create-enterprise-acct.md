@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2024-10-17"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: troubleshoot enterprise, enterprise problem, enterprise access, new enterprise account
 
@@ -21,7 +21,7 @@ content-type: troubleshoot
 You must have the correct access to complete certain tasks.
 {: shortdesc}
 
-You can't click **Add account** in the Account section in the {{site.data.keyword.Bluemix}} console.
+You can't click **Add account** in the Account section in the {{site.data.keyword.cloud}} console.
 {: tsSymptoms}
 
 You aren't assigned the correct access.

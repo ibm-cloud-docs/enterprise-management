@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-09-11"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise usage, view enterprise costs, account group usage, account usage, cost recovery, chargeback, support cost
 
@@ -15,10 +15,10 @@ subcollection: enterprise-management
 # Viewing usage in an enterprise
 {: #enterprise-usage}
 
-You can track resource and support costs from accounts in your {{site.data.keyword.Bluemix}} enterprise by viewing their usage. The accounts and account groups that you can view usage for depend on your assigned access.
+You can track resource and support costs from accounts in your {{site.data.keyword.cloud}} enterprise by viewing their usage. The accounts and account groups that you can view usage for depend on your assigned access.
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} enterprises enable you to centrally manage multiple {{site.data.keyword.Bluemix_notm}} accounts. As an enterprise user, you can keep an eye on resource usage and the associated costs for any account in the enterprise. See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more information.
+{{site.data.keyword.cloud_notm}} enterprises enable you to centrally manage multiple {{site.data.keyword.cloud_notm}} accounts. As an enterprise user, you can keep an eye on resource usage and the associated costs for any account in the enterprise. See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more information.
 
 ## Required access for viewing enterprise usage
 {: #enterprise-usage-access}
@@ -65,7 +65,7 @@ You can get a report of usage for the enterprise, an account group, or a specifi
 
 1. Log in, and select the enterprise account.
 
-   ```
+   ```bash
    ibmcloud login
    ```
    {: codeblock}
@@ -74,7 +74,7 @@ You can get a report of usage for the enterprise, an account group, or a specifi
 
    For example, the following command displays all account groups in an enterprise.
 
-   ```
+   ```bash
    ibmcloud enterprise account-groups --recursive
    ```
    {: codeblock}
@@ -83,21 +83,21 @@ You can get a report of usage for the enterprise, an account group, or a specifi
 
    * View usage for the entire enterprise for the current month.
 
-      ```
+      ```bash
       ibmcloud billing enterprise-usage
       ```
       {: codeblock}
 
    * View usage for the `Development` account group for July 2019.
 
-      ```
+      ```bash
       ibmcloud billing enterprise-usage --account-group Development --month 2019-07
       ```
       {: codeblock}
 
    * View the usage for the account groups and accounts that are directly under the enterprise.
 
-      ```
+      ```bash
       ibmcloud billing enterprise-usage --children
       ```
       {:  codeblock}
@@ -183,7 +183,7 @@ You can export a summary of your account's usage, child account usage, or inform
 
 An enterprise consolidates billing from all of its accounts and account groups to a single invoice, which simplifies billing management. You can recover the costs from resource usage in the enterprise by charging the usage costs for each account group or account to the associated department or team.
 
-To view your enterprise hierarchy and any usage, you need an access policy with the Editor or Administrator role on the Enterprise service for the entire enterprise. The following steps use the {{site.data.keyword.Bluemix_notm}} console as an example, but you can also perform these steps by using the CLI or API.
+To view your enterprise hierarchy and any usage, you need an access policy with the Editor or Administrator role on the Enterprise service for the entire enterprise. The following steps use the {{site.data.keyword.cloud_notm}} console as an example, but you can also perform these steps by using the CLI or API.
 
 1. Find the usage costs for each department by going to **Manage > Usage** in the enterprise account. From the **Time frame** menu, select the previous month to view the usage that is included in the latest invoice.
 

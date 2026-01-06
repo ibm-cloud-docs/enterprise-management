@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-10-23"
+  years: 2023, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -136,7 +136,7 @@ Child account administrators can set an IP address restriction for individual us
 To restrict all users to using only specific IP addresses, complete the following steps:
 
 1. From the Account section, enable the **Restrict IP address access** setting.
-1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the child accounts can log in to {{site.data.keyword.Bluemix}}.
+1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the child accounts can log in to {{site.data.keyword.cloud}}.
 
    You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
    {: note}
@@ -503,7 +503,7 @@ To create a settings template by using the API, complete the following steps:
    {: curl}
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/account_settings_templates' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/account_settings_templates' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "account_id": "5bbe28be34524sdbdaa34d37d1f2294a",
       "name": "my template",
       "account_settings": {
@@ -627,7 +627,7 @@ You can update a settings template at any time before you commit it. To update a
 1. List the settings templates in your enteprise account and note the `AccountSettingsTemplate` ID and ETag in the response for the template version that you want to update.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -687,7 +687,7 @@ You can update a settings template at any time before you commit it. To update a
    {: note}
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/account_settings_templates/{template_id}/version' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/account_settings_templates/{template_id}/version' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "account_id": "5bbe28be34524sdbdaa34d37d1f2294a",
       "name": "my template name",
       "account_settings": {
@@ -807,7 +807,7 @@ Review the settings template and commit it so that no further changes can be mad
 1. Get the version of a trusted profile template that you want to review and commit.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_templates/AccountSettingsTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9/versions/1' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_templates/AccountSettingsTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9/versions/1' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -878,7 +878,7 @@ Review the settings template and commit it so that no further changes can be mad
 1. Commit the version of the trusted profile template.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/account_settings_templates/{template_id}/{version}/commit' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X POST 'https://iam.cloud.ibm.com/v1/account_settings_templates/{template_id}/{version}/commit' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -943,7 +943,7 @@ To create an assignment for an account settings template, complete the following
 
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1001,7 +1001,7 @@ To create an assignment for an account settings template, complete the following
 1. Assign the settings template to an `Account` or `AccountGroup`.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/account_settings_assignments' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/account_settings_assignments' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "template_id": "AccountSettingsTemplate-cac1b203-5956-4981-bdec-0a4af4feab4d",
       "template_version": 1,
       "target_type": "Account",
@@ -1165,7 +1165,7 @@ The new template version that you assign replaces the old version. Learn more ab
 1. List the settings template assignments in your enterprise account and note the assignment ID, ETag and version for the assignment that you want to update:
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1226,7 +1226,7 @@ The new template version that you assign replaces the old version. Learn more ab
 1. Update the account settings assignment. If you're retrying an assignment, use the same version number.
 
    ```bash
-   curl -X PATCH 'https://iam.test.cloud.ibm.com/v1/account_settings_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X PATCH 'https://iam.cloud.ibm.com/v1/account_settings_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "template_version": 2
    }'
    ```
@@ -1309,7 +1309,7 @@ To remove an assignment, complete the following steps:
 
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1373,7 +1373,7 @@ To remove an assignment, complete the following steps:
    {: note}
 
    ```bash
-   curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/account_settings_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' }'
+   curl -X DELETE 'https://iam.cloud.ibm.com/v1/account_settings_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' }'
    ```
    {: curl}
    {: codeblock}
@@ -1429,7 +1429,7 @@ Before you can delete a settings template version, you must remove all assignmen
 1. List the settings templates in your enterprise account and note the settings template ID and version number for the version that you want to delete:
 
 ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/account_settings_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1521,7 +1521,7 @@ Before you can delete a settings template version, you must remove all assignmen
 Make sure that you remove the assignments for each version first.
 
 ```bash
-curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/account_settings_templates/AccountSettingsTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/account_settings_templates/AccountSettingsTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
 ```
 {: curl}
 {: codeblock}

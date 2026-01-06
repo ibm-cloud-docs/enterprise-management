@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019, 2025
-lastupdated: "2025-11-05"
+  years: 2019, 2026
+lastupdated: "2026-01-06"
 
 keywords: enterprise billing, enterprise, subscription, billing unit, billing option, invoice, credit pool
 
@@ -15,10 +15,10 @@ subcollection: enterprise-management
 # Centrally managing billing and usage with enterprises
 {: #enterprise}
 
-You can centrally manage multiple {{site.data.keyword.Bluemix}} accounts with [enterprises](#x2026915){: term}. Because billing is separate from the individual child accounts and consolidated to the enterprise level, enterprises simplify managing billing, invoicing, and payments for the accounts.
+You can centrally manage multiple {{site.data.keyword.cloud}} accounts with [enterprises](#x2026915){: term}. Because billing is separate from the individual child accounts and consolidated to the enterprise level, enterprises simplify managing billing, invoicing, and payments for the accounts.
 {: shortdesc}
 
-New to {{site.data.keyword.Bluemix_notm}} enterprises? See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more details about how enterprises can help you centrally manage billing and usage.
+New to {{site.data.keyword.cloud_notm}} enterprises? See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more details about how enterprises can help you centrally manage billing and usage.
 {: tip}
 
 ## Enterprise billing model
@@ -35,11 +35,11 @@ In an enterprise, billing is managed by the enterprise rather than in the indivi
 ## Billing options
 {: #enterprise-billing-options}
 
-Enterprises require subscription billing, an account with the [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use), or a Pay-As-You-Go account that signed up using a credit card on cloud.ibm.com. In subscription billing, you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. The Enterprise Savings Plan billing model is similar to subscription billing. You commit to spend a certain amount on {{site.data.keyword.Bluemix_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. You pay only for what you use or commit to on a monthly basis, with no long-term contracts.
+Enterprises require subscription billing, an account with the [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use), or a Pay-As-You-Go account that signed up using a credit card on cloud.ibm.com. In subscription billing, you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. The Enterprise Savings Plan billing model is similar to subscription billing. You commit to spend a certain amount on {{site.data.keyword.cloud_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. You pay only for what you use or commit to on a monthly basis, with no long-term contracts.
 
 After the enterprise is created, you can add more accounts to the enterprise. If you add a Lite or trial account, the account is automatically upgraded to a Pay-As-You-Go account.
 
-Some Pay-As-You-Go accounts can't be directly imported into an enterprise, such as many Pay-As-You-Go accounts that are billed in United States dollars (USD). However, you can still import these accounts into your enterprise by converting them to Subscription accounts and then importing them. To convert an account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+Some Pay-As-You-Go accounts can't be directly imported into an enterprise, such as many Pay-As-You-Go accounts that are billed in United States dollars (USD). However, you can still import these accounts into your enterprise by converting them to Subscription accounts and then importing them. To convert an account, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 {: note}
 
 Each enterprise supports only a single billing currency. All accounts must use the enterprise billing currency before you add them to the enterprise. Existing accounts that are imported into the enterprise no longer separately manage their billing. As a result, subscription credit can't be added to individual child accounts. Subscription credit must be added to the enterprise account, where it becomes part of the enterprise credit pool.
@@ -63,12 +63,12 @@ When existing subscriptions are added to the enterprise, each individual subscri
 
 | Originating Subscription | Remaining Credit | Valid From | Valid Until |
 | --- | --- | --- | --- |
-| {{site.data.keyword.Bluemix_notm}} Platform - 32100456, term 1 | $5,000       | 2019-01-01 | 2019-12-31 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 55543210, term 1 | $4,000       | 2019-04-01 | 2020-03-31 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 32100456, term 2 | $6,000       | 2020-01-01 | 2020-06-30 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 55543210, term 2 | $6,000       | 2020-04-01 | 2021-03-31 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 00012345 | $18,000       | 2020-07-01 | 2021-06-30 |
-| **Credit pool total**                                  | **$39,000**  |   **--**   |   **--**   |
+| {{site.data.keyword.cloud_notm}} Platform - 32100456, term 1 | $5,000 | 2019-01-01 | 2019-12-31 |
+| {{site.data.keyword.cloud_notm}} Platform - 55543210, term 1 | $4,000 | 2019-04-01 | 2020-03-31 |
+| {{site.data.keyword.cloud_notm}} Platform - 32100456, term 2 | $6,000 | 2020-01-01 | 2020-06-30 |
+| {{site.data.keyword.cloud_notm}} Platform - 55543210, term 2 | $6,000 | 2020-04-01 | 2021-03-31 |
+| {{site.data.keyword.cloud_notm}} Platform - 00012345 | $18,000 | 2020-07-01 | 2021-06-30 |
+| **Credit pool total** | **$39,000** | **--** | **--** |
 {: caption="Subscriptions in an enterprise credit pool" caption-side="top"}
 {: summary="This table has column headers and a summary row. The row headers identify the subscription and attributes. The last row has a header in the first column and a summation of values from previous rows in the second column."}
 

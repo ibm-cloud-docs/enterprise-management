@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2025
-lastupdated: "2025-02-17"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -86,7 +86,7 @@ No, you can't edit the name of an account from within your enterprise. To edit t
 {: #enterprise-invite-users}
 {: faq}
 
-To invite users to an enterprise, you must have an {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) access policy with the Editor or higher role on the User Management service. For more information, see [Inviting users](/docs/account?topic=account-iamuserinv&interface=ui#invitations).
+To invite users to an enterprise, you must have an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access policy with the Editor or higher role on the User Management service. For more information, see [Inviting users](/docs/account?topic=account-iamuserinv&interface=ui#invitations).
 
 ## Can my child account have a different subscription currency than my enterprise account?
 {: #enterprise-currency}
@@ -151,4 +151,4 @@ You need to be invited to the child account and assigned the editor or administr
 ## Do all accounts within an enterprise require the same level of support?
 {: #enterprise-acct-support}
 
-Yes, all accounts within an {{site.data.keyword.Bluemix_notm}} enterprise are assigned the same level of support. The level of support that is assigned to an enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
+Yes, all accounts within an {{site.data.keyword.cloud_notm}} enterprise are assigned the same level of support. The level of support that is assigned to an enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.

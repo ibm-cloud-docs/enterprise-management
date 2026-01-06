@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2025
+  years: 2019, 2026
 
-lastupdated: "2025-12-09"
+lastupdated: "2026-01-06"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
@@ -18,7 +18,7 @@ subcollection: enterprise-management
 # Assigning access for enterprise management
 {: #assign-access-enterprise}
 
-To assign a user access to manage an {{site.data.keyword.Bluemix}} enterprise, you must invite them to the enterprise account, and assign access for the enterprise account management service.
+To assign a user access to manage an {{site.data.keyword.cloud}} enterprise, you must invite them to the enterprise account, and assign access for the enterprise account management service.
 {: shortdesc}
 
 Access to manage the [enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) requires an access policy within the enterprise account. When you assign a user an Enterprise account management service policy within a child account in an enterprise, the user can't manage the enterprise to which the account belongs. Depending on the assigned role for the Enterprise account management service in the enterprise account, the user can perform specific actions:
