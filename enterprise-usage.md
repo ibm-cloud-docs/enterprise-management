@@ -136,7 +136,7 @@ ServiceCall<Reports> getResourceUsageReport(GetResourceUsageReportOptions getRes
 {: codeblock}
 {: java}
 
-```
+```java
 getResourceUsageReport(params)
 ```
 {: codeblock}

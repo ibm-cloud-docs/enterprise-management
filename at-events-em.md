@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2025
-lastupdated: "2025-05-19"
+  years: 2018, 2026
+lastupdated: "2026-01-06"
 
 keywords:
 
@@ -34,8 +34,8 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 Enterprise management sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
 
 | Dallas (`us-south`) | Washington (`us-east`)  | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
-|---------------------|-------------------------|-------------------|----------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
+|---------------------|-------------------------|--------------------|----------------------|
+| [No]{: tag-red}     | [No]{: tag-red}         | [No]{: tag-red}    | [No]{: tag-red}      |
 {: caption="Regions where activity tracking events are sent in Americas locations" caption-side="top"}
 {: #atracker-table-1}
 {: tab-title="Americas"}
@@ -44,8 +44,8 @@ Enterprise management sends activity tracking events by {{site.data.keyword.atra
 {: row-headers}
 
 | Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
-|---------------------|------------------|------------------|--------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
+|---------------------|-------------------|-------------------|--------------------|
+| [No]{: tag-red}     | [No]{: tag-red}   | [No]{: tag-red}   | [No]{: tag-red}    |
 {: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="top"}
 {: #atracker-table-2}
 {: tab-title="Asia Pacific"}
@@ -54,8 +54,8 @@ Enterprise management sends activity tracking events by {{site.data.keyword.atra
 {: row-headers}
 
 | Frankfurt (`eu-de`)  | London (`eu-gb`) | Madrid (`eu-es`) |
-|---------------------------------------------------------------|---------------------|------------------|
-| [Yes]{: tag-green} | [No]{: tag-red} | [No]{: tag-red} |
+|----------------------|------------------|------------------|
+| [Yes]{: tag-green}   | [No]{: tag-red}  | [No]{: tag-red}  |
 {: caption="Regions where activity tracking events are sent in Europe locations" caption-side="top"}
 {: #atracker-table-3}
 {: tab-title="Europe"}
@@ -75,8 +75,8 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 
 The following table lists the actions that generate enterprise management events:
 
-| Action                                               | Description |
-|------------------------------------------------------|-------------|
+| Action                                       | Description                                              |
+|----------------------------------------------|----------------------------------------------------------|
 | `enterprise.enterprise.create`               | An event is generated when a user creates an enterprise. |
 | `enterprise.enterprise.update`               | An event is generated when a user updates information about the enterprise. |
 | `enterprise.enterprise.import`               | An event is generated when a user imports an existing stand-alone account to the enterprise hierarchy. |

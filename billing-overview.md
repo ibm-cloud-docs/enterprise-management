@@ -50,7 +50,7 @@ When you have a Subscription account, you buy a subscription for an amount of cr
 In addition to the two billable account types, customers that have a Subscription account can sign up for the Enterprise Savings Plan billing model. This billing model is similar to a Subscription account with a few added benefits. The following table details the two billable account types and billing model.
 
 | Pay-As-You-Go | Subscription| Enterprise Savings Plan|
-|----------|---------|---------|
+|---------------|-------------|------------------------|
 | Monthly billing | Timely billing | Timely billing |
 | Invoiced on monthly consumption	| Invoices independent of usage | Invoiced on monthly consumption	|
 | Best suited for developers and companies	| Best suited for enterprise organizations| Best suited for both developers and enterprise organizations|
