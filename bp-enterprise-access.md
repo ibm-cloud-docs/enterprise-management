@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-11-17"
+  years: 2023, 2026
+lastupdated: "2026-01-07"
 
 subcollection: enterprise-management
 
@@ -120,7 +120,7 @@ Resources that users provision in your enterprise reside in child accounts. The 
 
 Some services, like account management services, don't have provisionable resources, so you don't need to scope policies for those services to specific resources.
 
-Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates.
+Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates. For more information amd other examples, go to [Monitoring enterprise IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates&interface=ui#monitor-ent-iam-example).
 
 ### Sample access policies for account management services
 {: #ent-acct-management}
