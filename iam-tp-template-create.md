@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-08-13"
+  years: 2023, 2026
+lastupdated: "2026-01-07"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -59,10 +59,10 @@ To create a trusted profile template, complete the following steps:
 1. Go to **Manage > Access (IAM) > Templates**, and select **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Create**.
 1. Enter a name and description for the trusted profile template that describes its purpose for enterprise users.
+1. Enter a name, email, and description for the enterprise-managed trusted profile that describes its purpose for child account users, and be sure to include a list of actions available for this trusted profile in the description.
 
-    In the description, provide a list of actions available for this trusted profile. 
-    {: tip}
-
+    In the email, you can either add a personal email ID or a distribution list.
+    {: note}
 
    You can use replacement variables in the profile name to customize it for each account. The following variables are supported:
 
@@ -745,7 +745,7 @@ You can update a trusted profile template at any time before you commit it. For 
 1. List the trusted profile templates in your enteprise account and note the `ProfileTemplate` ID and ETag in the response for the template version that you want to update.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -800,7 +800,7 @@ You can update a trusted profile template at any time before you commit it. For 
 1. Update the trusted profile template definition.
 
   ```bash
-   curl -X PUT 'https://iam.test.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X PUT 'https://iam.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "account_id": "5bbe28be34524sdbdaa34d37d1f2294a",
       "name": "db admin template",
       "profile": {
@@ -971,7 +971,7 @@ Review the trusted profile template and commit it so that you can't be make any 
 1. Get the version of a trusted profile template that you want to review and commit.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1042,7 +1042,7 @@ Review the trusted profile template and commit it so that you can't be make any 
 1. Commit the version of the trusted profile template.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/profile_templates/{template_id}/{version}/commit' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profile_templates/{template_id}/{version}/commit' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1106,7 +1106,7 @@ To create an assignment for a trusted profile template, complete the following s
 1. List the trusted profile templates in your enteprise account and note the `ProfileTemplate` ID and version in the response for the template version that you want to assign.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1166,7 +1166,7 @@ To create an assignment for a trusted profile template, complete the following s
 1. Assign the template to an `Account` or `AccountGroup`.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/profile_assignments' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profile_assignments' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "template_id": "ProfileTemplate-cac1b203-5956-4981-bdec-0a4af4feab4d",
       "template_version": 1,
       "target_type": "Account",
@@ -1266,7 +1266,7 @@ If an assignment fails, use the [Update assigment operation](/apidocs/iam-identi
 If you want to make changes to a trusted profile template that's committed or assigned, create a new version.
 
    ```bash
-   curl -X POST 'https://iam.test.cloud.ibm.com/v1/profile_templates/{template_id}/versions/' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X POST 'https://iam.cloud.ibm.com/v1/profile_templates/{template_id}/versions/' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "account_id": "5bbe28be34524sdbdaa34d37d1f2294a",
       "name": "db admin template",
       "profile": {
@@ -1488,7 +1488,7 @@ The new template version that you assign replaces the old version. Learn more ab
 1. List the trusted profile assignments in your enterprise account and note the `TemplateAssignment` ID and version for the assignment that you want to update:
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1549,7 +1549,7 @@ The new template version that you assign replaces the old version. Learn more ab
 1. Update the trusted profile assignment. If you're retrying an assignment, use the same version number. The following sample request migrates the assignment to version 2.
 
    ```bash
-   curl -X PATCH 'https://iam.test.cloud.ibm.com/v1/profile_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
+   curl -X PATCH 'https://iam.cloud.ibm.com/v1/profile_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN' -d '{
       "template_version": 2
    }'
    ```
@@ -1634,7 +1634,7 @@ To remove an assignment, complete the following steps:
 1. List the trusted profile assignments in your enterprise account and note the `TemplateAssignment` ID for the assignment that you want to remove.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_assignments?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1697,7 +1697,7 @@ Removing an assignment might cause a previous assignment to become active. For m
 {: note}
 
    ```bash
-   curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/profile_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' }'
+   curl -X DELETE 'https://iam.cloud.ibm.com/v1/profile_assignments/<assignment_id>' -H 'Authorization: Bearer $TOKEN' }'
    ```
    {: curl}
    {: codeblock}
@@ -1752,7 +1752,7 @@ Before you can delete a trusted profile template version, you must remove all as
 1. List the trusted profile templates in your enteprise account and note the `ProfileTemplate` ID and version in the response for the template version that you want to delete.
 
    ```bash
-   curl -X GET 'https://iam.test.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X GET 'https://iam.cloud.ibm.com/v1/profile_templates?account_id=5bbe28be34524sdbdaa34d37d1f2294a' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1807,7 +1807,7 @@ Before you can delete a trusted profile template version, you must remove all as
 1. Delete the version:
 
    ```bash
-   curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X DELETE 'https://iam.cloud.ibm.com/v1/profile_templates/{template_id}/versions/{version}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
@@ -1862,7 +1862,7 @@ Before you can delete a trusted profile template version, you must remove all as
 Make sure that you remove the assignments for each version first.
 
    ```bash
-   curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/profile_templates/ProfileTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
+   curl -X DELETE 'https://iam.cloud.ibm.com/v1/profile_templates/ProfileTemplate-767fc1f6-c77c-4196-b3d6-a009a5a536e9' -H 'Content-Type: application/json' -H 'Authorization: Bearer $TOKEN'
    ```
    {: curl}
    {: codeblock}
