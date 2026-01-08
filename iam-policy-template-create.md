@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-12-09"
+  years: 2023, 2026
+lastupdated: "2026-01-08"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -290,7 +290,7 @@ If there's a policy that multiple access group or trusted profile templates migh
 To programmatically create an access policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template) as shown in the following sample request:
 
 ```bash
-curl -X POST 'https://iam.test.cloud.ibm.com/v1/policy_template' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+curl -X POST 'https://iam.cloud.ibm.com/v1/policy_template' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
   "name": "IKSEditor",
   "description": "Grant Editor Role on SERVICE_NAME",
   "account_id": "ACCOUNT_ID",
@@ -379,7 +379,7 @@ fmt.Println(string(b))
 You can update the roles, resources, name, and description for a policy template at any time before you commit it. To programmatically update policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#replace-policy-template) as shown in the following sample request:
 
 ```bash
-curl -X PUT 'https://iam.test.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
+curl -X PUT 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
   "type": "access",
   "description": "Viewer role for for all instances of SERVICE_NAME in the account.",
   "subjects": [
@@ -471,7 +471,7 @@ If you need to make updates after you commit the template, create a new version.
 Review the policy template and commit it so that no further changes can be made to the version. This way, the Template Assignment Administrator can be sure that they assign the version only when you have confirmed that it's ready. To programmatically commit a policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#commit-policy-template) as shown in the following sample request:
 
 ```bash
-curl -X PUT 'https://iam.test.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMLPATE_VERSION/commit' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{}'
+curl -X PUT 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMLPATE_VERSION/commit' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{}'
 ```
 {: codeblock}
 {: curl}
@@ -503,7 +503,7 @@ Unlike regular access policies, an access policy template doesn't have an explic
 1. List all access policy templates and note the ID of the policy template in the response:
 
     ```bash
-    curl -X GET 'https://iam.test.cloud.ibm.com/v1/policy_templates?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+    curl -X GET 'https://iam.cloud.ibm.com/v1/policy_templates?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
     ```
     {: codeblock}
     {: curl}
@@ -517,7 +517,7 @@ Unlike regular access policies, an access policy template doesn't have an explic
 As access requirements evolve for teams in your enterprise, you might need to create another version of a policy template to meet new needs. To programmatically create a new policy template version by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template-version) as shown in the following sample request:
 
 ```bash
-curl -X POST 'https://iam.test.cloud.ibm.com/v1/policy_template/$TEMPLATE_ID/versions' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+curl -X POST 'https://iam.cloud.ibm.com/v1/policy_template/$TEMPLATE_ID/versions' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
   "name": "IKSEditor",
   "description": "Grant Editor Role on SERVICE_NAME",
   "account_id": "ACCOUNT_ID",
@@ -607,7 +607,7 @@ You might need to list the policy templates in your enterprise account for sever
 To list the policy templates in your enterprise account, call the [IAM Policy Management API](/apidocs/iam-policy-management#list-policy-templates) as shown in the following sample request:
 
 ```bash
-curl -X GET 'https://iam.test.cloud.ibm.com/v1/policy_templates?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X GET 'https://iam.cloud.ibm.com/v1/policy_templates?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
 ```
 {: codeblock}
 {: curl}
@@ -639,7 +639,7 @@ If you want to assign a different policy in a committed or assigned access group
 To remove a policy template from access group or trusted profile templates, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-assignment) as shown in the following sample request:
 
 ```bash
-curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/policy_assignments/$POLICY_ASSIGNMENT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/policy_assignments/$POLICY_ASSIGNMENT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
 ```
 {: codeblock}
 {: curl}
@@ -656,7 +656,7 @@ To delete a policy template, call the [IAM Policy Management API](/apidocs/iam-p
 
 
 ```bash
-curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
 ```
 {: codeblock}
 {: curl}
@@ -684,7 +684,7 @@ if response.StatusCode != 204 {
 To delete only a specific version, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-template-version) as shown in the following sample request:
 
 ```bash
-curl -X DELETE 'https://iam.test.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
+curl -X DELETE 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
 ```
 {: codeblock}
 {: curl}
