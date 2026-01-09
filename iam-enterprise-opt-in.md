@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-10-17"
+  years: 2023, 2026
+lastupdated: "2026-01-08"
 
 subcollection: enterprise-management
 
@@ -51,7 +51,7 @@ To disable enterprise-managed IAM in an account, the account owner must open a [
 As the owner of a child account, you can opt-in to enterprise-managed IAM. To opt-in to enterprise-managed IAM in a child account, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise) as shown in the following example:
 
 ```bash
-curl -s -L -X PATCH "https://accounts.test.cloud.ibm.com/v1/accounts/$ACCOUNT/traits" \
+curl -s -L -X PATCH "https://accounts.cloud.ibm.com/v1/accounts/$ACCOUNT/traits" \
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer $TOKEN" \
 -d "{

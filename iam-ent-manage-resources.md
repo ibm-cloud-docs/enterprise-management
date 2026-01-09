@@ -1,7 +1,7 @@
 ---
 copyright:
- years: 2025
-lastupdated: "2025-04-29"
+ years: 2025, 2026
+lastupdated: "2026-01-08"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -244,7 +244,7 @@ See the following sample response:
       "limit": 100
     }
   },
-  "href": "https://iam.test.cloud.ibm.com/v1/policy_templates/policyTemplate-8e27d6d9-4e9c-4cfd-a431-15d2010a7f82",
+  "href": "https://iam.cloud.ibm.com/v1/policy_templates/policyTemplate-8e27d6d9-4e9c-4cfd-a431-15d2010a7f82",
   "state": "active",
   "committed": true
 }

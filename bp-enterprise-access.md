@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-11-17"
+  years: 2023, 2026
+lastupdated: "2026-01-09"
 
 subcollection: enterprise-management
 
@@ -32,7 +32,9 @@ Depending on how you configure the action controls for a template, child account
 
 One advantage of IAM templates is the reduced time and effort to manage access in your organization. For example, instead of creating an access group with the same permissions in each account, create one access group template at the enterprise level, and assign that access group template to child accounts. The assignment creates the access group and its associated policies in each child account, saving you from manually creating hundreds of policies. Learn about other strategies for [Reducing time and effort to manage access](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#bp-enterprise-access-include-limit-policies).
 
-IAM templates help prevent policy drift by using the practice of immutable infrastructure. Immutable infrastructure is a DevOps practice that helps ensure all enterprise-managed IAM resources remain in a consistent state, reducing the risk of configuration errors. With immutable infrastructure, any changes to a template are made by creating a new instance or version of the template, rather than modifying an existing one. This means that the history of the template can be easily traced, as each instance or version represents a specific point in time. Tracking changes through the creation of new instances provides an audit trail that can help identify and address any security issues, making your IAM resources more reliable and secure. For more information about auditing enterprise IAM events, see [Monitoring enterprise IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates).
+IAM templates help prevent policy drift by using the practice of immutable infrastructure. Immutable infrastructure is a DevOps practice that helps ensure all enterprise-managed IAM resources remain in a consistent state, reducing the risk of configuration errors. With immutable infrastructure, any changes to a template are made by creating a new instance or version of the template, rather than modifying an existing one. This means that the history of the template can be easily traced, as each instance or version represents a specific point in time. Tracking changes through the creation of new instances provides an audit trail that can help identify and address any security issues, making your IAM resources more reliable and secure.
+
+
 
 With enterprise-managed IAM, you can grow your organization at scale. By assigning instances of templates as needed, you can avoid the complexity and risk of modifying existing instances. This way, it's easier to assign existing templates to new accounts.
 
@@ -91,7 +93,20 @@ Spend less time on configuring individual policies and use access policy templat
 
 
 
+## Custom role templates
+{: #custom-role-templates}
 
+A custom role template is a predefined custom role that can be applied to one or multiple child accounts. With custom roles, you can create service-specific roles with a custom set of actions that go beyond the platform-defined roles. Custom role templates enable you to define these specialized roles once at the enterprise level and deploy them consistently across your organization.
+
+Custom roles are useful when:
+
+- Platform-defined roles don't provide the exact level of access that is needed for your organization's workflows.
+- You need to create specialized roles for specific job functions or compliance requirements.
+- You want to grant access to a subset of actions within a service that isn't covered by existing roles.
+
+When you create a custom role template at the enterprise level and assign it to child accounts, the custom role is automatically created in those accounts. Users in child accounts can then assign the custom role through access policies, just like platform-defined roles.
+
+For more information, see [Creating custom roles](/docs/account?topic=account-custom-roles).
 
 ## Authorization policy templates
 {: #authorization-policy-templates}
@@ -120,7 +135,9 @@ Resources that users provision in your enterprise reside in child accounts. The 
 
 Some services, like account management services, don't have provisionable resources, so you don't need to scope policies for those services to specific resources.
 
-Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates.
+Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates. 
+
+
 
 ### Sample access policies for account management services
 {: #ent-acct-management}
