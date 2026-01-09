@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-08"
+lastupdated: "2026-01-09"
 
 subcollection: enterprise-management
 
@@ -32,7 +32,9 @@ Depending on how you configure the action controls for a template, child account
 
 One advantage of IAM templates is the reduced time and effort to manage access in your organization. For example, instead of creating an access group with the same permissions in each account, create one access group template at the enterprise level, and assign that access group template to child accounts. The assignment creates the access group and its associated policies in each child account, saving you from manually creating hundreds of policies. Learn about other strategies for [Reducing time and effort to manage access](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#bp-enterprise-access-include-limit-policies).
 
-IAM templates help prevent policy drift by using the practice of immutable infrastructure. Immutable infrastructure is a DevOps practice that helps ensure all enterprise-managed IAM resources remain in a consistent state, reducing the risk of configuration errors. With immutable infrastructure, any changes to a template are made by creating a new instance or version of the template, rather than modifying an existing one. This means that the history of the template can be easily traced, as each instance or version represents a specific point in time. Tracking changes through the creation of new instances provides an audit trail that can help identify and address any security issues, making your IAM resources more reliable and secure. For more information about auditing enterprise IAM events, see [Monitoring enterprise IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates).
+IAM templates help prevent policy drift by using the practice of immutable infrastructure. Immutable infrastructure is a DevOps practice that helps ensure all enterprise-managed IAM resources remain in a consistent state, reducing the risk of configuration errors. With immutable infrastructure, any changes to a template are made by creating a new instance or version of the template, rather than modifying an existing one. This means that the history of the template can be easily traced, as each instance or version represents a specific point in time. Tracking changes through the creation of new instances provides an audit trail that can help identify and address any security issues, making your IAM resources more reliable and secure.
+
+
 
 With enterprise-managed IAM, you can grow your organization at scale. By assigning instances of templates as needed, you can avoid the complexity and risk of modifying existing instances. This way, it's easier to assign existing templates to new accounts.
 
@@ -133,7 +135,9 @@ Resources that users provision in your enterprise reside in child accounts. The 
 
 Some services, like account management services, don't have provisionable resources, so you don't need to scope policies for those services to specific resources.
 
-Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates. For more information and other examples, go to [Monitoring enterprise IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates&interface=ui#monitor-ent-iam-example).
+Use IAM templates to grant access in child accounts to resources like all of a service's resources, all resources with a specific tag, or all resources in the account. Review the following sample access policies to help you determine how you might want to grant access in access group and trusted profile templates. 
+
+
 
 ### Sample access policies for account management services
 {: #ent-acct-management}

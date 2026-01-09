@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023. 2025
-lastupdated: "2025-08-13"
+  years: 2023, 2026
+lastupdated: "2026-01-09"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise trusted profile, penetration testing
 
@@ -147,8 +147,7 @@ Security consultants need these policies to view clusters, cluster IPs, and comp
 
 In penetration testing, consultants simulate cyberattacks to discover vulnerabilities and assess the security posture. Access to clusters and compute resources is often necessary to do penetration tests, as it allows them to simulate attacks on containerized applications, container orchestrators, or cloud services.
 
-Make sure that Access for external security consultants is temporary and monitored. For more information, see [Monitoring enterprise IAM templates](/docs/enterprise-management?topic=enterprise-management-monitor-enterprise-iam-templates).
-{: tip}
+
 
 ## Review and commit your trusted profile template
 {: #tp-review}
