@@ -42,12 +42,16 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
-        "date": "08 August 2025",
-        "title": "Centralized IAM policy support for enterprise log routing"
+        "date": "12 December 2025",
+        "title": "Creating enterprise role templates"
       },
       {
-        "date": "07 August 2025",
-        "title": "Stand-alone policy templates in IAM"
+        "date": "20 October 2025",
+        "title": "Enhanced user access controls"
+      },
+      {
+        "date": "08 August 2025",
+        "title": "Centralized IAM policy support for enterprise log routing"
       }
     ]
   }
