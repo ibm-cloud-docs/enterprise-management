@@ -106,7 +106,7 @@ For a user to manage security and compliance through {{site.data.keyword.sysdigs
 * Administrator or Editor role for {{site.data.keyword.sysdigsecure_full_notm}}
 * Custom role for the Enterprise
 
-To create the custom role with the appropriate permissions, see [Controlling access through IAM](/docs/workload-protection?topic=workload-protection-iam)
+To create the custom role with the appropriate permissions, see [Controlling access through IAM](/docs/workload-protection?topic=workload-protection-iam).
 
 ### Creating and assigning enterprise-managed IAM templates
 {: #templates-roles}
