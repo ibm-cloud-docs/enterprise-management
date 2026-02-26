@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-02-26"
 
 keywords:
 
@@ -43,7 +43,7 @@ Enterprise management sends activity tracking events by {{site.data.keyword.atra
 {: class="simple-tab-table"}
 {: row-headers}
 
-| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
+| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai - Airtel (`in-che`) |
 |---------------------|-------------------|-------------------|--------------------|
 | [No]{: tag-red}     | [No]{: tag-red}   | [No]{: tag-red}   | [No]{: tag-red}    |
 {: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="top"}
