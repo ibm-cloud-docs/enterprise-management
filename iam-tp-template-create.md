@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-07"
+lastupdated: "2026-03-20"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -174,8 +174,8 @@ Access policies grant access in child accounts to the federated users that can a
    You create a policy template with every policy that you configure for a trusted profile template. You can reference a policy template to assign access in other enterprise IAM templates.
    {: note}
 
-1. Select a service or group of services. Then, click **Next**.
-1. Select any combination of roles to define the scope of access, and click **Next**.
+1. Select a service or group of services and click **Next**.
+
 1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Add**.
 

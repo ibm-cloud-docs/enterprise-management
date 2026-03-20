@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-08"
+lastupdated: "2026-03-20"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -44,8 +44,8 @@ To create a stand-alone policy template in the console, complete the following s
 1. Go to **Manage > Access (IAM) > Enterprise > Templates > Policies** in the {{site.data.keyword.cloud_notm}} and click **Create**.
 1. Enter a name for the template and click **Create**.
 1. Click **Access** and enter the policy details.
-1. Scope the access to **All resources**, or select **Specific resources** based on attributes and click **Next**.
-1. Select any combination of roles to define the scope of access and click **Next**.
+1. Select a service or group of services and click **Next**.
+
 1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Save**.
 
