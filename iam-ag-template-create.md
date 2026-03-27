@@ -168,7 +168,7 @@ Access policies grant access in child accounts to the members of your enterprise
 
     1. Select a service or group of services and click **Next**.
 
-    1. (Optional) Add conditions to specify when you want the policy to grant access.
+       1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Add**. 
 
 
