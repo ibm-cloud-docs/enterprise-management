@@ -42,16 +42,16 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "27 March 2026",
+        "title": "Creating integrated policy assignments with custom role templates"
+      },
+      {
         "date": "12 December 2025",
         "title": "Creating enterprise role templates"
       },
       {
         "date": "20 October 2025",
         "title": "Enhanced user access controls"
-      },
-      {
-        "date": "08 August 2025",
-        "title": "Centralized IAM policy support for enterprise log routing"
       }
     ]
   }
