@@ -170,7 +170,8 @@ Access policies grant access in child accounts to the members of your enterprise
     1. Scope the access to **All resources**, or select **Specific resources** based on attributes and click **Next**.
     1. In the **Roles and actions** section, select the roles that define the scope of access. You can create custom role templates within a policy template flow, and also select a custom role from existing custom role templates for the selected service.
 
-    When you select a custom role template, only the most recent version is available. For more information, see [Limitations](#limitations-access-temp-custom-role).
+       When you select a custom role template, only the most recent version is available. For more information, see [Limitations](#limitations-access-temp-custom-role).
+
        1. Click **Create custom role** to define a custom combination of actions.
        1. Enter a template name.
        1. (Optional) Enter a template description.
@@ -178,12 +179,12 @@ Access policies grant access in child accounts to the members of your enterprise
        1. Enter an ID for the custom role.
        1. (Optional) Enter a description for the custom role.
        1. Select the actions and click **Create**. The custom role is listed and selected along with any other roles that are already selected for the policy.
-
-          Use the search bar to look for roles that support particular actions. For example, search for **read**, **edit**, or **view** to display the list of roles to which these actions apply.
-          {: note}
-
        1. (Optional) Add conditions to specify when you want the policy to grant access.
-1. Click **Add**. 
+
+       Use the search bar to look for roles that support particular actions. For example, search for **read**, **edit**, or **view** to display the list of roles to which these actions apply.
+       {: note}
+
+1. Click **Add**.
 
 #### Limitations
 {: #limitations-access-temp-custom-role}
