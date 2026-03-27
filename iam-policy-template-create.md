@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-03-20"
+lastupdated: "2026-03-27"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -48,6 +48,8 @@ To create a stand-alone policy template in the console, complete the following s
 
 1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Save**.
+
+
 
 #### Reviewing a policy template
 {: ui}

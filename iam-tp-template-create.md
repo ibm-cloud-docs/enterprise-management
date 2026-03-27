@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-03-20"
+lastupdated: "2026-03-27"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -178,6 +178,8 @@ Access policies grant access in child accounts to the federated users that can a
 
 1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Add**.
+
+
 
 #### Remove access policies
 {: #remove-policies-tp}
