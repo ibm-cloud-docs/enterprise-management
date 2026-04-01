@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2023
-lastupdated: "2024-10-17"
+lastupdated: "2026-04-01"
 
 keywords: enterprise, enterprise resources, enterprise account, best practices, setting up an enterprise
 
@@ -16,7 +16,7 @@ subcollection: enterprise-management
 # Best practices for setting up an enterprise
 {: #enterprise-best-practices}
 
-These best practices provide you with the basic building blocks for setting up an {{site.data.keyword.cloud}} enterprise. You can also review the [Enterprise account architecture](/docs/enterprise-account-architecture) white paper to learn about how you can take advantage of automation and the recommendations for how large customers should configure and govern {{site.data.keyword.cloud_notm}} at scale.
+These best practices provide you with the basic building blocks for setting up an {{site.data.keyword.cloud}} enterprise. You can also review the [Enterprise account architecture](/docs/enterprise-account-architecture) white paper to learn about how you can take advantage of automation and the recommendations for how enterprise customers should configure and govern {{site.data.keyword.cloud_notm}} at scale.
 {: shortdesc}
 
 ## Organizing accounts according to how you want to track billing

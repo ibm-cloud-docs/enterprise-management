@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-09"
+lastupdated: "2026-04-01"
 
 subcollection: enterprise-management
 
@@ -73,7 +73,7 @@ For more information, see [Creating enterprise-managed access group templates](/
 ## Trusted profile templates
 {: #tp-enterprise-templates}
 
-With trusted profile templates, you can automatically grant federated users access to child accounts with conditions based on SAML attributes from your corporate directory. You can skip the account invitation process and define conditions that map the people in your organization to the right account. This way, the right access is already set up for them when they apply a trusted profile.
+With trusted profile templates, you can automatically grant federated users access to child accounts with conditions based on SAML attributes from your corporate directory. You can skip the account invitation process and define conditions that map the people in your organization to the correct account. This way, the appropriate access is already set up for them when they apply a trusted profile.
 
 For more information, see [Creating enterprise-managed trusted profile templates](/docs/enterprise-management?topic=enterprise-management-tp-template-create).
 
@@ -89,7 +89,7 @@ For more information, see [Creating enterprise-managed settings templates](/docs
 
 Access policy templates define a policy without requiring a subject, and you can use them to grant access to multiple subjects.
 
-Spend less time on configuring individual policies and use access policy templates to quickly grant the right access in access group and trusted profile templates. For more information, see [Creating access policy templates](/docs/enterprise-management?topic=enterprise-management-policy-template-create).
+Spend less time on configuring individual policies and use access policy templates to quickly grant the appropriate access in access group and trusted profile templates. For more information, see [Creating access policy templates](/docs/enterprise-management?topic=enterprise-management-policy-template-create).
 
 
 
@@ -125,7 +125,7 @@ Action controls are available only for access group templates.
 
 
 
-For access group templates, the best practice is to restrict changes to policies, but to allow access group administrators to add members. This way, you can create role-based access group templates with the right access for those roles and delegate managing membership to the access group administrator. Learn more about the available action controls for access group [members](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#members-action-controls), [dynamic rules](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#dynamic-rules-action-controls), and [access policies](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#access-ag-action-controls).
+For access group templates, the best practice is to restrict changes to policies, but to allow access group administrators to add members. This way, you can create role-based access group templates with the appropriate access for those roles and delegate managing membership to the access group administrator. Learn more about the available action controls for access group [members](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#members-action-controls), [dynamic rules](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#dynamic-rules-action-controls), and [access policies](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#access-ag-action-controls).
 
 
 ## How can I grant access to child account resources with IAM templates?
@@ -219,7 +219,7 @@ I create an access group template for each job role:
 - Create an access group template for developers. Assign a policy with **Writer** service access role for the Kubernetes namespace `test` in all clusters.
 - Create an access group template for administrators and assign two policies. First, assign a policy with the **Manager** role on the Kubernetes service. Next, assign a policy with the administrator role on the Container Registry service.
 
-For each access group template, set the action control for adding members to Yes so that access group administrators in child accounts can add the right members to the enterprise-managed access group in each account.
+For each access group template, set the action control for adding members to Yes so that access group administrators in child accounts can add the appropriate members to the enterprise-managed access group in each account.
 
 When you assign access to a namespace, the policy applies to all current and future instances of the namespace in any cluster in the account that you authorize.
 {: note}

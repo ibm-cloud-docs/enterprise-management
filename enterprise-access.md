@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2025
+  years: 2019, 2026
 
-lastupdated: "2025-08-11"
+lastupdated: "2026-04-01"
 
 keywords: enterprise access
 
@@ -17,7 +17,7 @@ subcollection: enterprise-management
 # User management for enterprises
 {: #enterprise-access-management}
 
-{{site.data.keyword.cloud}} enterprises are valuable for large companies or organizations that need to group a set of accounts while still maintaining a separation and isolation between the accounts for different departments or teams. For more information about enterprises, see [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise)
+{{site.data.keyword.cloud}} enterprises are valuable for companies or organizations with multiple accounts that need to group a set of accounts while still maintaining a separation and isolation between the accounts for different departments or teams. For more information about enterprises, see [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise)
 {: shortdesc}
 
 With the correct access in an enterprise account, you can use enterprise-managed IAM templates to centrally administer IAM resources, like access groups, trusted profiles, and settings, for child accounts. Users who have the Template Administrator and Template Assignment Administrator roles on **All IAM Account Management services** can efficiently manage access to IAM-enabled resources in child accounts. Plus, as an IAM administrator in child accounts, you can still create your own IAM resources to stay flexible with your needs.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-01"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -38,7 +38,7 @@ Your {{site.data.keyword.cloud_notm}} account is your home for collaboration in 
 
 {{site.data.keyword.cloud_notm}} enterprises offer a simpler way to centrally manage billing and usage across multiple accounts. Within an enterprise, you can create a multi-tiered hierarchy of accounts by adding new or existing accounts and nesting them in account groups. How you structure your enterprise is up to you. For example, for a large organization, you might organize your accounts by geography, or by department. You can choose the structure that best fits how you want to track your usage. If your teams change, no problem - you can move accounts within the enterprise as needed.
 
-Consolidated billing simplifies invoicing and payment within your enterprise. Usage costs are deducted from a subscription credit pool that's shared between all accounts, so you can add and manage subscription credit from a single place. This unified view of your credit spending means you can right-size your subscriptions across all of your usage to make sure you're getting the best deal. And there's no juggling multiple invoices - your enterprise billing administrator gets a single invoice with the details of any charges. It's that simple.
+Consolidated billing simplifies invoicing and payment within your enterprise. Usage costs are deducted from a subscription credit pool that's shared between all accounts, so you can add and manage subscription credit from a single place. This unified view of your credit spending means you can optimize your subscriptions across all of your usage to make sure you're getting the best deal. And there's no juggling multiple invoices - your enterprise billing administrator gets a single invoice with the details of any charges. It's that simple.
 
 If you want to dive into the details to see where your money is going, you can do that. Enterprises provide top-down usage reporting so you can analyze costs for usage in your accounts and account groups. You have visibility from the enterprise level down to the resource type in each account.
 
@@ -111,15 +111,15 @@ Enterprise users with the correct acccess can assign IAM resources, like access 
 ## How can I use an enterprise?
 {: #enterprise-use-cases}
 
-Enterprises can help simplify account and billing management for otherwise complex scenarios. Enterprises can be beneficial for managing any large organization, but two primary use cases where you might want to create them are large companies and educational institutions.
+Enterprises can help simplify account and billing management for otherwise complex scenarios. Enterprises can be beneficial for managing any organization with multiple accounts, but two primary use cases where you might want to create them are companies with many departments and educational institutions.
 
 How you structure your enterprise depends on how you want to analyze usage and costs, such as to charge back usage to a particular group. Organize your enterprise according to how you want to track and manage billing and usage.
 {: tip}
 
-### Large companies or organizations
+### Companies or organizations with multiple accounts
 {: #enterprise-orgs}
 
-Enterprises can be valuable for large organizations that otherwise require multiple separate accounts for their departments or teams. By using account groups, you can model your enterprise hierarchy after your organization's structure.
+Enterprises can be valuable for organizations that otherwise require multiple separate accounts for their departments or teams. By using account groups, you can model your enterprise hierarchy after your organization's structure.
 
 #### Organize by department
 {: #enterprise-by-dept}

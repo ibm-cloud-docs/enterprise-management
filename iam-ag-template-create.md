@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-03-27"
+lastupdated: "2026-04-01"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -327,7 +327,7 @@ To remove an assignment, complete the following steps:
 {: #create-ag-template-api}
 {: api}
 
-Consider using access group templates when you have a large number of child accounts, common access requirements across accounts, strict security requirements, or need to make changes to access policies.
+Consider using access group templates when you have many child accounts, common access requirements across accounts, strict security requirements, or need to make changes to access policies.
 
 You can programmatically create an access group template by calling the [IAM Access Groups API](/apidocs/iam-access-groups#create-template) as shown in the following sample request. The example creates an access group template for managers who need administrator access to all IAM account management services in child accounts so that they can manage access:
 
@@ -598,7 +598,7 @@ Before you can delete an access group template version, you must remove all assi
 {: #create-ag-template-cli}
 {: cli}
 
-Consider using access group templates when you have a large number of child accounts, common access requirements across accounts, strict security requirements, or need to make changes to access policies in your enterprise.
+Consider using access group templates when you have many child accounts, common access requirements across accounts, strict security requirements, or need to make changes to access policies in your enterprise.
 
 You can create an access group template by completing the following steps:
 
