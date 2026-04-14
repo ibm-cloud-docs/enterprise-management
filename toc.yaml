@@ -16,16 +16,6 @@ toc:
       - enterprise.md
       - topic: billing-overview.md
         navtitle: How can I manage billing and usage in IBM Cloud?
-      - topicgroup:
-          label: Learn about access management
-          topics:
-          - include: ../account/iam-whatis.md
-          - include: ../account/iam-identities.md
-          - include: ../account/iam-access-concepts.md
-          - include: ../account/iam-policies-overview.md
-          - include: ../account/iam-roles-overview.md
-          - include: ../account/iam-mappings.md
-          - include: ../account/context-restrictions-what-is.md
       - include: ../secure-enterprise/index.md
       - topicgroup:
           label: Best practices
@@ -170,18 +160,6 @@ toc:
           - include: ../account/at-events-iam.md
           - include: ../account/at-events-cbr.md
           - include: ../account/at-events-cm.md
-      - topicgroup:
-          label: Getting help when you run into issues
-          topics:
-          - include: ../account/using-support-center.md
-          - include: ../account/support-plans.md
-          - include: ../account/create-case.md
-          - include: ../account/assign-user-access-cases.md
-          - include: ../account/manage-case.md
-          - include: ../account/view_notifications.md
-          - include: ../account/ViewStatus.md
-          - include: ../account/report-security.md
-          - include: ../account/case-severity-response-times.md
   - navgroup:
       id: reference
       topics:
@@ -235,7 +213,6 @@ toc:
           - include: ../account/invoice_faqs.md
           - include: ../account/commitment-faqs.md
           - include: ../account/cc-faqs.md
-          - include: ../account/faq-support.md
       - topicgroup:
           label: Troubleshooting enterprise accounts
           topics:
@@ -250,14 +227,6 @@ toc:
           - ts-access-ent-iam-templates.md
           - ts-access-child-accts.md
           - ts-iam-template-fail.md
-      - topicgroup:
-          label: Troubleshooting the Support Center
-          topics:
-          - include: ../account/ts_create-case.md
-          - include: ../account/ts_help-info-services.md
-          - include: ../account/ts_service-broker.md
-          - include: ../account/ts_view-archived-cases.md
-          - include: ../account/ts_view-case-details.md
       - topicgroup:
           label: Troubleshooting billing and usage
           topics:
