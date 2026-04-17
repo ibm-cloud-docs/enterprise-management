@@ -52,18 +52,18 @@ toc:
           topics:
           - enterprise-access.md
           - enterprise-assign-access.md
-          - include: ../account/iam-account_management.md
-          - include: ../account/context-restrictions-create.md
-          - include: ../account/context-restrictions-manage.md
-          - include: ../account/iam-service-roles.md
-          - include: ../account/iam-login_fedid.md
-          - include: ../account/iam-federation-guide.md
-          - include: ../account/iam-audit-policies.md
-          - include: ../account/iam-condition-properties.md
-          - include: ../account/iam-login-flows.md
-          - include: ../account/iam-idp-integration.md
-          - include: ../account/iam-policies-change-log.md
-          - include: ../account/iam-manage-user-account.md
+          - include: ../iam/iam-account_management.md
+          - include: ../iam/context-restrictions-create.md
+          - include: ../iam/context-restrictions-manage.md
+          - include: ../iam/iam-service-roles.md
+          - include: ../iam/iam-login_fedid.md
+          - include: ../iam/iam-federation-guide.md
+          - include: ../iam/iam-audit-policies.md
+          - include: ../iam/iam-condition-properties.md
+          - include: ../iam/iam-login-flows.md
+          - include: ../iam/iam-idp-integration.md
+          - include: ../iam/iam-policies-change-log.md
+          - include: ../iam/iam-manage-user-account.md
       - topicgroup:
           label: Working with resources and tags
           topics:
@@ -101,7 +101,7 @@ toc:
               - include: ../account/how_charged.md
               - include: ../account/change_pricing_plan.md
               - include: ../account/getting-pricing-api.md
-              - include: ../account/notifications.md
+              - include: ../support/notifications.md
               - include: ../account/project-spend.md
           - topicgroup:
               label: Managing your usage
@@ -157,8 +157,8 @@ toc:
           topics:
           - at-events-em.md
           - include: ../account/at-events-am.md
-          - include: ../account/at-events-iam.md
-          - include: ../account/at-events-cbr.md
+          - include: ../iam/at-events-iam.md
+          - include: ../iam/at-events-cbr.md
           - include: ../account/at-events-cm.md
   - navgroup:
       id: reference
@@ -197,7 +197,7 @@ toc:
               label: Enterprise Management
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
       - include: ../account/credit-types.md
-      - include: ../account/customer-incident-report.md
+      - include: ../support/customer-incident-report.md
       - include: ../account/known-issues.md
       - get-help.md
       - include: ../account/bxnui.md
