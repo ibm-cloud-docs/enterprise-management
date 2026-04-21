@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-03-30"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -137,7 +137,7 @@ To create an access policy template by using the CLI, complete the following ste
 
 1. Create a JSON file that configures the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
 
-   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
+   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/iam?topic=iam-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
 
     ```json
     {

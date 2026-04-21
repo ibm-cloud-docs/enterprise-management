@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-21"
 
 keywords: enterprise usage, view enterprise costs, account group usage, account usage, cost recovery, chargeback, support cost
 
@@ -23,7 +23,7 @@ You can track resource and support costs from accounts in your {{site.data.keywo
 ## Required access for viewing enterprise usage
 {: #enterprise-usage-access}
 
-In an enterprise, access to usage information is controlled by the Enterprise service. To view usage information, users must be invited to the enterprise account and have the Usage Reports Viewer, Editor, or Administrator role on the Enterprise service. The Usage Reports Viewer role provides access only to viewing usage reports, while the Editor and Administrator roles enable more enterprise management actions. In keeping with security best practices, assign the least amount of access that is needed for the user to complete their task. For more information, see [Enterprise actions and roles](/docs/account?topic=account-account-services#enterprise-account-management).
+In an enterprise, access to usage information is controlled by the Enterprise service. To view usage information, users must be invited to the enterprise account and have the Usage Reports Viewer, Editor, or Administrator role on the Enterprise service. The Usage Reports Viewer role provides access only to viewing usage reports, while the Editor and Administrator roles enable more enterprise management actions. In keeping with security best practices, assign the least amount of access that is needed for the user to complete their task. For more information, see [Enterprise actions and roles](/docs/iam?topic=iam-account-services#enterprise-account-management).
 
 You can give users granular access so that they can view usage for a certain account or account group. For example, say that your enterprise has account groups for each department, and each department has account groups for each team. You can scope the access so that each enterprise user can see only the information that is needed to fulfill their job role.
 * Your financial officer needs to view usage for the entire enterprise so that they can track and recover costs for each department, but they don't need to create accounts or account groups. Assign them the Usage Reports Viewer role for the enterprise.

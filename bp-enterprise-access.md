@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-01"
+lastupdated: "2026-04-21"
 
 subcollection: enterprise-management
 
@@ -106,7 +106,7 @@ Custom roles are useful when:
 
 When you create a custom role template at the enterprise level and assign it to child accounts, the custom role is automatically created in those accounts. Users in child accounts can then assign the custom role through access policies, just like platform-defined roles.
 
-For more information, see [Creating custom roles](/docs/account?topic=account-custom-roles).
+For more information, see [Creating custom roles](/docs/iam?topic=iam-custom-roles).
 
 ## Authorization policy templates
 {: #authorization-policy-templates}
@@ -172,7 +172,7 @@ You can create policies with more granularity by using access management tags.
 
 {{../account/bp_account.md#limit-policies}}
 
-For more information about IAM access and the available features, see [How {{site.data.keyword.cloud_notm}} IAM works](/docs/enterprise-management?topic=enterprise-management-iamoverview).
+For more information about IAM access and the available features, see [Getting started with {{site.data.keyword.cloud_notm}} IAM](/docs/iam?topic=iam-iamoverview).
 
 
 ## How can I grant permissions to satisfy service dependencies across my enterprise?
