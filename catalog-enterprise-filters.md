@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-01-10"
+  years: 2020, 2026
+lastupdated: "2026-04-21"
 
 keywords: catalog, private catalog, catalog management service, public catalog, enterprise account, child account, account group, enterprise, IBM Cloud catalog
 
@@ -23,7 +23,7 @@ As the account owner or administrator, you can [manage which products in the {{s
 {: #catalog-enterprise-prereqs}
 
 * [Set up your enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-tutorial).
-* Make sure that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+* Make sure that you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services#catalog-management-account-management).
 
 ## Managing products at the enterprise level
 {: #catalog-enterprise-filter}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact
 
@@ -38,7 +38,7 @@ To create an account group, you need the Administrator or Editor role on the Ent
 1. From the Enterprise dashboard in the {{site.data.keyword.cloud_notm}} console, click **Accounts** to view the accounts and account groups in the enterprise.
 1. In the Account groups section, click **Create**.
 1. Enter a name for the account group that reflects the accounts that it will contain. See [How can I use an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise#enterprise-use-cases) for examples of how you might organize accounts.
-1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
+1. If you want an enterprise user other than yourself to be the primary contact for the account group, select their IBMid from the **Contact** menu. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
 
    The contact is different from an account owner in that they don't have any additional access within the account group or its accounts. The user that you select as a contact acts as a focal point for any account group issues. For example, if a financial officer notices that the account group's usage costs are unexpectedly high, they might notify the account group contact.
 

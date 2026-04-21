@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2024-10-17"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, organize accounts, account group, change contact, account group contact
 
@@ -25,7 +25,7 @@ To update an account group contact, you need the Administrator or Editor role on
 {: #update-account-group-contact-ui}
 {: ui}
 
-To update the contact for an account group, complete the following steps. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
+To update the contact for an account group, complete the following steps. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Enterprise** > **Accounts**.
 1. In the **Account groups** section, click the **Actions** icon ![Actions icon](../icons/actions-icon-vertical.svg "Actions") in the row for the account group, and select **Edit**.
@@ -44,7 +44,7 @@ This action can be done only through the UI, API, or SDKs. To see the steps, swi
 
 To update the primary contact for the account group, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#import-account-to-enterprise){: external} as shown in the following sample request. Replace the IAM token and ID variables with the values from your enterprise.
 
-1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information.
+1. If a user that you want to assign as the contact isn't in the enterprise, first invite the user to the enterprise account. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information.
 
 1. Update the primary contact by passing the IAM ID of the user that you want to be the new primary contact for the enterprise.
 

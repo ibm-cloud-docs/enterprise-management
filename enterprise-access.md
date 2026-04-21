@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-04-01"
+lastupdated: "2026-04-21"
 
 keywords: enterprise access
 
@@ -26,7 +26,7 @@ Assigning IAM resources to accounts and account groups is an efficient way to gr
 
 The user list for each child account in an enterprise is accessible only to users in that child account. This means the users who are invited to the enterprise and the users who are invited to the accounts within the enterprise remain entirely separate. This is beneficial because you can add multiple accounts to an enterprise and organize them as needed into account groups, but keep the user lists restricted from other accounts.
 
-In most cases, you want to add only the users to your enterprise account that need the ability to manage the enterprise. Depending on the role the user is assigned on the [Enterprise account management service](/docs/account?topic=account-account-services#enterprise-account-management), they have varying levels of access for managing the enterprise. For example, a user assigned the Administrator role on the Enterprise service can rename the enterprise, update the domain, view usage, create accounts, and more. However, a user with the viewer or operator role is limited to viewing the accounts and account groups hierarchy for the enterprise.
+In most cases, you want to add only the users to your enterprise account that need the ability to manage the enterprise. Depending on the role the user is assigned on the [Enterprise account management service](/docs/iam?topic=iam-account-services#enterprise-account-management), they have varying levels of access for managing the enterprise. For example, a user assigned the Administrator role on the Enterprise service can rename the enterprise, update the domain, view usage, create accounts, and more. However, a user with the viewer or operator role is limited to viewing the accounts and account groups hierarchy for the enterprise.
 
 Inviting users to the enterprise account doesn't provide access to manage any of the child accounts within the enterprise or their resources. If you add a user to an enterprise account that contains a number of accounts, those users do not automatically have access to manage those accounts as far as user management, billing, and more. The enterprise account users also don't have access to any resources in other accounts within the enterprise.
 

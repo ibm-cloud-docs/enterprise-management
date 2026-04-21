@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-04-01"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -76,7 +76,7 @@ Learn more in [Centrally manage billing and usage with enterprises](/docs/enterp
 ## Enterprise support
 {: #enterprise-support-model}
 
-The level of support that is assigned to an {{site.data.keyword.cloud_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Basic, Advanced, and Premium Support plans](/docs/enterprise-management?topic=enterprise-management-support-plans#support_level_enterprise).
+The level of support that is assigned to an {{site.data.keyword.cloud_notm}} enterprise defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan. For more information about the support experience, see [Support level and enterprises](/docs/support?topic=support-support-plans#support_level_enterprise).
 
 ## Resource management
 {: #enterprise-resources}

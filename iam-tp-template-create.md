@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-03-27"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -111,7 +111,7 @@ To establish trust, complete the following steps:
 1. Click **Trust relationship > Federated users**.
 1. Click **Add**, and select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP).
 1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
-   1. Click **Add a condition** to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+   1. Click **Add a condition** to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/iam?topic=iam-iam-condition-properties).
    1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-ibm-idp-integration#trusted-profiles-idp-data).
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 1. Click **Add**. 
@@ -127,7 +127,7 @@ To establish trust, complete the following steps:
 
 1. Click **Trust relationship > Compute resources**. 
 1. Click **Add**, and select a compute service.
-1. Click **Add a condition** to define multiple conditions. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
+1. Click **Add a condition** to define multiple conditions. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/iam?topic=iam-iam-condition-properties).
 1. Click **Add**. 
 
 Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the compute resource that you want to edit or remove, by selecting **Add** or **Remove**.

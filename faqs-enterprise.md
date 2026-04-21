@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-21"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -86,7 +86,7 @@ No, you can't edit the name of an account from within your enterprise. To edit t
 {: #enterprise-invite-users}
 {: faq}
 
-To invite users to an enterprise, you must have an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access policy with the Editor or higher role on the User Management service. For more information, see [Inviting users](/docs/account?topic=account-iamuserinv&interface=ui#invitations).
+To invite users to an enterprise, you must have an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access policy with the Editor or higher role on the User Management service. For more information, see [Inviting users](/docs/iam?topic=iam-iamuserinv&interface=ui#invitations).
 
 ## Can my child account have a different subscription currency than my enterprise account?
 {: #enterprise-currency}

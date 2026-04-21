@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-02-12"
+lastupdated: "2026-04-21"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
@@ -95,7 +95,7 @@ Then, one of the following two options:
 * Administrator or Editor role for the Enterprise account management service for the entire enterprise
 * Administrator or Editor role on the current and target account group
 
-For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/account?topic=account-account-services#enterprise-account-management).
+For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/iam?topic=iam-account-services#enterprise-account-management).
 
 
 ### Managing security and compliance
@@ -118,7 +118,7 @@ To assign enterprise-managed IAM templates to child accounts, you must assign th
 By default, no users have these permissions, including the account owner.
 {: note}
 
-For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/account?topic=account-account-services#enterprise-account-management).
+For details about the actions users can take for each role, see [Actions and roles for account management services](/docs/iam?topic=iam-account-services#enterprise-account-management).
 
 ## Assigning access in the console
 {: #enterprise-access-console}
@@ -139,7 +139,7 @@ You can set the target of the policy to be for the entire enterprise, a specific
 8. (Optional) Repeat steps to add additional access.
 9. Click **Assign**.
 
-For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management services](/docs/account?topic=account-account-services#enterprise-account-management).
+For more information about roles and actions to assign access in an enterprise account, see [Assigning access to account management services](/docs/iam?topic=iam-account-services#enterprise-account-management).
 
 ## Assigning access by using the CLI
 {: #enterprise-cli-policy}

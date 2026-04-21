@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-21"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -237,4 +237,4 @@ Use the following steps to create an enterprise:
 
 Build out your enterprise structure by adding more existing accounts or creating new accounts within your enterprise. For more information, see [Adding accounts to your enterprise](/docs/enterprise-management?topic=enterprise-management-enterprise-add).
 
-You can also invite additional users to the enterprise account so that they can help manage the enterprise. For example, you might want to invite a financial officer to manage billing and track usage costs, and invite department leads to administer accounts. See [Inviting users](/docs/account?topic=account-iamuserinv) for more information about how to invite users.
+You can also invite additional users to the enterprise account so that they can help manage the enterprise. For example, you might want to invite a financial officer to manage billing and track usage costs, and invite department leads to administer accounts. See [Inviting users](/docs/iam?topic=iam-iamuserinv) for more information about how to invite users.
