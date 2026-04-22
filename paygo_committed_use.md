@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-22"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use
 
@@ -43,7 +43,7 @@ After you contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/s
 ## Viewing your commitment usage
 {: #committed-usage}
 
-The Enterprise Savings Plan page provides the usage details for your commitment on the account. You can track your usage month to month for a detailed view of your commitment usage history. To access this information, you need an access policy with the viewer role or higher on the billing account management service. See [IAM access](/docs/account?topic=account-userroles) for more information.
+The Enterprise Savings Plan page provides the usage details for your commitment on the account. You can track your usage month to month for a detailed view of your commitment usage history. To access this information, you need an access policy with the viewer role or higher on the billing account management service. See [IAM access](/docs/iam?topic=iam-userroles) for more information.
 
 To view your Enterprise Savings Plan usage in the {{site.data.keyword.cloud}} console, go to **Manage > Billing and usage > Commitments** and select **Enterprise Savings Plan**.
 
@@ -74,4 +74,4 @@ For more information about product-level discounts through your Enterprise Savin
 
 You can get Advanced or Premium support with your Enterprise Savings Plan. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. Both support plans cost just 10% of your annual commitment and usage. To get support, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.cloud_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/enterprise-management?topic=enterprise-management-support-plans).
+For more information about {{site.data.keyword.cloud_notm}} support plans, see [Support plans](/docs/support?topic=support-support-plans).
