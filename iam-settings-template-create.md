@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -21,7 +21,7 @@ In an enterprise where you have many child accounts, it can be time-consuming an
 You can assign only one settings template to an account or account group. Create a settings template that applies to the most accounts and create a new one only for accounts that have special requirements. For example, you might have stricter multifactor authentication (MFA) requirements in production environment accounts.
 {: note}
 
-When you assign a settings template, child account users with the Administrator role on the [IAM identity service](/docs/account?topic=account-account-services&interface=ui#identity-service-account-management) can still manage settings for their account. If there are conflicting settings between the template-defined settings and settings that are managed within the account, the stricter setting is applied to the account. This means that the more restrictive configuration takes precedence and is enforced for that particular account.
+When you assign a settings template, child account users with the Administrator role on the [IAM identity service](/docs/iam?topic=iam-account-services#identity-service-account-management) can still manage settings for their account. If there are conflicting settings between the template-defined settings and settings that are managed within the account, the stricter setting is applied to the account. This means that the more restrictive configuration takes precedence and is enforced for that particular account.
 
 ## Before you begin
 {: #before-you-settings-template}
@@ -95,7 +95,7 @@ To apply restrictions on specific users, enable the **Restrict user list visibil
 
 By default, all members of an account can create {{site.data.keyword.cloud}} API keys. However, by using the API key creation setting, that access can be restricted so that only members with the correct access can create these user API keys.
 
-Restricting the ability to create API keys makes sense if you want users in specific child account to always log in interactively, meaning that you don't want automation scripts to run that can log in users automatically by using an API key. For more information about API keys, see [Managing user API keys](/docs/account?topic=account-userapikey).
+Restricting the ability to create API keys makes sense if you want users in specific child account to always log in interactively, meaning that you don't want automation scripts to run that can log in users automatically by using an API key. For more information about API keys, see [Managing user API keys](/docs/iam?topic=iam-userapikey).
 
 If you turn on the Restrict API key creation setting, users in your account require specific access to create API keys, including the account owner. To restrict who can create API keys, use the following steps:
 
@@ -105,21 +105,21 @@ Enabling this setting affects only the creation of user API keys. It does not af
 1. Enable the **Restrict API key creation** setting in the Account section.
 1. Click **Yes** to confirm.
 
-Now that the setting is enabled to restrict users from creating API keys, you can create an access group template that grants the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create API keys with restrictions enabled](/docs/account?topic=account-allow-api-create&interface=ui#restrict-api-create-access).
+Now that the setting is enabled to restrict users from creating API keys, you can create an access group template that grants the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create API keys with restrictions enabled](/docs/iam?topic=iam-allow-api-create#restrict-api-create-access).
 {: important}
 
 #### Restricting users from creating service IDs
 {: ##restrict-service-id}
 {: ui}
 
-By default, all members of an account can create service IDs. However, by using the Service ID creation setting, access can be restricted so that only members with the correct access can create service IDs. For more information about Service IDs, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
+By default, all members of an account can create service IDs. However, by using the Service ID creation setting, access can be restricted so that only members with the correct access can create service IDs. For more information about Service IDs, see [Creating and working with service IDs](/docs/iam?topic=iam-serviceids).
 
 If you enable the Service ID creation setting, users in child accounts require specific access to create service IDs, including the account owner. To restrict who can create service IDs, use the following steps:
 
 1. Enable the **Restrict service ID creation** setting in the Account section.
 1. Click **Yes** to confirm.
 
-Now that the setting is enabled to restrict users from creating service IDs, you can create an access group template that grants the required access to enable specific users to continue creating service IDs. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create service IDs with restrictions enabled](/docs/account?topic=account-restrict-service-id-create&interface=ui#assign-access-create-service-id-restrict)
+Now that the setting is enabled to restrict users from creating service IDs, you can create an access group template that grants the required access to enable specific users to continue creating service IDs. Remember, the account owner is also required to have this explicit access. For more information, see [Assigning access to create service IDs with restrictions enabled](/docs/iam?topic=iam-restrict-service-id-create#assign-access-create-service-id-restrict)
 {: important}
 
 #### Allowing specific IP addresses
@@ -138,7 +138,7 @@ To restrict all users to using only specific IP addresses, complete the followin
 1. From the Account section, enable the **Restrict IP address access** setting.
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the child accounts can log in to {{site.data.keyword.cloud}}.
 
-   You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
+   You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/iam?topic=iam-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
    {: note}
 
 1. Click **Save**.
@@ -164,7 +164,7 @@ Enabling MFA does not affect users that are already logged in because MFA takes 
 To enable MFA in a settings template, complete the following steps:
 
 1. Go to the Authentication section.
-1. Select the type of MFA that you want to enable in your account. For more information about the MFA options, see [MFA options](/docs/account?topic=account-types#mfa-options).
+1. Select the type of MFA that you want to enable in your account. For more information about the MFA options, see [MFA options](/docs/iam?topic=iam-types#mfa-options).
 
 
 The MFA level defined by the child account applies if the enterprise-managed setting is less strict or removed. For example, the administrator of a production child account might specify a stricter level of MFA than what is defined by the enterprise-managed settings template.

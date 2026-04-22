@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -109,7 +109,7 @@ To change the default behavior, complete the following steps:
 {: #add-dynamic-template}
 {: ui}
 
-You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must match the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
+You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must match the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/iam?topic=iam-ibm-idp-integration).
 
 1. Go to **Manage > Access (IAM) > Templates** in the {{site.data.keyword.cloud_notm}} console.
 1. Select your access group template.
@@ -427,7 +427,7 @@ In the previous example, the `action_controls` allow access group administrators
 {: #add-dynamic-template-api}
 {: api}
 
-You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must be matched by the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
+You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must be matched by the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/iam?topic=iam-ibm-idp-integration).
 
 In the previous example, managers are dynamically added to the group by the `rules` specified in the `assertions` section. The session duration is set to `12` hours for dynamically added users. Access group membership is revoked after this time period expires. Users must log back in to refresh their access group membership.
 
@@ -677,7 +677,7 @@ You can create an access group template by completing the following steps:
     {: curl}
     {: codeblock}
 
-1.  Use the [access-group-template-create](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_access_group_template_create) method as shown in the following sample request:
+1.  Use the [access-group-template-create](/docs/iam?topic=iam-ibmcloud_commands_iam#ibmcloud_iam_access_group_template_create) method as shown in the following sample request:
 
     ```bash
     ibmcloud iam access-group-template-create --output JSON --file /path/to/access_group_template.json
@@ -705,7 +705,7 @@ In the previous example, the `action_controls` allow access group administrators
 {: #add-dynamic-template-cli}
 {: cli}
 
-You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must be matched by the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
+You can create dynamic rules to automatically add federated users in child accounts to enterprise-managed access groups based on specific identity attributes. Set up conditions that must be matched by the data that is configured within the identity provider (IdP) and passed in with a user's federated ID during login. Before you add dynamic rules, you must [Enable authentication from an external identity provider](/docs/iam?topic=iam-ibm-idp-integration).
 
 In the previous example, managers are dynamically added to the group by the `rules` specified in the `assertions` section. The session duration is set to `12` hours for dynamically added users. Access group membership is revoked after this time period expires. Users must log back in to refresh their access group membership.
 

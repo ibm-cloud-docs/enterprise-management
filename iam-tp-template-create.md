@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, trusted profile, migrate version, upgrade version, new version
 
@@ -18,7 +18,7 @@ subcollection: enterprise-management
 In an enterprise where you have many child accounts, it can be time-consuming and error-prone to manually configure trusted profiles in each account. Use trusted profile templates to dynamically grant federated users access to accounts in your enterprise.
 {: shortdesc}
 
-You can establish trust with only federated users when you use enterprise-managed trusted profile templates. To set up trusted profiles in child accounts for compute resources, {{site.data.keyword.cloud_notm}} services, and service IDs, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
+You can establish trust with only federated users when you use enterprise-managed trusted profile templates. To set up trusted profiles in child accounts for compute resources, {{site.data.keyword.cloud_notm}} services, and service IDs, see [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile).
 {: note}
 
 A user doesn't need to be a member of an account to apply a trusted profile. A user can apply a profile if the user has the same identity provider (IdP) as the trusted profile and they meet the conditions of trust. For example, a user in your enterprise directory needs access to a group of accounts to accomplish a specific task. Create a trusted profile template with conditions of trust that targets that user and the policies that they need. Then, assign the trusted profile template to the accounts where they need access. Now, the user can switch between accounts by applying the trusted profile in each account, and they have consistent access across accounts.
@@ -29,7 +29,7 @@ Administrators on the Identity service can add trust relationships and policies 
 ## Before you begin
 {: #before-you-tp-template}
 
-- Before you begin, you need to [Enable authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
+- Before you begin, you need to [Enable authentication from an external identity provider](/docs/iam?topic=iam-ibm-idp-integration).
 
 - To learn about how enterprise-manged IAM templates make your enterprise more secure, see [How enterprise-managed IAM access works](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#how-enterprise-iam).
 
@@ -112,7 +112,7 @@ To establish trust, complete the following steps:
 1. Click **Add**, and select **Users federated by IBMid** or **Users federated by {{site.data.keyword.cloud_notm}} AppID** as the authentication method and input the default identity provider (IdP).
 1. Add conditions based on your IdP data to define how and when federated users can apply the profile.
    1. Click **Add a condition** to define multiple conditions. Federated users must meet all the conditions to apply the trusted profile. For more information about the fields that are used to create conditions, see [IAM condition properties](/docs/iam?topic=iam-iam-condition-properties).
-   1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/account?topic=account-ibm-idp-integration#trusted-profiles-idp-data).
+   1. View **Identity provider data** to search attribute names and values in your own personal data from your IdP. For more information, see [Using IdP data to build trusted profiles](/docs/iam?topic=iam-ibm-idp-integration#trusted-profiles-idp-data).
 1. Define the session duration for how long a user can apply the profile before they must reauthenticate.
 1. Click **Add**. 
 

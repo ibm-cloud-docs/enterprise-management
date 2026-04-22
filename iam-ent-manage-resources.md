@@ -1,7 +1,7 @@
 ---
 copyright:
  years: 2025, 2026
-lastupdated: "2026-01-08"
+lastupdated: "2026-04-22"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -21,12 +21,12 @@ completion-time: 15m
 A common request from companies across many industries is how to manage cloud resources across their accounts centrally. At {{site.data.keyword.cloud}}, there are a few ways to complete this task. You can either use [{{site.data.keyword.cloud_notm}} projects to manage the Infrastructure as code (IaC)](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects), or you can use an API directly, which is recommended for companies with existing resource management systems that are looking to extend them to include {{site.data.keyword.cloud_notm}} resources. This tutorial walks you through the steps on using a single service ID to manage resources in all enterprise subaccounts by using only API requests. Steps 1–5 are one-time configuration steps that are required to set up access and permissions, while steps 6–9 are operational steps that must be performed each time you want to manage account resources. The configuration steps include obtaining access credentials, creating the necessary service identities, and defining access policies. The operational steps involve retrieving access tokens, listing the trusted profiles that the operator service ID can use, generating an access token for the child account, and using them to manage resources.
 {: shortdesc}
 
-Resource management can be automated for child accounts that use a [service ID](/docs/account?topic=account-serviceids&interface=ui) and [enterprise-managed {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) templates](https://www.ibm.com/new/announcements/introducing-ibm-cloud-enterprise-managed-iam){: external} from the enterprise root account. First, you must have a service ID and an API key, which can be from the enterprise root account, or from any other existing child account in the enterprise. Then, you can use the trusted profile and access policy templates to assign the required access for managing resources. Next, the templates can be assigned to the child accounts in the enterprise you want to manage. Finally, by using the assigned trusted profiles and the service ID’s API key, you can manage resources in the context of each child account.
+Resource management can be automated for child accounts that use a [service ID](/docs/iam?topic=iam-serviceids) and [enterprise-managed {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) templates](https://www.ibm.com/new/announcements/introducing-ibm-cloud-enterprise-managed-iam){: external} from the enterprise root account. First, you must have a service ID and an API key, which can be from the enterprise root account, or from any other existing child account in the enterprise. Then, you can use the trusted profile and access policy templates to assign the required access for managing resources. Next, the templates can be assigned to the child accounts in the enterprise you want to manage. Finally, by using the assigned trusted profiles and the service ID’s API key, you can manage resources in the context of each child account.
 
 ## Before you begin
 {: #prereqs-ent-manage-resource}
 
-* Create a service ID and an API key specific to the service ID. This is your operations service ID that is used to manage resources in the child accounts. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids&interface=ui).
+* Create a service ID and an API key specific to the service ID. This is your operations service ID that is used to manage resources in the child accounts. For more information, see [Creating and working with service IDs](/docs/iam?topic=iam-serviceids).
 * Have user or service ID credentials with access to create and assign IAM templates `Viewer` role on the **Enterprise** service. This user or service ID must be different than the operations service ID and it is needed only once to complete the set up.
 * Verify that you're assigned the following IAM roles:
     * Template administrator on **All IAM Account Management services**

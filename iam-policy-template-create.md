@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-04-22"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -15,7 +15,7 @@ subcollection: enterprise-management
 # Creating enterprise-managed policy templates
 {: #policy-template-create}
 
-Configuring an access policy every time you need to grant access in an access group or trusted profile template can be time-consuming and error prone. Simplify the process and maintain uniformity in your policies by using enterprise-managed access policy templates to assign access or [create service to service authorizations](/docs/account?topic=account-serviceauth).
+Configuring an access policy every time you need to grant access in an access group or trusted profile template can be time-consuming and error prone. Simplify the process and maintain uniformity in your policies by using enterprise-managed access policy templates to assign access or [create service to service authorizations](/docs/iam?topic=iam-serviceauth).
 {: shortdesc}
 
 Access policy templates define a policy without requiring a subject, and you can use them to grant access to multiple subjects.
@@ -24,7 +24,7 @@ For example, you might need to assign an access policy that grants administrator
 
 While a policy subject isn't required if you use the CLI or API, you do need one in the {{site.data.keyword.cloud_notm}} console. Each time that you assign an access policy to a trusted profile or access group template in the {{site.data.keyword.cloud_notm}} console, you create a policy template. You can reference policy templates to grant access in trusted profile and access group templates by using the console, CLI, or API. View policy by going to **Manage > Access (IAM) > Templates > Policies**.
 
-Access policy templates support only the `v2/policies` schema. For more information, see the [IAM Policy Management API change log](/docs/account?topic=account-api-change-log).
+Access policy templates support only the `v2/policies` schema. For more information, see the [IAM Policy Management API change log](/docs/iam?topic=iam-api-change-log).
 {: note}
 
 ## Creating a policy template by using the console
@@ -137,7 +137,7 @@ To create an access policy template by using the CLI, complete the following ste
 
 1. Create a JSON file that configures the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
 
-   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/iam?topic=iam-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based).
+   The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/iam?topic=iam-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/iam?topic=iam-iam-time-based).
 
     ```json
     {
