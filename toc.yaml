@@ -28,7 +28,6 @@ toc:
       id: tutorial
       topics:
       - enterprise-tutorial.md
-      - enterprise-create.md
       - iam-secure-account-tutorial.md
       - iam-ent-template-tutorial.md
       - iam-ent-template-pen-test.md
@@ -40,6 +39,7 @@ toc:
       - topicgroup:
           label: Managing your enterprise
           topics:
+          - enterprise-create.md
           - enterprise-add-accounts.md
           - enterprise-organize-accounts.md
           - enterprise-update-group-contact.md
