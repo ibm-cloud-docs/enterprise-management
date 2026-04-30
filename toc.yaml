@@ -135,7 +135,7 @@ toc:
               - include: ../account/migrate-billing.md
               - include: ../account/migrate-bp-billing.md
           - include: ../account/cancel-billing-items.md
-          - include: ../account/support.md
+          - include: ../support/support.md
       - topicgroup:
           label: Managing projects
           topics:
