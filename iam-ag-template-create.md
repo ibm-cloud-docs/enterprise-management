@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-05-11"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -170,8 +170,6 @@ Access policies grant access in child accounts to the members of your enterprise
     1. Scope the access to **All resources**, or select **Specific resources** based on attributes and click **Next**.
     1. In the **Roles and actions** section, select the roles that define the scope of access. You can create custom role templates within a policy template flow, and also select a custom role from existing custom role templates for the selected service.
 
-       When you select a custom role template, only the most recent version is available. For more information, see [Limitations](#limitations-access-temp-custom-role).
-
        1. Click **Create custom role** to define a custom combination of actions.
        1. Enter a template name.
        1. (Optional) Enter a template description.
@@ -185,11 +183,6 @@ Access policies grant access in child accounts to the members of your enterprise
        {: note}
 
 1. Click **Add**.
-
-#### Limitations
-{: #limitations-access-temp-custom-role}
-
-When you add a custom role to an access policy template, only the most recent version of the custom role template is available for selection. If you create a newer version of a custom role template after you add it to your policy template, the policy template continues to use the originally selected version. To use the most recent version, remove the custom role and add it again.
 
 #### Remove access policies
 {: #remove-access-ag-template}
