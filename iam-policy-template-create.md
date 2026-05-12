@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-05-12"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -48,8 +48,6 @@ To create a stand-alone policy template in the console, complete the following s
 1. Scope the access to **All resources**, or select **Specific resources** based on attributes and click **Next**.
 1. In the **Roles and actions** section, select the roles that define the scope of access. You can create custom role templates within a policy template flow, and also select a custom role from existing custom role templates for the selected service.
 
-    When you select a custom role template, only the most recent version is available. For more information, see [Limitations](/docs/enterprise-management?topic=enterprise-management-policy-template-create&interface=ui#limitations-policy-template-custom-roles).
-
     1. Click **Create custom role** to define a custom combination of actions.
     1. (Optional) Enter a template description.
     1. Enter a name for the custom role.
@@ -62,11 +60,6 @@ To create a stand-alone policy template in the console, complete the following s
 
 1. (Optional) Add conditions to specify when you want the policy to grant access.
 1. Click **Save**.
-
-#### Limitations
-{: #limitations-policy-template-custom-roles}
-
-When you add a custom role to an access policy template, only the most recent version of the custom role template is available for selection. If you create a newer version of a custom role template after you add it to your policy template, the policy template continues to use the originally selected version. To use the most recent version, remove the custom role and add it again.
 
 #### Reviewing a policy template
 {: ui}
