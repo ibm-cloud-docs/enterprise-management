@@ -200,7 +200,7 @@ toc:
       - include: ../support/customer-incident-report.md
       - include: ../account/known-issues.md
       - get-help.md
-      - include: ../account/bxnui.md
+      - include: ../support/bxnui.md
   - navgroup:
       id: help
       topics:
