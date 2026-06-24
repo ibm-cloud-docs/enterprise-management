@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-06-24"
 
 keywords: enterprise billing, enterprise, subscription, billing unit, billing option, invoice, credit pool
 
@@ -24,6 +24,7 @@ New to {{site.data.keyword.cloud_notm}} enterprises? See [What is an enterprise?
 ## Enterprise billing model
 {: #enterprise-billing-basics}
 
+
 In an enterprise, billing is managed by the enterprise rather than in the individual child accounts. This centralized billing model differs from a stand-alone account in the following ways.
 
 * Credit from any existing subscriptions or promotions in accounts that are added to the enterprise is consolidated into the enterprise's credit pool. The billing administrator adds new subscriptions to the credit pool from the enterprise account.
@@ -31,6 +32,9 @@ In an enterprise, billing is managed by the enterprise rather than in the indivi
 * Usage is invoiced through the enterprise account. Only the enterprise billing administrator can view invoices and manage payments.
 
 ![A diagram that shows that credit from accounts is added to the enterprise credit pool, which is managed by the billing administrator in the enterprise account. Usage access is managed separately and can be targeted to the enterprise, an account group, or an account.](images/enterprise-billing.svg){: caption="Figure 1.Enterprise billing and usage management" caption-side="bottom"}
+
+
+
 
 ## Billing options
 {: #enterprise-billing-options}
