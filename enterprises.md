@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-06-24"
+lastupdated: "2026-06-26"
 
 keywords: enterprise, enterprise account, multiple accounts, organization, hierarchy
 
@@ -62,19 +62,9 @@ Your enterprise structure is flexible and can grow and change as your needs do. 
 ## Consolidated billing
 {: #enterprise-billing}
 
+In an enterprise, all billing is managed through the enterprise account rather than in individual child accounts. Subscription credit and promotional credit from all accounts is consolidated into a shared credit pool, and usage costs from all accounts are deducted from this pool. This consolidated approach simplifies invoicing and payments, with a single invoice for the entire enterprise and one place to manage payment methods.
 
-In an enterprise, all billing is managed through the enterprise account. Enterprises require [subscription billing](/docs/account?topic=account-accounts#subscription-account) or an account with the [Enterprise Savings Plan billing model](/docs/enterprise-management?topic=enterprise-management-committed-use). Subscription billing means that you purchase a subscription for an amount of credit to spend during the subscription term, and usage is deducted from the subscription credit at a discounted rate. Subscription credit, as well as credit from any promotions, is added to the enterprise credit pool, which is shared across all accounts in the enterprise. As accounts use resources, credit is spent from the credit pool. The Pay as you go with Committed Use billing model is similar to the billing model for Subscription accounts. You commit to spend a certain amount on {{site.data.keyword.cloud_notm}} and receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount.
-
-![A diagram that shows that credit from accounts is added to the enterprise credit pool, which is managed by the billing administrator in the enterprise account.](images/enterprise-billing.svg "Billing for all accounts is managed by the billing administrator in the enterprise account."){: caption="Enterprise billing management" caption-side="bottom"}
-
-Because billing is consolidated, enterprises make managing invoicing and payments across multiple accounts easier with these key benefits:
-* A credit pool of subscriptions that span multiple accounts, so you can size your subscriptions for all of your usage rather than usage per account
-* A single invoice for all usage within the enterprise, so understanding costs is easier
-* A single place to manage payment methods, so you can update once for all accounts
-
-Learn more in [Centrally manage billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
-
-
+For detailed information about how enterprise billing works, including billing options, the credit pool, and access management, see [Centrally manage billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 
 ## Enterprise support
 {: #enterprise-support-model}
