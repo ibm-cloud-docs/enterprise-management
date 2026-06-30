@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2024
-lastupdated: "2024-09-23"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -109,7 +109,7 @@ To delete only a specific version, complete the following steps:
 
 To create an authorization policy template, complete the following steps in the CLI:
 
-1. Create a JSON file that configures the definition of the authorization policy template. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
+1. Create a JSON file that configures the definition of the authorization policy template. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template).
 
    The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enterprise account. Then, the `authorization policy` definition is defined. This authorization template grants an Editor role between all "File Storage for VPC" in the assigned accounts.
 
@@ -181,7 +181,7 @@ You can update the roles, target, source, name, and description for an authoriza
 
 To update an authorization template by using the CLI, complete the following steps:
 
-1. Update your JSON file with the new authorization template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
+1. Update your JSON file with the new authorization template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template).
 
    When you update the template name, you update the name for every version.
    {: note}
@@ -267,7 +267,7 @@ Unassigning an authorization policy assignment removes all the underlying resour
 
 As access requirements evolve for teams in your enterprise, you might need to create another version of an authorization template to meet new needs. To create a new authorization template version by using the CLI, complete the following steps:
 
-1. Edit your JSON file to include any updates to the authorization template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template)
+1. Edit your JSON file to include any updates to the authorization template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template)
 
 1. Use the `authorization-policy-template-version-create` command as shown in the following sample request:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-05-12"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, enterprise access, policy templates, enterprise managed, policies, enterprise policy, template
 
@@ -128,7 +128,7 @@ If multiple access group or trusted profile templates require the same policy, c
 
 To create an access policy template by using the CLI, complete the following steps:
 
-1. Create a JSON file that configures the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
+1. Create a JSON file that configures the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template).
 
    The following example JSON file specifies the `name` and `description` of the template and the `account_id` of the enteprise account. Then, the `policy` definition is defined. This policy template grants an access policy with Editor permissions on the {{site.data.keyword.sysdigsecure_full_notm}} service. The policy includes a time-based rule that grants access from Monday to Friday all day, repeating weekly. For more information, see [Time-based conditions](/docs/iam?topic=iam-iam-condition-properties&interface=ui#policy-condition-properties) and [Limiting access with time-based conditions](/docs/iam?topic=iam-iam-time-based).
 
@@ -186,7 +186,7 @@ You can update the roles, resources, name, and description for a policy template
 
 To update policy template by using the CLI, complete the following steps:
 
-1. Update your JSON file with the new policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template).
+1. Update your JSON file with the new policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template).
 
    When you update the template name, this updates the name for every version.
    {: note}
@@ -247,7 +247,7 @@ You can reference a policy template to assign access in an access group or trust
 
 As access requirements evolve for teams in your enterprise, you might need to create another version of a policy template to meet new needs. To create a new policy template version by using the CLI, complete the following steps:
 
-1. Edit your JSON file to include any updates to the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template)
+1. Edit your JSON file to include any updates to the policy template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template)
 
 1. Use the `access-policy-template-version-create` command as shown in the following sample request:
 
@@ -299,7 +299,7 @@ This deletes version `2` of the `SCCWPEditor` policy template.
 
 If there's a policy that multiple access group or trusted profile templates might require, create an access policy template.
 
-To programmatically create an access policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template) as shown in the following sample request:
+To programmatically create an access policy template by using the API, call the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template) as shown in the following sample request:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policy_template' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -388,7 +388,7 @@ fmt.Println(string(b))
 {: #update-policy-template-api}
 {: api}
 
-You can update the roles, resources, name, and description for a policy template at any time before you commit it. To programmatically update policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#replace-policy-template) as shown in the following sample request:
+You can update the roles, resources, name, and description for a policy template at any time before you commit it. To programmatically update policy template by using the API, call the [IAM Policy Management API](/docs/apis/iam-policy-management#replace-policy-template) as shown in the following sample request:
 
 ```bash
 curl -X PUT 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{
@@ -480,7 +480,7 @@ If you need to make updates after you commit the template, create a new version.
 {: #commit-policy-version-api}
 {: api}
 
-Review the policy template and commit it so that no further changes can be made to the version. This way, the Template Assignment Administrator can be sure that they assign the version only when you have confirmed that it's ready. To programmatically commit a policy template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#commit-policy-template) as shown in the following sample request:
+Review the policy template and commit it so that no further changes can be made to the version. This way, the Template Assignment Administrator can be sure that they assign the version only when you have confirmed that it's ready. To programmatically commit a policy template by using the API, call the [IAM Policy Management API](/docs/apis/iam-policy-management#commit-policy-template) as shown in the following sample request:
 
 ```bash
 curl -X PUT 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMLPATE_VERSION/commit' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -H 'If-Match: $ETAG' -d '{}'
@@ -510,7 +510,7 @@ if response.StatusCode != 204 {
 {: #grant-access-template-api}
 {: api}
 
-Unlike regular access policies, an access policy template doesn't have an explicit subject that you're granting access to when you create it. To programmatically assign a policy template to an access group or trusted profile template by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template-assignment) as shown in the following sample request:
+Unlike regular access policies, an access policy template doesn't have an explicit subject that you're granting access to when you create it. To programmatically assign a policy template to an access group or trusted profile template by using the API, call the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template-assignment) as shown in the following sample request:
 
 1. List all access policy templates and note the ID of the policy template in the response:
 
@@ -526,7 +526,7 @@ Unlike regular access policies, an access policy template doesn't have an explic
 {: #new-version-policy-api}
 {: api}
 
-As access requirements evolve for teams in your enterprise, you might need to create another version of a policy template to meet new needs. To programmatically create a new policy template version by using the API, call the [IAM Policy Management API](/apidocs/iam-policy-management#create-policy-template-version) as shown in the following sample request:
+As access requirements evolve for teams in your enterprise, you might need to create another version of a policy template to meet new needs. To programmatically create a new policy template version by using the API, call the [IAM Policy Management API](/docs/apis/iam-policy-management#create-policy-template-version) as shown in the following sample request:
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policy_template/$TEMPLATE_ID/versions' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -616,7 +616,7 @@ fmt.Println(string(b))
 
 You might need to list the policy templates in your enterprise account for several reasons. You can see what policies are available or retrieve details about a policy that you want to edit, remove from another template, or delete.
 
-To list the policy templates in your enterprise account, call the [IAM Policy Management API](/apidocs/iam-policy-management#list-policy-templates) as shown in the following sample request:
+To list the policy templates in your enterprise account, call the [IAM Policy Management API](/docs/apis/iam-policy-management#list-policy-templates) as shown in the following sample request:
 
 ```bash
 curl -X GET 'https://iam.cloud.ibm.com/v1/policy_templates?account_id=$ACCOUNT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
@@ -648,7 +648,7 @@ Removing the reference to a policy template from an access group or trusted prof
 
 If you want to assign a different policy in a committed or assigned access group or trusted profile template, you must create a new version. For more information, see [Creating a new version of access group templates](/docs/enterprise-management?topic=enterprise-management-ag-template-create&interface=ui#new-version-ag-template) and [trusted profile templates](/docs/enterprise-management?topic=enterprise-management-tp-template-create&interface=ui#new-version-tp-template).
 
-To remove a policy template from access group or trusted profile templates, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-assignment) as shown in the following sample request:
+To remove a policy template from access group or trusted profile templates, call the [IAM Policy Management API](/docs/apis/iam-policy-management#delete-policy-assignment) as shown in the following sample request:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/policy_assignments/$POLICY_ASSIGNMENT_ID' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'
@@ -664,7 +664,7 @@ Deleting a policy template deletes all version of the template. You can delete a
 
 In the case that you want to delete a policy template that's referenced in a trusted profile or access group template that's assigned to child accounts, you must remove the trusted profile or access group template assignment from those child accounts. For more information, see [Removing an assignment for access group templates](/docs/enterprise-management?topic=enterprise-management-ag-template-create#remove-assignment-ag) and [trusted profile templates](/docs/enterprise-management?topic=enterprise-management-tp-template-create#remove-assignment-tp).
 
-To delete a policy template, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-template) as shown in the following sample request:
+To delete a policy template, call the [IAM Policy Management API](/docs/apis/iam-policy-management#delete-policy-template) as shown in the following sample request:
 
 
 ```bash
@@ -693,7 +693,7 @@ if response.StatusCode != 204 {
 {: #delete-policy-version-api}
 {: api}
 
-To delete only a specific version, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-template-version) as shown in the following sample request:
+To delete only a specific version, call the [IAM Policy Management API](/docs/apis/iam-policy-management#delete-policy-template-version) as shown in the following sample request:
 
 ```bash
 curl -X DELETE 'https://iam.cloud.ibm.com/v1/policy_templates/$TEMPLATE_ID/versions/$TEMPLATE_VERSION' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json'

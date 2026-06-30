@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, create account group, organize accounts, move accounts, account group, change contact, account group contact
 
@@ -152,7 +152,7 @@ fmt.Println(string(b))
 {: go}
 
 
-For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise){: external}.
+For detailed information about the API, see [Enterprise Management API](/docs/apis/enterprise-apis/enterprise){: external}.
 
 ## Moving accounts within the enterprise
 {: #move-accounts}
@@ -278,7 +278,7 @@ if err != nil {
 {: go}
 
 
-For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise){: external}.
+For detailed information about the API, see [Enterprise Management API](/docs/apis/enterprise-apis/enterprise){: external}.
 
 ### Moving accounts with enterprise-managed IAM template assignments
 {: #moving-template-assignment}

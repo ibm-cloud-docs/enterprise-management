@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-06-30"
 
 keywords: enterprise usage, view enterprise costs, account group usage, account usage, cost recovery, chargeback, support cost
 
@@ -120,7 +120,7 @@ Sales            account_group   456.78          0                   USD        
 {: #enterprise-usage-api}
 {: api}
 
-You can get usage reports from an enterprise and its accounts by calling the [Enterprise Usage Reports API](/apidocs/enterprise-apis/resource-usage-reports). You can base the query in your API call on an enterprise, an account group, or an account and specify whether to view the entity or its children.
+You can get usage reports from an enterprise and its accounts by calling the [Enterprise Usage Reports API](/docs/apis/enterprise-apis/resource-usage-reports). You can base the query in your API call on an enterprise, an account group, or an account and specify whether to view the entity or its children.
 
 The following examples show queries that you can use to get different usage reports. When you call the API, replace the ID variables and IAM token with the values from your enterprise.
 

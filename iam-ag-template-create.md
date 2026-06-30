@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-05-11"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, access group, migrate version, upgrade version, new version
 
@@ -322,7 +322,7 @@ To remove an assignment, complete the following steps:
 
 Consider using access group templates when you have many child accounts, common access requirements across accounts, strict security requirements, or need to make changes to access policies.
 
-You can programmatically create an access group template by calling the [IAM Access Groups API](/apidocs/iam-access-groups#create-template) as shown in the following sample request. The example creates an access group template for managers who need administrator access to all IAM account management services in child accounts so that they can manage access:
+You can programmatically create an access group template by calling the [IAM Access Groups API](/docs/apis/iam-access-groups#create-template) as shown in the following sample request. The example creates an access group template for managers who need administrator access to all IAM account management services in child accounts so that they can manage access:
 
 ```bash
 {
@@ -454,7 +454,7 @@ By default, access group administrators in child accounts can't add access polic
 
 You can update an access group template at any time before a template is committed.
 
-To update an access group template, call the [IAM Policy Management API](/apidocs/iam-policy-management#delete-policy-assignment) as shown in the following sample request:
+To update an access group template, call the [IAM Policy Management API](/docs/apis/iam-policy-management#delete-policy-assignment) as shown in the following sample request:
 
 ```bash
 curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "name": "IAM Admin Group template 2", "description": "This access group template allows admin access to all IAM platform services in the account.", "group": { "name": "IAM Admin Group 8", "description": "This access group template allows admin access to all IAM platform services in the account.", "members": { "users": [ "IBMid-665000T8WY" ], "services": [ "iam-ServiceId-e371b0e5-1c80-48e3-bf12-c6a8ef2b1a11" ], "action_controls": { "add": true, "remove": false } }, "assertions": { "rules": [ { "name": "Manager group rule", "expiration": 12, "realm_name": "https://idp.example.org/SAML2", "conditions": [ { "claim": "blueGroup", "operator": "CONTAINS", "value": "test-bluegroup-saml" } ], "action_controls": { "remove": false, "update": false } } ], "action_controls": { "add": false } }, "action_controls": { "access": { "add": false } } }, "policy_template_references": [ { "id": "policyTemplateId-123", "version": "1" }, { "id": "policyTemplateId-234", "version": "1" } ] }' "{base_url}/v1/group_templates/{template_id}/versions/{version_num}"
@@ -595,7 +595,7 @@ Consider using access group templates when you have many child accounts, common 
 
 You can create an access group template by completing the following steps:
 
-1. Create a JSON file with your access group template definition. For more information about the attributes you can use, see the [IAM Access Groups API](/apidocs/iam-access-groups#create-template). The following example creates an access group template for managers who need administrator access to all IAM account management services in child accounts so that they can manage access:
+1. Create a JSON file with your access group template definition. For more information about the attributes you can use, see the [IAM Access Groups API](/docs/apis/iam-access-groups#create-template). The following example creates an access group template for managers who need administrator access to all IAM account management services in child accounts so that they can manage access:
 
     ```bash
     {
@@ -734,7 +734,7 @@ You can update an access group template at any time before a template is committ
 
 To update an access group template, complete the following steps:
 
-1. Update your JSON file with the new access group template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Access Groups API](/apidocs/iam-access-groups#create-template).
+1. Update your JSON file with the new access group template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Access Groups API](/docs/apis/iam-access-groups#create-template).
 1. Use the `access-group-template-version-update` method as shown in the following sample request:
 
     ```bash
@@ -812,7 +812,7 @@ If you want to make changes to an access group template that's committed or assi
    {: codeblock}
    {: curl}
 
-1. Create a JSON file that includes any updates that you want to make. For more information about the attributes that you can use in your JSON file, see the [IAM Access Groups API](/apidocs/iam-access-groups#create-template).
+1. Create a JSON file that includes any updates that you want to make. For more information about the attributes that you can use in your JSON file, see the [IAM Access Groups API](/docs/apis/iam-access-groups#create-template).
 
 1. Create a new version by using the `access-group-template-version-create` method as shown in the following sample request:
 

@@ -1,7 +1,7 @@
 ---
 copyright:
  years: 2025, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, enterprise access group
 
@@ -80,7 +80,7 @@ The following example shows how to obtain a token by using the CLI:
 You can skip this step if you already have a service ID and an associated API key created.
 {: note}
 
-By using the obtained access token from the previous step, create a service ID by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
+By using the obtained access token from the previous step, create a service ID by calling the [IAM Identity Services API](/docs/apis/iam-identity-token-api#create-service-id) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/v1/serviceids" \
@@ -114,7 +114,7 @@ See the following sample response:
 ```
 {: codeblock}
 
-Then, you can create the service ID’s API key by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-api-key) as shown in the following example:
+Then, you can create the service ID’s API key by calling the [IAM Identity Services API](/docs/apis/iam-identity-token-api#create-api-key) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/v1/apikeys"\
@@ -160,7 +160,7 @@ See the following sample response:
 
 Now, you can create two access policy templates to grant the required access to manage all services. These templates are used in the next step to grant access to the trusted profile.
 
-Create the templates to grant the required access to manage all services by calling the [IAM Identity Services API](/apidocs/iam-policy-management#create-policy-template) as shown in the following example:
+Create the templates to grant the required access to manage all services by calling the [IAM Identity Services API](/docs/apis/iam-policy-management#create-policy-template) as shown in the following example:
 
 You must assign the `Administrator` role for all catalog services.
 {: important}
@@ -291,7 +291,7 @@ curl --location 'https://iam.cloud.ibm.com/v1/policy_templates' \
 {: #create-tp-template-ent-tutorial}
 {: step}
 
-Create the trusted profile template with the operator service ID as the trusted entity and the two policy templates from the [Create the access policy templates](#create-policy-templates) step by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-profile-template) as shown in the following example:
+Create the trusted profile template with the operator service ID as the trusted entity and the two policy templates from the [Create the access policy templates](#create-policy-templates) step by calling the [IAM Identity Services API](/docs/apis/iam-identity-token-api#create-profile-template) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/v1/profile_templates" \
@@ -330,7 +330,7 @@ curl -X POST "https://iam.cloud.ibm.com/v1/profile_templates" \
 {: #assign-tp-template-account}
 {: step}
 
-The template can be assigned to individual accounts or account groups (recommended). When you assign a template to an account group, a trusted profile gets created in each child account in the account group. Also, the system automatically creates trusted profiles for new accounts that are added to the account group, or removes them when child accounts are removed or deleted from the group. Create an assignment for a trusted profile template by calling the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-trusted-profile-assignment) as shown in the following example:
+The template can be assigned to individual accounts or account groups (recommended). When you assign a template to an account group, a trusted profile gets created in each child account in the account group. Also, the system automatically creates trusted profiles for new accounts that are added to the account group, or removes them when child accounts are removed or deleted from the group. Create an assignment for a trusted profile template by calling the [IAM Identity Services API](/docs/apis/iam-identity-token-api#create-trusted-profile-assignment) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/v1/profile_assignments"\
@@ -350,7 +350,7 @@ curl -X POST "https://iam.cloud.ibm.com/v1/profile_assignments"\
 {: #get-serviceid-token}
 {: step}
 
-To manage the enterprise account resources, you must use the operations service ID's API key that you created previously to obtain an access token. Call the [IAM Identity Services API](/apidocs/iam-identity-token-api#gettoken-apikey) as shown in the following example:
+To manage the enterprise account resources, you must use the operations service ID's API key that you created previously to obtain an access token. Call the [IAM Identity Services API](/docs/apis/iam-identity-token-api#gettoken-apikey) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/identity/token" \
@@ -378,7 +378,7 @@ See the following sample response:
 {: #get-list-tp}
 {: step}
 
-By calling the [IAM Identity Services API](/apidocs/iam-identity-token-api) as shown in the following example, you can return the list of trusted profiles and accounts that the operator service ID can use:
+By calling the [IAM Identity Services API](/docs/apis/iam-identity-token-api) as shown in the following example, you can return the list of trusted profiles and accounts that the operator service ID can use:
 
 ```bash
 curl --location 'https://iam.cloud.ibm.com/identity/profiles' \
@@ -468,7 +468,7 @@ See the following sample response:
 {: #get-child-tp-token}
 {: step}
 
-By using the operations service ID's access token, each trusted profile ID and the ID of the child account, you can create an access token for a trusted profile. Call the [IAM Identity Services API](/apidocs/iam-identity-token-api#gettoken-assume) as shown in the following example:
+By using the operations service ID's access token, each trusted profile ID and the ID of the child account, you can create an access token for a trusted profile. Call the [IAM Identity Services API](/docs/apis/iam-identity-token-api#gettoken-assume) as shown in the following example:
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/identity/token"\
@@ -484,7 +484,7 @@ curl -X POST "https://iam.cloud.ibm.com/identity/token"\
 {: #use-TP-manage-resources}
 {: step}
 
-Now, you can make requests to resource APIs, for example creating a new {{site.data.keyword.cloudant_short_notm}} instance within an account by calling the [Resource Controller API](/apidocs/resource-controller/resource-controller#create-resource-instance) as shown in the following example:
+Now, you can make requests to resource APIs, for example creating a new {{site.data.keyword.cloudant_short_notm}} instance within an account by calling the [Resource Controller API](/docs/apis/resource-controller/resource-controller#create-resource-instance) as shown in the following example:
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H "Authorization: Bearer <IAM token>" -H 'Content-Type: application/json' -d '{

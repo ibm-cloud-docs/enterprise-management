@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-08"
+lastupdated: "2026-06-30"
 
 subcollection: enterprise-management
 
@@ -48,7 +48,7 @@ To disable enterprise-managed IAM in an account, the account owner must open a [
 {: #existing-acct-opt-in-api}
 {: api}
 
-As the owner of a child account, you can opt-in to enterprise-managed IAM. To opt-in to enterprise-managed IAM in a child account, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise) as shown in the following example:
+As the owner of a child account, you can opt-in to enterprise-managed IAM. To opt-in to enterprise-managed IAM in a child account, call the [Enterprise Management API](/docs/apis/enterprise-apis/enterprise) as shown in the following example:
 
 ```bash
 curl -s -L -X PATCH "https://accounts.cloud.ibm.com/v1/accounts/$ACCOUNT/traits" \
@@ -65,7 +65,7 @@ curl -s -L -X PATCH "https://accounts.cloud.ibm.com/v1/accounts/$ACCOUNT/traits"
 {: #new-acct-opt-in-api}
 {: api}
 
-As an enterprise user with the Administrator role on the Enterprise service, you can enable enterprise-managed IAM when you create a new account. To create an account with enterprise-managed IAM enabled, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#create-account) as shown in the following example:
+As an enterprise user with the Administrator role on the Enterprise service, you can enable enterprise-managed IAM when you create a new account. To create an account with enterprise-managed IAM enabled, call the [Enterprise Management API](/docs/apis/enterprise-apis/enterprise#create-account) as shown in the following example:
 
 ```bash
 curl -X POST "https://enterprise.cloud.ibm.com/v1/accounts -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{

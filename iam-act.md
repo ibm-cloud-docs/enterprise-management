@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-11-06"
+  years: 2026
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version, action control template
 
@@ -290,7 +290,7 @@ ibmcloud iam action-control-template TEMPLATE_NAME|TEMPLATE_ID
 
 Create a new version of an action control template when you need to make updates to a committed version. To create a new version, complete the following steps.
 
-1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#replace-action-control-template).
+1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#replace-action-control-template).
 1. Use the `iam-access-management.action-control-template.create` command to create a new version. The following sample request creates a new version of the template with template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
 
    ```bash
@@ -376,7 +376,7 @@ Consider using action control templates when you have many child accounts that r
 
 To create an action control template by using the API, complete the following steps:
 
-Create a JSON file that configures the template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#list-action-control-templates). The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. 
+Create a JSON file that configures the template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#list-action-control-templates). The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template. 
 
 ```bash
 curl -X POST "https://iam.cloud.ibm.com/v1/action_control_templates" -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d '{
@@ -618,7 +618,7 @@ get_action_control_template_version(
 
 Create a new version of an action control template when you need to make updates to a committed version. To create a new version, complete the following steps.
 
-1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/apidocs/iam-policy-management#replace-action-control-template).
+1. Update your JSON file with the new action control template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Policy Management API](/docs/apis/iam-policy-management#replace-action-control-template).
 1. Use the `iam-access-management.action-control-template.create` method to create a new version. The following sample request creates a new version of the template with template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab` for the `atracker` service.
 
 ```bash
@@ -676,7 +676,7 @@ createActionControlTemplateVersion(params)
 
 You can update a specific version of an action control template, only if the version is not committed. 
 
-The new template version that you assign replaces the old version. Learn more about [Assigning an action control template](/apidocs/iam-policy-management#create-action-control-template-assignment).
+The new template version that you assign replaces the old version. Learn more about [Assigning an action control template](/docs/apis/iam-policy-management#create-action-control-template-assignment).
 {: note}
 
 Use the `iam-access-management.action-control-template.update` method to update a new version. The following sample request creates a new version of the template with the same template ID `actionControlTemplate-12345678-abcd-1a2b-a1b2-1234567890ab`, but version: `1` for the `atracker` service.
