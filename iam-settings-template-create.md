@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, multiple accounts, assign access, enterprise access, templates, enterprise managed, access, settings, migrate version, upgrade version, new version
 
@@ -325,7 +325,7 @@ Consider using settings templates when you have many child accounts that require
 
 To create a settings template by using the CLI, complete the following steps:
 
-1. Create a JSON file that configures the settings template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/apidocs/iam-identity-token-api#create-account-settings-template).
+1. Create a JSON file that configures the settings template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/docs/apis/iam-identity-token-api#create-account-settings-template).
 
    The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template, and the `account_settings`. The creation of API keys is restricted to users with the API Key Creator role on the Identity Service. The creation of service IDs is not restricted, so all members can create service IDs in the accounts where the settings template is assigned. The maximum sessions per identity is set to `5`, and the multifactor authentication is set to `LEVEL3`, which requires all users to use U2F MFA.
    ```json
@@ -355,7 +355,7 @@ To create a settings template by using the CLI, complete the following steps:
 
 You can update a settings template at any time before you commit it. To update a specific version of an account settings template, complete the following steps:
 
-1. Update your JSON file with the new settings template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/apidocs/iam-identity-token-api#update-account-settings-template-version).
+1. Update your JSON file with the new settings template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/docs/apis/iam-identity-token-api#update-account-settings-template-version).
 
    The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template, and the `account_settings`. The new configuration resets MFA to `NONE` and removes the other settings.
 
@@ -426,7 +426,7 @@ If an assignment fails, use the `account-settings-assigment-update` method to re
 
 Create a new version of an account settings template when you need to make updates to a committed version. To create a new version, complete the following steps.
 
-1. Update your JSON file with the new settings template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/apidocs/iam-identity-token-api#update-account-settings-template-version).
+1. Update your JSON file with the new settings template configuration. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/docs/apis/iam-identity-token-api#update-account-settings-template-version).
 1. Use the `account-settings-template-version-create` method to create a new version. The following sample request creates a new version of the template `AccountSettingsUpdated`.
 
    ```bash
@@ -497,7 +497,7 @@ Consider using settings templates when you have many child accounts that require
 
 To create a settings template by using the API, complete the following steps:
 
-1. Configure the settings template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/apidocs/iam-identity-token-api#create-account-settings-template).
+1. Configure the settings template definition. For more information about the attributes that you can use in your JSON file, see the [IAM Identity API](/docs/apis/iam-identity-token-api#create-account-settings-template).
 
    The following example JSON file specifies the `account_id` of the enterprise account, the `name` of the template, and the `account_settings`. The creation of API keys is restricted to users with the API Key Creator role on the Identity Service. The creation of service IDs is not restricted, so all members can create service IDs in the accounts where the settings template is assigned. The maximum sessions per identity is set to `5`, and the multifactor authentication is set to `LEVEL3`, which requires all users to use U2F MFA.
    {: curl}

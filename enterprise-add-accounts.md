@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, add account, import account, create account
 
@@ -89,7 +89,7 @@ To import an existing account, complete the following steps:
 {: #add-account-api}
 {: api}
 
-To import an existing account to the enterprise, call the [Enterprise Management API](/apidocs/enterprise-apis/enterprise#import-account-to-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
+To import an existing account to the enterprise, call the [Enterprise Management API](/docs/apis/enterprise-apis/enterprise#import-account-to-enterprise){: external} as shown in the following sample request. Replace the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) token and ID variables with the values from your enterprise.
 
 ```bash
 curl -X PUT "https://enterprise.cloud.ibm.com/v1/enterprises/$ENTERPRISE_ID/import/accounts/$ACCOUNT_ID" -H "Authorization: Bearer <IAM_Token>" -H 'Content-Type: application/json' -d '{
@@ -251,7 +251,7 @@ After you create the account, the account owner can log in to the account to inv
 {: #create-account-api}
 {: api}
 
-To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise#create-account){: external}.
+To create a new account in the enterprise, call the Enterprise Management API as shown in the following sample request, replacing the IAM token and ID variables with the values from your enterprise. For detailed information about the API, see [Enterprise Management API](/docs/apis/enterprise-apis/enterprise#create-account){: external}.
 
 ```bash
 curl -X POST "https://enterprise.cloud.ibm.com/v1/accounts

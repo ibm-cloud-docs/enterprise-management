@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-06-30"
 
 keywords: enterprise, enterprise account, create enterprise, set up enterprise, multiple account, video
 
@@ -107,7 +107,7 @@ The account that you used to create the enterprise is now a part of the enterpri
 {: #create-api}
 {: api}
 
-You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](/apidocs/enterprise-apis/enterprise){: external}.
+You can programmatically create an enterprise by calling the Enterprise Management API as shown in the following sample request. For detailed information about the API, see [Enterprise Management API](/docs/apis/enterprise-apis/enterprise){: external}.
 
 ```bash
 curl -X POST "https://enterprise.cloud.ibm.com/v1/enterprises

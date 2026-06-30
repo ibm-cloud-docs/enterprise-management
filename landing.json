@@ -35,7 +35,7 @@
     }
   ],
   "section_devtools": {
-    "api": "/apidocs/enterprise-apis/enterprise",
+    "api": "/docs/apis/enterprise-apis/enterprise",
     "cli": "/docs/enterprise-management?topic=enterprise-management-ibmcloud_enterprise"
   },
   "section_updates": {

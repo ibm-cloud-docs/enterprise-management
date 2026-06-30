@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2026
 
-lastupdated: "2026-04-21"
+lastupdated: "2026-06-30"
 
 keywords: enterprise policy, enterprise access, assign enterprise access, enterprise service, enterprise IAM, enterprise-managed, IAM templates
 
@@ -390,4 +390,4 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-For more information, see [Create a policy](/apidocs/iam-policy-management){: external}.
+For more information, see [Create a policy](/docs/apis/iam-policy-management){: external}.

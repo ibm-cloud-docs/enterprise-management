@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-06-30"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -98,7 +98,7 @@ No, billing and subscriptions are managed at the enterprise level rather than at
 {: #enterprise-domain}
 {: faq}
 
-Yes, domains can be updated. You can use the [Enterprise Management API](https://{DomainName}/apidocs/enterprise-apis/enterprise#update-enterprise){: external} to update your domain.
+Yes, domains can be updated. You can use the [Enterprise Management API](/docs/apis/enterprise-apis/enterprise#update-enterprise){: external} to update your domain.
 
 ## Do individual child accounts receive separate invoices if they are in an enterprise account?
 {: #enterprise-invoice}

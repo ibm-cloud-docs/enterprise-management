@@ -168,22 +168,22 @@ toc:
           topics:
           - link:
               label: Enterprise Management
-              href: https://{DomainName}/apidocs/enterprise-apis/enterprise
+              href: https://{DomainName}/docs/apis/enterprise-apis/enterprise
           - link:
               label: Enterprise Billing Units
-              href: https://{DomainName}/apidocs/enterprise-apis/billing-unit
+              href: https://{DomainName}/docs/apis/enterprise-apis/billing-unit
           - link:
               label: Usage Metering
-              href: https://{DomainName}/apidocs/usage-metering
+              href: https://{DomainName}/docs/apis/usage-metering
           - link:
               label: Usage Reports
-              href: https://{DomainName}/apidocs/metering-reporting
+              href: https://{DomainName}/docs/apis/metering-reporting
           - link:
               label: Enterprise Billing Units
-              href: https://{DomainName}/apidocs/enterprise-apis/billing-unit
+              href: https://{DomainName}/docs/apis/enterprise-apis/billing-unit
           - link:
               label: Enterprise Usage Reports
-              href: https://{DomainName}/apidocs/enterprise-apis/resource-usage-reports
+              href: https://{DomainName}/docs/apis/enterprise-apis/resource-usage-reports
       - topicgroup:
           label: Command reference
           topics:
