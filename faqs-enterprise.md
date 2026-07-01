@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2026
-lastupdated: "2026-06-30"
+lastupdated: "2026-07-01"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership
 
@@ -18,8 +18,11 @@ content-type: faq
 # FAQ about enterprises
 {: #enterprise-faqs}
 
+
 FAQ for your {{site.data.keyword.cloud}} enterprise might include questions about importing accounts, moving accounts and account groups, and inviting users to your enterprise. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
+
+
 
 ## How do I set up an enterprise account?
 {: #enterprise-setup}
